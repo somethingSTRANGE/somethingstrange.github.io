@@ -1,70 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>Games on somethingSTRANGE</title>
-    <link>http://somethingstrange.com/showcase/games/</link>
-    <description>Recent content in Games on somethingSTRANGE</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy;{year}. All content is licensed under &lt;a target=&#39;_blank&#39; rel=&#39;external noopener&#39; href=&#39;https://www.apache.org/licenses/LICENSE-2.0&#39;&gt;Apache License 2.0&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate>
-    
-        <atom:link href="http://somethingstrange.com/showcase/games/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>Thief: The Dark Project</title>
-        <link>http://somethingstrange.com/showcase/games/thief/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        
-        <atom:modified>Sun, 19 Jan 2020 21:13:42 +0900</atom:modified>
-        <guid>http://somethingstrange.com/showcase/games/thief/</guid>
-        <description>Markdown goes here.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Games on somethingSTRANGE</title><link>http://somethingstrange.com/showcase/games/</link><description>Recent content in Games on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy;{year}. All content is licensed under &lt;a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0&lt;/a>.</copyright><lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate><atom:link href="http://somethingstrange.com/showcase/games/index.xml" rel="self" type="application/rss+xml"/><item><title>Thief: The Dark Project</title><link>http://somethingstrange.com/showcase/games/thief/</link><pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate><atom:modified>Sun, 19 Jan 2020 21:13:42 +0900</atom:modified><guid>http://somethingstrange.com/showcase/games/thief/</guid><description>Markdown goes here.
 Markdown goes here.
 TEST
 EN
 Added &amp;ldquo;meta_image&amp;rdquo; front matter.
-Added &amp;ldquo;image&amp;rdquo; front matter.</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        <media:content url="http://somethingstrange.com/showcase/rana-marketing01.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>Thief 2: The Metal Age</title>
-        <link>http://somethingstrange.com/showcase/games/thief2/</link>
-        <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
-        
-        <atom:modified>Sun, 19 Jan 2020 21:13:42 +0900</atom:modified>
-        <guid>http://somethingstrange.com/showcase/games/thief2/</guid>
-        <description>Markdown goes here.
+Added &amp;ldquo;image&amp;rdquo; front matter.</description><dc:creator>Michael Ryan</dc:creator><media:content url="http://somethingstrange.com/showcase/rana-marketing01.jpg" medium="image"><media:title type="html">featured image</media:title></media:content></item><item><title>Thief 2: The Metal Age</title><link>http://somethingstrange.com/showcase/games/thief2/</link><pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate><atom:modified>Sun, 19 Jan 2020 21:13:42 +0900</atom:modified><guid>http://somethingstrange.com/showcase/games/thief2/</guid><description>Markdown goes here.
 Markdown goes here.
 TEST
 EN
 Added &amp;ldquo;meta_image&amp;rdquo; front matter.
-Added &amp;ldquo;image&amp;rdquo; front matter.</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-
-    
-  </channel>
-</rss>
+Added &amp;ldquo;image&amp;rdquo; front matter.</description><dc:creator>Michael Ryan</dc:creator></item></channel></rss>
