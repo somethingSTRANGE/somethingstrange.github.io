@@ -1,371 +1,2104 @@
-<!doctype html><html lang=en dir=ltr>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head prefix="og: http://ogp.me/ns#">
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<title>js – somethingSTRANGE</title>
-<script defer src=/js/custom.min.b3ab9233ba0fb309022241cea016a7d6f73999a3da1cff3037b975aecbe6a94b.js></script>
-<script defer src=/js/fuse.min.32195737929df2c8096e855a5789cbb3f1331224d9169e8705493e7008f47df8.js></script>
-<script src=/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js></script>
-<script defer src=/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js></script>
-<script defer src=/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js></script>
-<script defer src=/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js></script>
-<script defer src=/js/helper/closest.min.js></script>
-<script>"use strict";window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=Array.prototype.forEach),String.prototype.includes||(String.prototype.includes=function(b,a){'use strict';if(b instanceof RegExp)throw TypeError('first argument must not be a RegExp');return a===void 0&&(a=0),this.indexOf(b,a)!==-1}),Document.prototype.append=Element.prototype.append=function(){this.appendChild(_mutation(arguments))};function _mutation(a){if(!a.length)throw new Error('DOM Exception 8');if(a.length===1)return typeof a[0]=='string'?document.createTextNode(a[0]):a[0];for(var c=document.createDocumentFragment(),e=a.length,d=-1,b;++d<e;)b=a[d],c.appendChild(typeof b=='string'?document.createTextNode(b):b);return c}String.prototype.startsWith||(String.prototype.startsWith=function(b,a){return a=a||0,this.indexOf(b,a)===a}),document.addEventListener('DOMContentLoaded',function(){var A=document.querySelector('.navbar__burger'),V,F,G,Q,P,f,e,O,t,ag,K,I,o,g,z,l,b,r,s,W,H,d,E,h,B,C,ap,y,ao,an,am,al,ak,D,ac,aj,ah,ae,j,i,c,ad,w,Z,U,ab,x,p,R,m,ar,aq,a,at,L,n,J,S,T,u,q,v;A?A.addEventListener('click',function(c){var a=document.querySelector('.navbarm__collapse'),b;a&&(b=a.getAttribute('data-open'),b==='true'?(a.setAttribute('data-open','false'),a.style.maxHeight=0,A.classList.remove('is-active')):(a.setAttribute('data-open','true'),a.style.maxHeight=a.scrollHeight+"px",A.classList.add('is-active')))}):null,V=document.querySelectorAll('.single__contents > table');for(let a=0;a<V.length;a++)F=V[a],G=document.createElement('div'),G.className='table-wrapper',F.parentElement.replaceChild(G,F),G.appendChild(F);Q=document.querySelectorAll('.footnote-ref'),P=document.querySelectorAll('.footnote-backref'),Q?Q.forEach(function(a,c){a.onmouseenter=function(){b.classList.contains('scrolling')&&b.classList.remove('scrolling')},a.onmouseleave=function(){b.classList.contains('scrolling')||setTimeout(function(){b.classList.add('scrolling')},100)},a.onclick=function(){b.classList.contains('scrolling')||(b.classList.remove('navbar--show'),b.classList.remove('navbar--hide'),b.classList.add('navbar--hide'))}}):null,P?P.forEach(function(a,c){a.onmouseenter=function(){b.classList.contains('scrolling')&&b.classList.remove('scrolling')},a.onmouseleave=function(){b.classList.contains('scrolling')||setTimeout(function(){b.classList.add('scrolling')},100)},a.onclick=function(){b.classList.contains('scrolling')||(b.classList.remove('navbar--show'),b.classList.remove('navbar--hide'),b.classList.add('navbar--hide'))}}):null,f=document.querySelector('.summary__container'),e=document.querySelector('.search-result'),O=document.querySelector('.search-result__close'),O?O.addEventListener('click',function(a){e.setAttribute('data-display','none'),f.setAttribute('data-display','block')}):null,document.querySelectorAll('.tab')?document.querySelectorAll('.tab').forEach(function(a,d){var e=a.getAttribute('id'),f=a,b=a.querySelectorAll('.tab__link'),c=a.querySelectorAll('.tab__content'),g=[];b&&b.length>0?b.forEach(function(b,d,a){b.onclick=function(e){for(var b=0;b<a.length;b++)d===parseInt(b,10)?a[b].classList.contains('active')||(a[b].classList.add('active'),c[b].style.display='block'):(a[b].classList.remove('active'),c[b].style.display='none')}}):null}):null,document.querySelectorAll('.codetab')?document.querySelectorAll('.codetab').forEach(function(a,d){var e=a.getAttribute('id'),f=a,b=a.querySelectorAll('.codetab__link'),c=a.querySelectorAll('.codetab__content'),g=[];b&&b.length>0?b.forEach(function(b,d,a){b.onclick=function(e){for(var b=0;b<a.length;b++)d===parseInt(b,10)?a[b].classList.contains('active')||(a[b].classList.add('active'),c[b].style.display='block'):(a[b].classList.remove('active'),c[b].style.display='none')}}):null}):null,t=document.getElementById("gtt"),t.style.display="none",t.addEventListener('click',function(){window.document.documentMode?document.documentElement.scrollTop=0:af(250)});function af(a){var b=-window.scrollY/(a/15),c=setInterval(function(){window.scrollY!=0?window.scrollBy(0,b):clearInterval(c)},15)}ag=function(){document.body.scrollTop>250||document.documentElement.scrollTop>250?t.style.display="block":t.style.display="none"},K=document.querySelectorAll('.expand__button');for(let a=0;a<K.length;a++)K[a].addEventListener("click",function(){var a=this.nextElementSibling;a.style.maxHeight?(a.style.maxHeight=null,this.querySelector('svg').classList.add('expand-icon__right'),this.querySelector('svg').classList.remove('expand-icon__down')):(a.style.maxHeight=a.scrollHeight+"px",this.querySelector('svg').classList.remove('expand-icon__right'),this.querySelector('svg').classList.add('expand-icon__down'))});I=window.pageYOffset||document.documentElement.scrollTop,o=document.querySelector('.toc'),g=o?o.querySelector('#TableOfContents'):null,z=document.getElementById('toggle-toc'),l=document.querySelector('.single__contents'),b=document.querySelector('.navbar'),r=document.querySelector('.toc__flexbox'),s=document.querySelector('.toc__flexbox--outer'),W=document.querySelectorAll('.expand__content'),H=document.querySelectorAll('.box'),d=null,E=JSON.parse("false"),h=JSON.parse('["h2","h3","h4"]'),h?h=h.toString():h="h1, h2, h3, h4, h5, h6",l&&l.querySelectorAll(".tab")?l.querySelectorAll(".tab").forEach(function(a){a.querySelectorAll(h).forEach(function(a){d=Array.isArray(d)?d.concat(a.getAttribute('id')):[a.getAttribute('id')]})}):null,W?W.forEach(function(a){a.querySelectorAll(h).forEach(function(a){d=Array.isArray(d)?d.concat(a.getAttribute('id')):[a.getAttribute('id')]})}):null,H?H.forEach(function(a){a.querySelectorAll(h).forEach(function(a){d=Array.isArray(d)?d.concat(a.getAttribute('id')):[a.getAttribute('id')]})}):null,window.onscroll=function(){ag();var a=window.pageYOffset||document.documentElement.scrollTop;if(a>I){if(a<250?t.style.display="none":t.style.display="block",a<45)return null;b.classList.contains('scrolling')&&(b.classList.contains('navbar--hide')?b.classList.contains('navbar--show')&&b.classList.remove('navbar--show'):b.classList.add('navbar--hide')),l&&(l.querySelectorAll(h).length>0?l.querySelectorAll(h).forEach(function(c){var b,a;if(z&&!z.checked)return null;if(d&&d.includes(c.getAttribute('id')))return null;document.documentElement.scrollTop>=c.offsetTop&&g&&(b=c.getAttribute('id'),o.querySelectorAll('a').forEach(function(a){a.classList.remove('active')}),o.querySelector('a[href="#'+b+'"]')?o.querySelector('a[href="#'+b+'"]').classList.add('active'):null,!1===E||(g.querySelectorAll('ul')?g.querySelectorAll('ul').forEach(function(a){a.querySelectorAll('li').forEach(function(a){a.querySelectorAll('ul').forEach(function(a){a.style.display='none'})})}):null),a=g.querySelector("[href='#"+b+"']"),a&&a.nextElementSibling&&(a.nextElementSibling.style.display='block'),getParents(a,'ul')?getParents(a,'ul').forEach(function(a){a.style.display='block'}):null)}):(r&&(r.setAttribute('data-position',''),r.classList.contains('hide')||r.classList.add('hide')),s&&(s.setAttribute('data-position',''),s.classList.contains('hide')||s.classList.add('hide'))))}else a<250&&(t.style.display="none"),b.classList.contains('scrolling')&&(b.classList.contains('navbar--hide')?b.classList.remove('navbar--hide'):b.classList.contains('navbar--show')||b.classList.add('navbar--show')),l&&(l.querySelectorAll(h).length>0?l.querySelectorAll(h).forEach(function(c){var b,a;if(z&&!z.checked)return null;if(d&&d.includes(c.getAttribute('id')))return null;document.documentElement.scrollTop>=c.offsetTop&&g&&(b=c.getAttribute('id'),o.querySelectorAll('a').forEach(function(a){a.classList.remove('active')}),o.querySelector('a[href="#'+b+'"]')?o.querySelector('a[href="#'+b+'"]').classList.add('active'):null,!1===E||(g.querySelectorAll('ul')?g.querySelectorAll('ul').forEach(function(a){a.querySelectorAll('li').forEach(function(a){a.querySelectorAll('ul').forEach(function(a){a.style.display='none'})})}):null),a=g.querySelector("[href='#"+b+"']"),a&&a.nextElementSibling&&(a.nextElementSibling.style.display='block'),getParents(a,'ul')?getParents(a,'ul').forEach(function(a){a.style.display='block'}):null)}):(r&&!r.classList.contains('hide')&&r.classList.add('hide'),s&&!s.classList.contains('hide')&&s.classList.add('hide'))),g&&document.documentElement.scrollTop<250&&(!1===E||(g.querySelector('ul')?g.querySelector('ul').querySelectorAll('li').forEach(function(a){a.querySelectorAll('ul').forEach(function(a){a.style.display='none'})}):null));I=a<=0?0:a},B=localStorage.getItem('theme'),C=document.getElementById('root'),ap=document.querySelectorAll('.select-theme'),y=document.querySelectorAll('.select-theme__item'),ao=JSON.parse('"dark"'),an=JSON.parse('"light"'),am=JSON.parse('"hacker"'),al=JSON.parse('"solarized"'),ak=JSON.parse('"kimbie"'),D=function(a){var b=document.getElementsByName('msapplication-TileColor')[0],c=document.getElementsByName('theme-color')[0],d=document.getElementsByName('msapplication-navbutton-color')[0],e=document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];a.includes('dark')?(b.setAttribute('content','#fcfcfa'),c.setAttribute('content','#403E41'),d.setAttribute('content','#403E41'),e.setAttribute('content','#403E41')):a.includes('light')?(b.setAttribute('content','#555'),c.setAttribute('content','#eee'),d.setAttribute('content','#eee'),e.setAttribute('content','#eee')):a.includes('hacker')?(b.setAttribute('content','#e3cd26'),c.setAttribute('content','#252526'),d.setAttribute('content','#252526'),e.setAttribute('content','#252526')):a.includes('solarized')?(b.setAttribute('content','#d3af86'),c.setAttribute('content','#51412c'),d.setAttribute('content','#51412c'),e.setAttribute('content','#51412c')):a.includes('kimbie')&&(b.setAttribute('content','#586e75'),c.setAttribute('content','#eee8d5'),d.setAttribute('content','#eee8d5'),e.setAttribute('content','#eee8d5'))},ac=function(a){if(a===ao)return'dark';if(a===an)return'light';if(a===am)return'hacker';if(a===al)return'solarized';if(a===ak)return'kimbie'},B?(y?y.forEach(function(a){a.text.trim()===B?a.classList.add('is-active'):a.classList.remove('is-active')}):null,D(B)):D(C.className),y?y.forEach(function(a,b){a.addEventListener('click',function(c){var a=ac(c.target.text.trim()),b,d;localStorage.setItem('theme',a),D(a),C.removeAttribute('class'),C.classList.add('theme__'+a),ap.forEach(function(b){b.querySelectorAll('a').forEach(function(b){b.classList&&(b.text.trim()===a?b.classList.contains('is-active')||b.classList.add('is-active'):b.classList.contains('is-active')&&b.classList.remove('is-active'))})}),window.mermaid&&(a==="dark"||a==="hacker"?(mermaid.initialize({theme:'dark'}),location.reload()):(mermaid.initialize({theme:'default'}),location.reload())),b=document.getElementById('utterances'),b&&b.querySelector('iframe').contentWindow.postMessage({type:'set-theme',theme:a==="dark"||a==="hacker"?'photon-dark':a==='kimbie'?'github-dark-orange':'github-light'},'https://utteranc.es'),d=document.querySelectorAll('.twitter-timeline'),d&&window.postMessage({type:'set-twitter-theme',theme:a==='light'||a==='solarized'?'light':'dark'})})}):null,aj=JSON.parse('"http://somethingstrange.com/"'),ah=JSON.parse('"http://somethingstrange.com/tags/js/"'),ae=JSON.parse('""'),j=null,i=null,c=null,ad=JSON.parse("true"),w=JSON.parse("true"),Z=JSON.parse('"side"'),U=JSON.parse('"tags"'),ab=JSON.parse('"term"'),x=null,ad&&function(){var a=new XMLHttpRequest;U==="publication"&&ab!=="page"?a.open('GET',ah+"index.json"):a.open('GET',aj+ae+"/index.json"),a.setRequestHeader('Content-Type','application/json; charset=utf-8'),a.onload=function(){a.status===200?(x=new Fuse(JSON.parse(a.response.toString('utf-8')),{keys:U.includes('publication')?['title','abstract']:['title','description','content'],includeMatches:w,shouldSort:!0,threshold:.4,location:0,distance:100,maxPatternLength:32,minMatchCharLength:1,isCaseSensitive:!1,findAllMatches:!1,useExtendedSearch:!1}),window.fuse=x):console.error('['+a.status+']Error:',a.statusText)},a.send()}();function ai(e,a){var b=document.createElement('li'),c,d;b.className='search-result__item',c=document.createElement('a'),c.innerHTML=a.item.title,c.setAttribute('class','search-result__item--title'),c.setAttribute('href',a.item.permalink),d=document.createElement('div'),d.setAttribute('class','search-result__item--desc'),a.item.description?d.innerHTML=a.item.description:a.item.content&&(d.innerHTML=a.item.content.substring(0,225)),b.appendChild(c),b.appendChild(d),e.appendChild(b)}function $(f,a){var e=document.createElement('li'),b,d,c;if(e.className='search-result__item',b=null,d=document.createElement('a'),d.innerHTML=a.item.title,d.setAttribute('class','search-result__item--title'),d.setAttribute('href',a.item.uri),a.matches&&a.matches.length){for(c=0;c<a.matches.length;c++)'title'===a.matches[c].key&&(d=document.createElement('a'),d.innerHTML=k(a.matches[c].value,a.matches[c].indices),d.setAttribute('class','search-result__item--title'),d.setAttribute('href',a.item.uri)),'description'===a.matches[c].key?(b=document.createElement('div'),b.setAttribute('class','search-result__item--desc'),b.innerHTML=k(a.item.description,a.matches[c].indices)):'content'===a.matches[c].key?b||(b=document.createElement('div'),b.setAttribute('class','search-result__item--desc'),b.innerHTML=k(a.item.content.substring(0,150),a.matches[c].indices)):a.item.description?(b=document.createElement('div'),b.setAttribute('class','search-result__item--desc'),b.innerHTML=a.item.description):(b=document.createElement('div'),b.setAttribute('class','search-result__item--desc'),b.innerHTML=a.item.content.substring(0,150));e.appendChild(d),b&&e.appendChild(b),e&&f.appendChild(e)}}function Y(d,c){var a,b;for(j=document.getElementById('search-results'),i=document.getElementById('search-menu'),j.setAttribute('class','dropdown is-active'),a=document.createElement('ul'),a.setAttribute('class','dropdown-content search-content'),c.length?c.forEach(function(b){var e=document.createElement('li'),c=document.createElement('a'),f,d;c.setAttribute('href',b.uri),c.setAttribute('class','dropdown-item'),c.appendChild(e),f=document.createElement('div'),f.innerHTML=b.title,f.setAttribute('class','menu-item__title'),d=document.createElement('div'),d.setAttribute('class','menu-item__desc'),b.description?d.innerHTML=b.description:b.content&&(d.innerHTML=b.content.substring(0,150)),e.appendChild(f),e.appendChild(d),a.appendChild(c)}):(b=document.createElement('li'),b.setAttribute('class','dropdown-item'),b.innerText='No results found',a.appendChild(b));i.hasChildNodes();)i.removeChild(i.lastChild);i.appendChild(a)}function M(d,c){var a,b;for(j=document.getElementById('search-results'),i=document.getElementById('search-menu'),j.setAttribute('class','dropdown is-active'),a=document.createElement('ul'),a.setAttribute('class','dropdown-content search-content'),c.length?c.forEach(function(b){var g=document.createElement('li'),e=document.createElement('a'),c=null,f,d;if(e.setAttribute('href',b.item.uri),e.setAttribute('class','dropdown-item'),e.appendChild(g),f=document.createElement('div'),f.innerHTML=b.item.title,f.setAttribute('class','menu-item__title'),b.matches&&b.matches.length){for(d=0;d<b.matches.length;d++)'title'===b.matches[d].key&&(f.innerHTML=k(b.matches[d].value,b.matches[d].indices)),'description'===b.matches[d].key?(c=document.createElement('div'),c.setAttribute('class','menu-item__desc'),c.innerHTML=k(b.item.description,b.matches[d].indices)):'content'===b.matches[d].key?c||(c=document.createElement('div'),c.setAttribute('class','menu-item__desc'),c.innerHTML=k(b.item.content.substring(0,150),b.matches[d].indices)):b.item.description?(c=document.createElement('div'),c.setAttribute('class','menu-item__desc'),c.innerHTML=b.item.description):(c=document.createElement('div'),c.setAttribute('class','menu-item__desc'),c.innerHTML=b.item.content.substring(0,150));g.appendChild(f),c&&g.appendChild(c),a.appendChild(e)}}):(b=document.createElement('li'),b.setAttribute('class','dropdown-item'),b.innerText='No results found',a.appendChild(b));i.hasChildNodes();)i.removeChild(i.lastChild);i.appendChild(a)}function X(e,c){var a,d;j=document.getElementById('search-mobile-results'),a=document.createElement('div'),a.setAttribute('class','mobile-search__content'),c.length>0?c.forEach(function(b){var c=document.createElement('a');c.setAttribute('href',b.uri),c.innerHTML='<div class="mobile-search__item"><div class="mobile-search__item--title">📄 '+b.title+'</div><div class="mobile-search__item--desc">'+(b.description?b.description:b.content)+'</div></div>',a.appendChild(c)}):(d=document.createElement('span'),a.appendChild(d));let b=document.getElementById('search-mobile-results');while(b.firstChild)b.removeChild(b.firstChild);j.appendChild(a)}function aa(e,c){var a,d;j=document.getElementById('search-mobile-results'),a=document.createElement('div'),a.setAttribute('class','mobile-search__content'),c.length?c.forEach(function(b){var e=document.createElement('li'),g=document.createElement('a'),c=null,f,d;if(g.setAttribute('href',b.item.uri),g.appendChild(e),e.setAttribute('class','mobile-search__item'),f=document.createElement('div'),f.innerHTML=b.item.title,f.setAttribute('class','mobile-search__item--title'),b.matches&&b.matches.length){for(d=0;d<b.matches.length;d++)'title'===b.matches[d].key&&(f.innerHTML=k(b.matches[d].value,b.matches[d].indices)),'description'===b.matches[d].key?(c=document.createElement('div'),c.setAttribute('class','mobile-search__item--desc'),c.innerHTML=k(b.item.description,b.matches[d].indices)):'content'===b.matches[d].key?c||(c=document.createElement('div'),c.setAttribute('class','mobile-search__item--desc'),c.innerHTML=k(b.item.content.substring(0,150),b.matches[d].indices)):b.item.description?(c=document.createElement('div'),c.setAttribute('class','mobile-search__item--desc'),c.innerHTML=b.item.description):(c=document.createElement('div'),c.setAttribute('class','mobile-search__item--desc'),c.innerHTML=b.item.content.substring(0,150));e.appendChild(f),c&&e.appendChild(c),a.appendChild(g)}}):(d=document.createElement('span'),a.appendChild(d));let b=document.getElementById('search-mobile-results');while(b.firstChild)b.removeChild(b.firstChild);j.appendChild(a)}function k(a,d){if(!d)return a;var b='',c=0;return d.forEach(function(d){if(d[0]===d[1])return null;b+=''+a.substring(c,d[0])+'<span class="search__highlight">'+a.substring(d[0],d[1]+1)+'</span>'+'',c=d[1]+1}),b+=a.substring(c),b}p=document.getElementById('search'),R=document.getElementById('search-mobile'),m=document.getElementById('search-results'),p?p.addEventListener('input',function(b){var a,d;if(!b.target.value|window.innerWidth<770)return m?m.setAttribute('class','dropdown'):null,e?e.setAttribute('data-display','none'):null,f?f.setAttribute('data-display','block'):null,null;c=b.target.value,a=x.search(b.target.value),Z==="main"?w?_(c,a):N(c,a):(w?M(c,a):Y(c,a),d=m.querySelectorAll('.dropdown-item'),d?d.forEach(function(a){a.addEventListener('mousedown',function(a){a.target.click()})}):null)}):null,p?p.addEventListener('blur',function(){if(window.innerWidth<770)return null;m?m.setAttribute('class','dropdown'):null}):null,p?p.addEventListener('click',function(b){var a,d;if(window.innerWidth<770)return null;if(!b.target.value)return m?m.setAttribute('class','dropdown'):null,null;c=b.target.value,a=x.search(b.target.value),Z==="main"?w?_(c,a):N(c,a):(w?M(c,a):Y(c,a),d=m.querySelectorAll('.dropdown-item'),d?d.forEach(function(a){a.addEventListener('mousedown',function(a){a.target.click()})}):null)}):null,ar=document.getElementById("search-menu"),aq=document.querySelector('#search-menu .dropdown-item.is-active'),a=null,at=null,L=350,p?p.addEventListener('keydown',function(c){var b,d;if(window.innerWidth<770)return null;if(c.key==='Escape'&&(e?e.setAttribute('data-display','none'):null,f?f.setAttribute('data-display','block'):null),b=document.querySelectorAll('#search-menu .dropdown-item'),d=c.which||c.keyCode,!b||!b.length)return null;if(c.key==='ArrowDown'||d===40){a===null?(a=0,b[a].classList.remove('is-active')):(b[a].classList.remove('is-active'),a=a===b.length-1?0:a+1),b[a].classList.add('is-active');let c=b[a].offsetTop+b[a].clientHeight-L;c>0?document.querySelector(".search-content").scrollTop+=b[a].getBoundingClientRect().height:a===0&&(document.querySelector(".search-content").scrollTop=0)}else if(c.key==='ArrowUp'||d===38){a===null?(a=b.length-1,b[a].classList.remove('is-active')):(b[a].classList.remove('is-active'),a=a===0?b.length-1:a-1),b[a].classList.add('is-active');let c=b[a].offsetTop+b[a].clientHeight-L;c<0?document.querySelector(".search-content").scrollTop-=b[a].getBoundingClientRect().height:document.querySelector(".search-content").scrollTop=c+b[a].getBoundingClientRect().height}else c.key==='Enter'||d===13?b[a]&&b[a].getAttribute('href')&&(location.href=b[a].getAttribute('href')):(c.key==='Escape'||d===27)&&(c.target.value=null,j&&j.classList.remove('is-active'))}):null,R?R.addEventListener('input',function(a){if(!a.target.value){let a=document.getElementById('search-mobile-results');while(a.firstChild)a.removeChild(a.firstChild);return null}c=a.target.value;var b=x.search(a.target.value);X(c,b),w?aa(c,b):X(c,b)}):null,n=document.querySelector('#search-mobile'),J=document.querySelector('.mobile-search'),S=document.querySelectorAll('.navbar-search'),T=document.querySelector('#search-mobile-close'),u=document.querySelector('#search-mobile-container'),q=document.querySelector('#search-mobile-results'),v=document.querySelector('html'),J&&(J.style.display='none'),S?S.forEach(function(a,b){a.addEventListener('click',function(){u&&(u.style.display='block'),n&&n.focus(),v&&(v.style.overflowY='hidden')})}):null,T?T.addEventListener('click',function(){if(u&&(u.style.display='none'),n&&(n.value=''),q)while(q.firstChild)q.removeChild(q.firstChild);v&&(v.style.overflowY='visible')}):null,n?n.addEventListener('keydown',function(a){var b=a.which||a.keyCode;if(a.key==='Escape'||b===27){if(u&&(u.style.display='none'),n&&(n.value=''),q)while(q.firstChild)q.removeChild(q.firstChild);v&&(v.style.overflowY='visible')}}):null;function N(d,a){var g=document.querySelector('.search-result__body'),b=g.querySelector('ul'),c=document.createElement('ul');d?a&&a&&a.length&&(a.forEach(function(a){ai(c,a)}),e?e.setAttribute('data-display','block'):null,f?f.setAttribute('data-display','none'):null):(e?e.setAttribute('data-display','none'):null,f?f.setAttribute('data-display','block'):null),b.parentNode.replaceChild(c,b)}function _(d,a){var g=document.querySelector('.search-result__body'),b=g.querySelector('ul'),c=document.createElement('ul');d?a&&a&&a.length&&(a.forEach(function(a){$(c,a)}),e?e.setAttribute('data-display','block'):null,f?f.setAttribute('data-display','none'):null):(e?e.setAttribute('data-display','none'):null,f?f.setAttribute('data-display','block'):null),b.parentNode.replaceChild(c,b)}})</script>
-<link rel=stylesheet href=/css/main.min.css>
-<link rel=stylesheet href=/css/font.min.css>
-<link rel=stylesheet href=/css/custom.min.css>
-<link rel=alternate type=application/rss+xml title=RSS href=http://somethingstrange.com/tags/js/index.xml>
-<meta name=description content="An assemblage of art, code, and other odds and ends.">
-<meta name=created content="2021-11-01T16:53:42-0800">
-<meta name=modified content="2021-11-01T16:53:42-0800">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js – somethingSTRANGE</title>
+    
+
+  
+  
+    
+    <script defer src="/js/custom.min.b3ab9233ba0fb309022241cea016a7d6f73999a3da1cff3037b975aecbe6a94b.js"></script>
+  
+
+
+
+
+  
+  <script defer src="/js/fuse.min.32195737929df2c8096e855a5789cbb3f1331224d9169e8705493e7008f47df8.js"></script>
+
+
+
+<script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
+
+<script defer src="/js/lazysizes.min.fb649fcae62177dfe63e67081ddceb830b5ce1f05a4184e9bbb7d87ac4b8f4e5.js"></script>
+
+<script defer src="/js/helper/getParents.min.ccd45f158c1b17849307ba913a72beac239c410f2b6e648496a79842da84e55b.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.1d13d3e810c3940e80cbba6216a1c76fbf42b5431fc83537ea6997863802362b.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+  
+<script>
+  "use strict";
+
+  
+  
+  if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
+  
+  if (!String.prototype.includes) {
+    String.prototype.includes = function (search, start) {
+      'use strict';
+
+      if (search instanceof RegExp) {
+        throw TypeError('first argument must not be a RegExp');
+      }
+      if (start === undefined) { start = 0; }
+      return this.indexOf(search, start) !== -1;
+    };
+  }
+
+  
+  Document.prototype.append = Element.prototype.append = function append() {
+    this.appendChild(_mutation(arguments));
+  };
+  function _mutation(nodes) {
+    if (!nodes.length) {
+      throw new Error('DOM Exception 8');
+    } else if (nodes.length === 1) {
+      return typeof nodes[0] === 'string' ? document.createTextNode(nodes[0]) : nodes[0];
+    } else {
+      var
+      fragment = document.createDocumentFragment(),
+      length = nodes.length,
+      index = -1,
+      node;
+
+      while (++index < length) {
+        node = nodes[index];
+
+        fragment.appendChild(typeof node === 'string' ? document.createTextNode(node) : node);
+      }
+
+      return fragment;
+    }
+  }
+
+  
+  if (!String.prototype.startsWith) {
+    String.prototype.startsWith = function (searchString, position) {
+      position = position || 0;
+      return this.indexOf(searchString, position) === position;
+    };
+  }
+  
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    var navCollapseBtn = document.querySelector('.navbar__burger');
+    navCollapseBtn ? navCollapseBtn.addEventListener('click', function (e) {
+      var navCollapse = document.querySelector('.navbarm__collapse');
+
+      if (navCollapse) {
+        var dataOpen = navCollapse.getAttribute('data-open');
+
+        if (dataOpen === 'true') {
+          navCollapse.setAttribute('data-open', 'false');
+          navCollapse.style.maxHeight = 0;
+          navCollapseBtn.classList.remove('is-active');
+        } else {
+          navCollapse.setAttribute('data-open', 'true');
+          navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
+          navCollapseBtn.classList.add('is-active');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    var footNoteRefs = document.querySelectorAll('.footnote-ref');
+    var footNoteBackRefs = document.querySelectorAll('.footnote-backref');
+
+    footNoteRefs ? 
+    footNoteRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function () {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+
+    footNoteBackRefs ? 
+    footNoteBackRefs.forEach(function(elem, idx) {
+      elem.onmouseenter = function () {
+        if (navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('scrolling');
+        }
+      }
+
+      elem.onmouseleave = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          setTimeout(function() {
+            navbar.classList.add('scrolling');
+          }, 100);
+        }
+      }
+
+      elem.onclick = function () {
+        if (!navbar.classList.contains('scrolling')) {
+          navbar.classList.remove('navbar--show');
+          navbar.classList.remove('navbar--hide');
+          navbar.classList.add('navbar--hide');
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var summaryContainer = document.querySelector('.summary__container');
+    var searchResult = document.querySelector('.search-result');
+    var searchResultCloseBtn = document.querySelector('.search-result__close');
+    searchResultCloseBtn ? searchResultCloseBtn.addEventListener('click', function (e) {
+      searchResult.setAttribute('data-display', 'none');
+      summaryContainer.setAttribute('data-display', 'block');
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.tab') ? 
+    document.querySelectorAll('.tab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var tabLinks = elem.querySelectorAll('.tab__link');
+      var tabContents = elem.querySelectorAll('.tab__content');
+      var ids = [];
+
+      tabLinks && tabLinks.length > 0 ?
+      tabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                tabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              tabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.codetab') ? 
+    document.querySelectorAll('.codetab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var codetabLinks = elem.querySelectorAll('.codetab__link');
+      var codetabContents = elem.querySelectorAll('.codetab__content');
+      var ids = [];
+
+      codetabLinks && codetabLinks.length > 0 ?
+      codetabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                codetabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              codetabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    var gttBtn = document.getElementById("gtt");
+    gttBtn.style.display = "none";
+    gttBtn.addEventListener('click', function () {
+      if (window.document.documentMode) {
+        document.documentElement.scrollTop = 0;
+      } else {
+        scrollToTop(250);
+      }
+    });
+
+    function scrollToTop(scrollDuration) {
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function () {
+        if (window.scrollY != 0) {
+          window.scrollBy(0, scrollStep);
+        }
+        else clearInterval(scrollInterval);
+      }, 15);
+    }
+
+    var scrollFunction = function () {
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        gttBtn.style.display = "block";
+      } else {
+        gttBtn.style.display = "none";
+      }
+    }
+    
+
+
+    
+    var expandBtn = document.querySelectorAll('.expand__button');
+
+    for (let i = 0; i < expandBtn.length; i++) {
+      expandBtn[i].addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.querySelector('svg').classList.add('expand-icon__right');
+          this.querySelector('svg').classList.remove('expand-icon__down');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.querySelector('svg').classList.remove('expand-icon__right');
+          this.querySelector('svg').classList.add('expand-icon__down');
+        }
+      });
+    }
+    
+
+
+    
+    var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var tocElem = document.querySelector('.toc');
+    var tableOfContentsElem = tocElem ? tocElem.querySelector('#TableOfContents') : null;
+    var toggleTocElem = document.getElementById('toggle-toc');
+    var singleContentsElem = document.querySelector('.single__contents');
+    var navbar = document.querySelector('.navbar');
+    var tocFlexbox = document.querySelector('.toc__flexbox');
+    var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
+    var expandContents = document.querySelectorAll('.expand__content');
+    var boxContents = document.querySelectorAll('.box');
+    var notAllowedTitleIds = null;
+
+    
+    var tocFolding = JSON.parse("false");
+    
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
+    
+    if (tocLevels) {
+      tocLevels = tocLevels.toString();
+    } else {
+      tocLevels = "h1, h2, h3, h4, h5, h6";
+    }
+
+    
+    singleContentsElem && singleContentsElem.querySelectorAll(".tab") ?
+    singleContentsElem.querySelectorAll(".tab").forEach(function (elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    expandContents ? expandContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    boxContents ? boxContents.forEach(function(elem) {
+      elem.querySelectorAll(tocLevels).forEach(function (element) {
+        notAllowedTitleIds = Array.isArray(notAllowedTitleIds) ?
+          notAllowedTitleIds.concat(element.getAttribute('id')) :
+          [element.getAttribute('id')];
+      });
+    }) : null;
+
+    
+    window.onscroll = function () {
+      scrollFunction();
+      
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        } else {
+          gttBtn.style.display = "block";
+        }
+
+        if (st < 45) {
+          return null;
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (!navbar.classList.contains('navbar--hide')) {
+            navbar.classList.add('navbar--hide');
+          } else if (navbar.classList.contains('navbar--show')) {
+            navbar.classList.remove('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+              
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox) {
+              tocFlexbox.setAttribute('data-position', '');
+              if (!tocFlexbox.classList.contains('hide')) {
+                tocFlexbox.classList.add('hide');
+              }
+            }
+            if (tocFlexboxOuter) {
+              tocFlexboxOuter.setAttribute('data-position', '');
+              if (!tocFlexboxOuter.classList.contains('hide')) {
+                tocFlexboxOuter.classList.add('hide');
+              }
+            }
+          }
+        }
+      } else { 
+        if (st < 250) {
+          gttBtn.style.display = "none";
+        }
+
+        if (navbar.classList.contains('scrolling')) {
+          if (navbar.classList.contains('navbar--hide')) {
+            navbar.classList.remove('navbar--hide');
+          } else if (!navbar.classList.contains('navbar--show')) {
+            navbar.classList.add('navbar--show');
+          }
+        }
+
+        if (singleContentsElem) {
+          if (singleContentsElem.querySelectorAll(tocLevels).length > 0) {
+            singleContentsElem.querySelectorAll(tocLevels).forEach(function (elem) {
+              if (toggleTocElem && !toggleTocElem.checked) {
+                return null;
+              }
+              
+              if (notAllowedTitleIds && notAllowedTitleIds.includes(elem.getAttribute('id'))) {
+                return null;
+              }
+
+              if (document.documentElement.scrollTop >= elem.offsetTop) {
+                if (tableOfContentsElem) {
+                  var id = elem.getAttribute('id');
+                  tocElem.querySelectorAll('a').forEach(function (elem) {
+                    elem.classList.remove('active');
+                  });
+                  tocElem.querySelector('a[href="#' + id + '"]') ?
+                    tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+
+                  if (false === tocFolding) {
+                    
+                  } else {
+                    tableOfContentsElem.querySelectorAll('ul') ?
+                      tableOfContentsElem.querySelectorAll('ul').forEach(function (rootUl) {
+                        rootUl.querySelectorAll('li').forEach(function (liElem) {
+                          liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                            ulElem.style.display = 'none';
+                          });
+                        });
+                      }) : null;
+                  }
+
+                  var curElem = tableOfContentsElem.querySelector("[href='#" + id + "']");
+                  if (curElem && curElem.nextElementSibling) {
+                    curElem.nextElementSibling.style.display = 'block';
+                  }
+                  getParents(curElem, 'ul') ?
+                    getParents(curElem, 'ul').forEach(function (elem) {
+                      elem.style.display = 'block';
+                    }) : null;
+                }
+              }
+            });
+          } else {
+            if (tocFlexbox && !tocFlexbox.classList.contains('hide')) {
+              tocFlexbox.classList.add('hide');
+            }
+            if (tocFlexboxOuter && !tocFlexboxOuter.classList.contains('hide')) {
+              tocFlexboxOuter.classList.add('hide');
+            }
+          }
+          
+        }
+
+        if (tableOfContentsElem && document.documentElement.scrollTop < 250) {
+          if (false === tocFolding) {
+
+          } else {
+            tableOfContentsElem.querySelector('ul') ?
+              tableOfContentsElem.querySelector('ul').querySelectorAll('li').forEach(function (liElem) {
+                liElem.querySelectorAll('ul').forEach(function (ulElem) {
+                  ulElem.style.display = 'none';
+                });
+              }) : null;
+          }
+        }
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+  
+
+
+  
+    var localTheme = localStorage.getItem('theme');
+    var rootEleme = document.getElementById('root');
+    var selectThemeElem = document.querySelectorAll('.select-theme');
+    var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    
+    var skinDarkCode = JSON.parse("\"dark\"");
+    
+    var skinLightCode = JSON.parse("\"light\"");
+    
+    var skinHackerCode = JSON.parse("\"hacker\"");
+    
+    var skinSolarizedCode = JSON.parse("\"solarized\"");
+    
+    var skinKimbieCode = JSON.parse("\"kimbie\"");
+
+    var setMetaColor = function(themeColor) {
+      var metaMsapplicationTileColor = document.getElementsByName('msapplication-TileColor')[0];
+      var metaThemeColor = document.getElementsByName('theme-color')[0];
+      var metaMsapplicationNavbuttonColor = document.getElementsByName('msapplication-navbutton-color')[0];
+      var metaAppleMobileWebAappStatusBarStyle = document.getElementsByName('apple-mobile-web-app-status-bar-style')[0];
+
+      if (themeColor.includes('dark')) {
+        metaMsapplicationTileColor.setAttribute('content', '#fcfcfa');
+        metaThemeColor.setAttribute('content', '#403E41');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#403E41');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#403E41');
+      } else if (themeColor.includes('light')) {
+        metaMsapplicationTileColor.setAttribute('content', '#555');
+        metaThemeColor.setAttribute('content', '#eee');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee');
+      } else if (themeColor.includes('hacker')) {
+        metaMsapplicationTileColor.setAttribute('content', '#e3cd26');
+        metaThemeColor.setAttribute('content', '#252526');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#252526');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#252526');
+      } else if (themeColor.includes('solarized')) {
+        metaMsapplicationTileColor.setAttribute('content', '#d3af86');
+        metaThemeColor.setAttribute('content', '#51412c');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#51412c');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#51412c');
+      } else if (themeColor.includes('kimbie')) {
+        metaMsapplicationTileColor.setAttribute('content', '#586e75');
+        metaThemeColor.setAttribute('content', '#eee8d5');
+        metaMsapplicationNavbuttonColor.setAttribute('content', '#eee8d5');
+        metaAppleMobileWebAappStatusBarStyle.setAttribute('content', '#eee8d5');
+      }
+    }
+
+    var parseSkinCode = function(themeText) {
+      if (themeText === skinDarkCode) {
+        return 'dark';
+      } else if (themeText === skinLightCode) {
+        return 'light';
+      } else if (themeText === skinHackerCode) {
+        return 'hacker';
+      } else if (themeText === skinSolarizedCode) {
+        return 'solarized';
+      } else if (themeText === skinKimbieCode) {
+        return 'kimbie';
+      }
+    }
+    
+    if (localTheme) {
+      selectThemeItemElem ? 
+      selectThemeItemElem.forEach(function (elem) {
+        if (elem.text.trim() === localTheme) {
+          elem.classList.add('is-active');
+        } else {
+          elem.classList.remove('is-active');
+        }
+      }) : null;
+
+      setMetaColor(localTheme);
+    } else {
+      setMetaColor(rootEleme.className);
+    }
+
+    selectThemeItemElem ? 
+    selectThemeItemElem.forEach(function (v, i) {
+      v.addEventListener('click', function (e) {
+        var selectedThemeVariant = parseSkinCode(e.target.text.trim());
+        localStorage.setItem('theme', selectedThemeVariant);
+        setMetaColor(selectedThemeVariant);
+
+        rootEleme.removeAttribute('class');
+        rootEleme.classList.add('theme__' + selectedThemeVariant);
+        selectThemeElem.forEach(function(rootElem) {
+          rootElem.querySelectorAll('a').forEach(function (elem) {
+            if (elem.classList) {
+              if (elem.text.trim() === selectedThemeVariant) {
+                if (!elem.classList.contains('is-active')) {
+                  elem.classList.add('is-active');
+                }
+              } else {
+                if (elem.classList.contains('is-active')) {
+                  elem.classList.remove('is-active');
+                }
+              }
+            }
+          });
+        });
+
+        if (window.mermaid) {
+          if (selectedThemeVariant === "dark" || selectedThemeVariant === "hacker") {
+            mermaid.initialize({ theme: 'dark' });
+            location.reload();
+          } else {
+            mermaid.initialize({ theme: 'default' });
+            location.reload();
+          }
+        }
+
+        var utterances = document.getElementById('utterances');
+        if (utterances) {
+          utterances.querySelector('iframe').contentWindow.postMessage({
+            type: 'set-theme',
+            theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
+          }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
+        }
+      });
+    }) : null;
+  
+
+
+  
+    
+    var baseurl = JSON.parse("\"http://somethingstrange.com/\"");
+    
+    var permalink = JSON.parse("\"http://somethingstrange.com/tags/js/\"");
+    
+    var langprefix = JSON.parse("\"\"");
+    var searchResults = null;
+    var searchMenu = null;
+    var searchText = null;
+    
+    
+    var enableSearch = JSON.parse("true");
+    
+    var enableSearchHighlight = JSON.parse("true");
+    
+    var searchResultPosition = JSON.parse("\"side\"");
+    
+    var sectionType = JSON.parse("\"tags\"");
+    
+    var kind = JSON.parse("\"term\"");
+    
+    var fuse = null;
+
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        if (sectionType === "publication" && kind !== "page") {
+          xhr.open('GET', permalink + "index.json");
+        } else {
+          xhr.open('GET', baseurl + langprefix + "/index.json");
+        }
+        
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: sectionType.includes('publication') ? ['title', 'abstract'] : ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true, 
+              threshold: 0.4, 
+              location: 0, 
+              distance: 100, 
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+              isCaseSensitive: false, 
+              findAllMatches: false, 
+              useExtendedSearch: false, 
+            });
+            window.fuse = fuse;
+          }
+          else {
+            console.error('[' + xhr.status + ']Error:', xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
+
+    function makeLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.permalink);
+
+      var descDiv = document.createElement('div');
+      descDiv.setAttribute('class', 'search-result__item--desc');
+      if (obj.item.description) {
+        descDiv.innerHTML = obj.item.description;
+      } else if (obj.item.content) {
+        descDiv.innerHTML = obj.item.content.substring(0, 225);
+      }
+      
+      li.appendChild(a);
+      li.appendChild(descDiv);
+      ulElem.appendChild(li);
+    }
+
+    function makeHighlightLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      var descDiv = null;
+
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.uri);
+
+      if (obj.matches && obj.matches.length) {
+        for (var i = 0; i < obj.matches.length; i++) {
+          if ('title' === obj.matches[i].key) {
+            a = document.createElement('a');
+            a.innerHTML = generateHighlightedText(obj.matches[i].value, obj.matches[i].indices);
+            a.setAttribute('class', 'search-result__item--title');
+            a.setAttribute('href', obj.item.uri);
+          }
+          
+          if ('description' === obj.matches[i].key) {
+            descDiv = document.createElement('div');
+            descDiv.setAttribute('class', 'search-result__item--desc');
+            descDiv.innerHTML = generateHighlightedText(obj.item.description, obj.matches[i].indices);
+          } else if ('content' === obj.matches[i].key) {
+            if (!descDiv) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = generateHighlightedText(obj.item.content.substring(0, 150), obj.matches[i].indices);
+            }
+          } else {
+            if (obj.item.description) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.description;
+            } else {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.content.substring(0, 150);
+            }
+          }
+        }
+
+        li.appendChild(a);
+        if (descDiv) {
+          li.appendChild(descDiv);
+        }
+        if (li) {
+          ulElem.appendChild(li);
+        }
+      }
+    }
+
+    function renderSearchResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+      
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.setAttribute('href', result.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+
+          var descDiv = document.createElement('div');
+          descDiv.setAttribute('class', 'menu-item__desc');
+          if (result.description) {
+            descDiv.innerHTML = result.description;
+          } else if (result.content) {
+            descDiv.innerHTML = result.content.substring(0, 150);
+          }
+
+          li.appendChild(titleDiv);
+          li.appendChild(descDiv);
+          ul.appendChild(a);
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchHighlightResultsSide(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dropdown is-active');
+
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dropdown-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.setAttribute('class', 'dropdown-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'menu-item__title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'menu-item__desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'menu-item__desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dropdown-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var content = document.createElement('div');
+      content.setAttribute('class', 'mobile-search__content');
+
+      if (results.length > 0) {
+        results.forEach(function (result) {
+          var item = document.createElement('a');
+          item.setAttribute('href', result.uri);
+          item.innerHTML = '<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ' + result.title + '</div><div class="mobile-search__item--desc">' + (result.description ? result.description : result.content) + '</div></div>';
+          content.appendChild(item);
+        });
+      } else {
+        var item = document.createElement('span');
+        content.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(content);      
+    }
+
+    function renderSearchHighlightResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var ul = document.createElement('div');
+      ul.setAttribute('class', 'mobile-search__content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.appendChild(li);
+          li.setAttribute('class', 'mobile-search__item');
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'mobile-search__item--title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'mobile-search__item--desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var item = document.createElement('span');
+        ul.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(ul);
+    }
+
+    function generateHighlightedText(text, regions) {
+      if (!regions) {
+        return text;
+      }
+
+      var content = '', nextUnhighlightedRegionStartingIndex = 0;
+
+      regions.forEach(function(region) {
+        if (region[0] === region[1]) {
+          return null;
+        }
+        
+        content += '' +
+          text.substring(nextUnhighlightedRegionStartingIndex, region[0]) +
+          '<span class="search__highlight">' +
+            text.substring(region[0], region[1] + 1) +
+          '</span>' +
+        '';
+        nextUnhighlightedRegionStartingIndex = region[1] + 1;
+      });
+
+      content += text.substring(nextUnhighlightedRegionStartingIndex);
+
+      return content;
+    };
+
+    var searchElem = document.getElementById('search');
+    var searchMobile = document.getElementById('search-mobile');
+    var searchResultsContainer = document.getElementById('search-results');
+
+    searchElem ?
+    searchElem.addEventListener('input', function(e) {
+      if (!e.target.value | window.innerWidth < 770) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+        
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function(item) {
+          item.addEventListener('mousedown', function(e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('blur', function() {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('click', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      if (!e.target.value) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dropdown') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+
+      if (searchResultPosition === "main") {
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsMain(searchText, results);
+        } else {
+          renderSearchResultsMain(searchText, results);
+        }
+      } else{
+        if (enableSearchHighlight) {
+          renderSearchHighlightResultsSide(searchText, results);
+        } else {
+          renderSearchResultsSide(searchText, results);
+        }
+
+        var dropdownItems = searchResultsContainer.querySelectorAll('.dropdown-item');
+        dropdownItems ? dropdownItems.forEach(function (item) {
+          item.addEventListener('mousedown', function (e) {
+            e.target.click();
+          });
+        }) : null;
+      }
+    }) : null;
+
+    var searchMenuElem = document.getElementById("search-menu");
+    var activeItem = document.querySelector('#search-menu .dropdown-item.is-active');
+    var activeIndex = null;
+    var items = null;
+    var searchContainerMaxHeight = 350;
+
+    searchElem ? 
+    searchElem.addEventListener('keydown', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+
+      if (e.key === 'Escape') {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      }
+
+      var items = document.querySelectorAll('#search-menu .dropdown-item');
+      var keyCode = e.which || e.keyCode;
+
+      if (!items || !items.length) {
+        return null;
+      }
+      
+      if (e.key === 'ArrowDown' || keyCode === 40) {
+        if (activeIndex === null) {
+          activeIndex = 0;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        }
+        items[activeIndex].classList.add('is-active');
+
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel > 0) {
+          document.querySelector(".search-content").scrollTop += items[activeIndex].getBoundingClientRect().height;
+        } else if (activeIndex === 0) {
+          document.querySelector(".search-content").scrollTop = 0;
+        }
+      } else if (e.key === 'ArrowUp' || keyCode === 38) {
+        if (activeIndex === null) {
+          activeIndex = items.length - 1;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        }
+        items[activeIndex].classList.add('is-active');
+        
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel < 0) {
+          document.querySelector(".search-content").scrollTop -= items[activeIndex].getBoundingClientRect().height;
+        } else {
+          document.querySelector(".search-content").scrollTop = overflowedPixel + items[activeIndex].getBoundingClientRect().height;
+        }
+      } else if (e.key === 'Enter' || keyCode === 13) {
+        if (items[activeIndex] && items[activeIndex].getAttribute('href')) {
+          location.href = items[activeIndex].getAttribute('href');
+        }
+      } else if (e.key === 'Escape' || keyCode === 27) {
+        e.target.value = null;
+        if (searchResults) {
+          searchResults.classList.remove('is-active');
+        }
+      }
+    }) : null;
+
+    searchMobile ? 
+    searchMobile.addEventListener('input', function(e) {
+      if (!e.target.value) {
+        let wrap = document.getElementById('search-mobile-results');
+        while (wrap.firstChild) {
+          wrap.removeChild(wrap.firstChild);
+        }
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      renderSearchResultsMobile(searchText, results);
+      if (enableSearchHighlight) {
+        renderSearchHighlightResultsMobile(searchText, results);
+      } else {
+        renderSearchResultsMobile(searchText, results);
+      }
+    }) : null;
+  
+
+
+  
+    var mobileSearchInputElem = document.querySelector('#search-mobile');
+    var mobileSearchClassElem = document.querySelector('.mobile-search');
+    var mobileSearchBtnElems = document.querySelectorAll('.navbar-search');
+    var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
+    var mobileSearchContainer = document.querySelector('#search-mobile-container');
+    var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
+    var htmlElem = document.querySelector('html');
+
+    if (mobileSearchClassElem) {
+      mobileSearchClassElem.style.display = 'none';
+    }
+
+    mobileSearchBtnElems ? 
+    mobileSearchBtnElems.forEach(function (elem, idx) {
+      elem.addEventListener('click', function () {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'block';
+        }
+
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.focus();
+        }
+
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'hidden';
+        }
+      });
+    }) : null;
+
+    mobileSearchCloseBtnElem ? 
+    mobileSearchCloseBtnElem.addEventListener('click', function() {
+      if (mobileSearchContainer) {
+        mobileSearchContainer.style.display = 'none';
+      }
+
+      if (mobileSearchInputElem) {
+        mobileSearchInputElem.value = '';
+      }
+      
+      if (mobileSearchResultsElem) {
+        while (mobileSearchResultsElem.firstChild) {
+          mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+        }
+      }
+
+      if (htmlElem) {
+        htmlElem.style.overflowY = 'visible';
+      }
+    }) : null;
+
+    mobileSearchInputElem ?
+    mobileSearchInputElem.addEventListener('keydown', function(e) {
+      var keyCode = e.which || e.keyCode;
+      if (e.key === 'Escape' || keyCode === 27) {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'none';
+        }
+        
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.value = '';
+        }
+
+        if (mobileSearchResultsElem) {
+          while (mobileSearchResultsElem.firstChild) {
+            mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+          }
+        }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'visible';
+        }
+      }
+    }) : null;
+  
+
+
+  
+    function renderSearchResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+      
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+
+    function renderSearchHighlightResultsMain(searchText, results) {
+      var searchBody = document.querySelector('.search-result__body');
+      var originUl = searchBody.querySelector('ul');
+      var ul = document.createElement('ul');
+
+      if (!searchText) {
+        searchResult ? searchResult.setAttribute('data-display', 'none') : null;
+        summaryContainer ? summaryContainer.setAttribute('data-display', 'block') : null;
+      } else if (results) {
+        if (results && results.length) {
+          results.forEach(function (result) {
+            makeHighlightLi(ul, result);
+          });
+
+          searchResult ? searchResult.setAttribute('data-display', 'block') : null;
+          summaryContainer ? summaryContainer.setAttribute('data-display', 'none') : null;
+        }
+      }
+
+      originUl.parentNode.replaceChild(ul, originUl);
+    }
+  
+  });
+</script>    
+    
+
+
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+
+  
+  
+    
+    <link rel="stylesheet" href="/css/font.min.css">
+  
+
+  
+  
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+  
+
+
+    
+<link rel="alternate" type="application/rss&#43;xml" title="RSS" href="http://somethingstrange.com/tags/js/index.xml">
+
+<meta name="description" content="An assemblage of art, code, and other odds and ends." />
+
+
+<meta name="created" content="2021-11-01T16:53:42-0800">
+<meta name="modified" content="2021-11-01T16:53:42-0800">
 <meta property="article:published_time" content="2021-11-01T16:53:42-0800">
-<meta name=author content="Michael Ryan">
+
+<meta name="author" content="Michael Ryan">
+
+
 <meta property="og:site_name" content="somethingSTRANGE">
 <meta property="og:title" content="js">
 <meta property="og:url" content="http://somethingstrange.com/tags/js/">
 <meta property="og:type" content="website">
 <meta property="og:description" content="An assemblage of art, code, and other odds and ends.">
-<meta property="og:image" content="http://somethingstrange.com/images/meta/meta_image.png">
-<meta property="og:image:url" content="http://somethingstrange.com/images/meta/meta_image.png">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:app:name:iphone content="somethingSTRANGE">
-<meta property="twitter:title" content="js">
-<meta property="twitter:description" content="An assemblage of art, code, and other odds and ends.">
-<meta name=generator content="Hugo 0.89.1">
-<meta name=msapplication-TileColor content="#fff">
-<meta name=theme-color content="#fff">
-<meta name=msapplication-navbutton-color content="#fff">
-<meta name=apple-mobile-web-app-status-bar-style content="#fff">
-<link rel=canonical href=http://somethingstrange.com/tags/js/>
-<link rel=manifest href=/manifest.json>
-<link rel=apple-touch-icon sizes=57x57 href=/favicon/apple-icon-57x57.png>
-<link rel=apple-touch-icon sizes=60x60 href=/favicon/apple-icon-60x60.png>
-<link rel=apple-touch-icon sizes=72x72 href=/favicon/apple-icon-72x72.png>
-<link rel=apple-touch-icon sizes=76x76 href=/favicon/apple-icon-76x76.png>
-<link rel=apple-touch-icon sizes=114x114 href=/favicon/apple-icon-114x114.png>
-<link rel=apple-touch-icon sizes=120x120 href=/favicon/apple-icon-120x120.png>
-<link rel=apple-touch-icon sizes=144x144 href=/favicon/apple-icon-144x144.png>
-<link rel=apple-touch-icon sizes=152x152 href=/favicon/apple-icon-152x152.png>
-<link rel=apple-touch-icon sizes=180x180 href=/favicon/apple-icon-180x180.png>
-<link rel=icon type=image/png sizes=192x192 href=/favicon/android-icon-192x192.png>
-<link rel=icon type=image/png sizes=192x192 href=/favicon/android-icon-512x512.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
-<link rel=icon type=image/png sizes=96x96 href=/favicon/favicon-96x96.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
-<meta name=msapplication-TileColor content="#ffffff">
-<meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","url":"http://somethingstrange.com/tags/js/","name":"js","description":"An assemblage of art, code, and other odds and ends.","mainEntityOfPage":{"@type":"WebPage","@id":"http://somethingstrange.com/"},"publisher":{"@type":"Organization","name":"somethingSTRANGE","url":"http://somethingstrange.com/"}}</script>
+
+  
+    <meta property="og:image" content="http://somethingstrange.com/images/meta/meta_image.png">
+    <meta property="og:image:url" content="http://somethingstrange.com/images/meta/meta_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:name:iphone" content="somethingSTRANGE">
+    <meta property="twitter:title" content="js">
+    <meta property="twitter:description" content="An assemblage of art, code, and other odds and ends.">
+  
+
+<meta name="generator" content="Hugo 0.89.1" />
+<meta name="msapplication-TileColor" content="#fff">
+
+<meta name="theme-color" content="#fff">
+
+<meta name="msapplication-navbutton-color" content="#fff">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+<link rel="canonical" href="http://somethingstrange.com/tags/js/">
+
+<link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url" : "http://somethingstrange.com/tags/js/",
+    "name": "js",
+    "description": "An assemblage of art, code, and other odds and ends.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://somethingstrange.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "somethingSTRANGE",
+      "url": "http://somethingstrange.com/"
+    }
+  }
+</script>
+
+    
+  
+  
+
+
+
+
+
+
+
+    
 </head>
-<body id=root class=theme__dark>
-<script>var localTheme=localStorage.getItem('theme');localTheme&&(document.getElementById('root').className='theme__'+localTheme)</script>
-<div id=container>
-<div class=wrapper data-type=tags data-kind=term>
-<nav class="navbar scrolling" role=navigation aria-label="main navigation" data-dir=ltr>
-<div class=navbar__brand>
-<a href=/ title=Home rel=home class=navbar__logo-link>
-<img src=/logo.png alt=Home class=navbar__logo>
-</a>
-<a href=/ title=Home rel=home class=navbar__title-link>
-<h6 class=navbar__title>somethingSTRANGE</h6>
-</a>
+
+<body id="root" class="theme__dark">
+    <script>
+        var localTheme = localStorage.getItem('theme');
+        if (localTheme) {
+            document.getElementById('root').className = 'theme__' + localTheme;
+        }
+    </script>
+    <div id="container">
+        
+
+
+
+
+
+        <div class="wrapper" data-type="tags" data-kind="term">
+            <nav class="navbar scrolling" role="navigation" aria-label="main navigation" data-dir="ltr">
+  <div class="navbar__brand">
+    
+    <a href="/" title="Home" rel="home" class="navbar__logo-link">
+      <img src="/logo.png" alt="Home" class="navbar__logo">
+    </a>
+    
+    
+      <a href="/" title="Home" rel="home" class="navbar__title-link">
+        <h6 class="navbar__title">somethingSTRANGE</h6>
+      </a>
+    
+  </div>
+
+  
+<div class="theme theme-mobile" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" style="" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+      
+    </div>
+  </div>
 </div>
-<div class="theme theme-mobile" data-ani=true>
-<div class=dropdown>
-<button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani=true><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentcolor" d="M6.34 7.93c-3.12 3.12-3.12 8.19.0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19.0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41.0L6.34 7.93zM12 19.59c-1.6.0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>
-</button>
-<div class="dropdown-content select-theme">
-<a href=# class="dropdown-item select-theme__item is-active">
-dark
-</a>
-<a href=# class="dropdown-item select-theme__item">
-light
-</a>
-<a href=# class="dropdown-item select-theme__item">
-hacker
-</a>
-<a href=# class="dropdown-item select-theme__item">
-kimbie
-</a>
-<a href=# class="dropdown-item select-theme__item">
-solarized
-</a>
+
+
+<div class="mobile-search__btn navbar-search" data-ani="true">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 </div>
+
+<div id="search-mobile-container" class="mobile-search hide" data-dir="ltr">
+  <div class="mobile-search__top">
+    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="Search" class="mobile-search__top--input"/>
+    <div id="search-mobile-close" class="mobile-search__top--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div id="search-mobile-results" class="mobile-search__body">
+    
+  </div>
 </div>
-</div>
-<div class="mobile-search__btn navbar-search" data-ani=true><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentcolor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49.0s.41-1.08.0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-</div>
-<div id=search-mobile-container class="mobile-search hide" data-dir=ltr>
-<div class=mobile-search__top>
-<input id=search-mobile type=text aria-label="Mobile Search" placeholder=Search class=mobile-search__top--input>
-<div id=search-mobile-close class=mobile-search__top--icon><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentcolor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41.0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
-</div>
-</div>
-<div id=search-mobile-results class=mobile-search__body>
-</div>
-</div>
-<a role=button class=navbar__burger aria-label=menu aria-expanded=false data-ani=true>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
+
+
+<a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false"
+  data-ani="true">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
 </a>
-<div class=navbarm__collapse data-open=false>
-<ul dir=ltr>
-<li class=navbarm__menu--item>
-<a href=/about>About</a>
-</li>
-<li class=navbarm__menu--item>
-<a href=/posts>Posts</a>
-</li>
-<li class=navbarm__menu--item>
-<a href=/showcase>Showcase</a>
-</li>
-<li class="navbarm__menu--item active">
-<a href=/tags class=navbarm__menu--term data-index=0>
-Tags
-</a>
-</li>
-<li class=navbarm__menu--item>
-<a href=/categories class=navbarm__menu--term data-index=1>
-Categories
-</a>
-</li>
-<li class=navbarm__menu--item>
-<a href=/series class=navbarm__menu--term data-index=2>
-Series
-</a>
-</li>
-</ul>
+<div class="navbarm__collapse" data-open="false">
+  <ul dir="ltr">
+    
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/about">About</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/posts">Posts</a>
+        </li>
+      
+      
+    
+      
+      
+      
+      
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/showcase">Showcase</a>
+        </li>
+      
+      
+    
+
+    
+      <li class="navbarm__menu--item active">
+        <a href="/tags" class="navbarm__menu--term" data-index="0">
+          Tags
+        </a>
+      </li>
+    
+      <li class="navbarm__menu--item ">
+        <a href="/categories" class="navbarm__menu--term" data-index="1">
+          Categories
+        </a>
+      </li>
+    
+      <li class="navbarm__menu--item ">
+        <a href="/series" class="navbarm__menu--term" data-index="2">
+          Series
+        </a>
+      </li>
+    
+  </ul>
 </div>
-<div class=navbar__menu>
-<div class=theme data-ani=true>
-<div class=dropdown>
-<button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani=true><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentcolor" d="M6.34 7.93c-3.12 3.12-3.12 8.19.0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19.0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41.0L6.34 7.93zM12 19.59c-1.6.0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>
-</button>
-<div class="dropdown-content select-theme">
-<a href=# class="dropdown-item select-theme__item is-active">
-dark
-</a>
-<a href=# class="dropdown-item select-theme__item">
-light
-</a>
-<a href=# class="dropdown-item select-theme__item">
-hacker
-</a>
-<a href=# class="dropdown-item select-theme__item">
-kimbie
-</a>
-<a href=# class="dropdown-item select-theme__item">
-solarized
-</a>
+  <div class="navbar__menu">
+  
+  
+  
+<div class="theme" data-ani="true">
+  <div class="dropdown">
+    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button" data-ani="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
+    </button>
+    <div class="dropdown-content select-theme">
+      
+        
+        <a href="#" class="dropdown-item select-theme__item is-active">
+          dark
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          light
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          hacker
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          kimbie
+        </a>
+        
+        <a href="#" class="dropdown-item select-theme__item ">
+          solarized
+        </a>
+        
+      
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<a href=/about class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>About</a>
-<a href=/posts class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Posts</a>
-<a href=/showcase class="navbar__menu-item navbar__slide-down" dir=ltr data-ani=true>Showcase</a>
+
+  
+  
+  
+  
+  
+  
+  
+  <a href="/about" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">About</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/posts" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">Posts</a>
+  
+  
+  
+  
+  
+  
+  
+  <a href="/showcase" class="navbar__menu-item navbar__slide-down " dir="ltr" data-ani="true">Showcase</a>
+  
+  
 </div>
 </nav>
-<main class="main inner" data-sidebar-position=right>
-<div class="list__main lm">
-<nav class="breadcrumb hide" aria-label=breadcrumbs>
-<script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
-<ol>
-<li>
-<a href=http://somethingstrange.com/><svg style="top:.2em;position:relative" data-name="home" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15.75" height="14"><path fill="currentcolor" d="M280.37 148.26 96 300.11V464a16 16 0 0016 16l112.06-.29a16 16 0 0015.92-16V368a16 16 0 0116-16h64a16 16 0 0116 16v95.64a16 16 0 0016 16.05L464 480a16 16 0 0016-16V3e2L295.67 148.26a12.19 12.19.0 00-15.3.0zM571.6 251.47 488 182.56V44.05a12 12 0 00-12-12h-56a12 12 0 00-12 12v72.61L318.47 43a48 48 0 00-61 0L4.34 251.47a12 12 0 00-1.6 16.9l25.5 31A12 12 0 0045.15 301l235.22-193.74a12.19 12.19.0 0115.3.0L530.9 301a12 12 0 0016.9-1.6l25.5-31a12 12 0 00-1.7-16.93z"/></svg></a>
-</li>
-<li>
-<a href=http://somethingstrange.com/tags/ class=capitalize>Tags</a>
-</li>
-<li class=is-active>
-<span>js</span>
-</li>
-</ol>
+            
+            
+
+<main class="main inner" data-sidebar-position="right">
+  <div class="list__main lm">
+    
+
+<nav class="breadcrumb hide" aria-label="breadcrumbs">
+  <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
+    <ol>
+      <li >
+        <a href="http://somethingstrange.com/"><svg style="top: 0.2em; position: relative;" data-name="home" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15.75" height="14"><path fill="currentColor" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg></a>
+      </li>
+      <li >
+        <a href="http://somethingstrange.com/tags/" class="capitalize">Tags</a>
+      </li>
+      <li  class="is-active" >
+        <span>js</span>
+      </li>
+    </ol>
 </nav>
-<header class=list__header>
-<h5 class="list__header--title capitalize h5">js</h5>
-</header>
-<div class="list__header--desc p2">
+
+    <header class="list__header">
+      <h5 class="list__header--title capitalize h5">js</h5>
+    </header>
+    
+    <div class="list__header--desc p2">
+      
+    </div>
+
+    <div class="summary__container" data-display="block">
+      
+        
+  <article class="summary-classic" data-ani="true">
+  <div class="summary-classic__flex-box" >
+    <a class="summary-tagged__image-anchor-left" data-ani="true" href="http://somethingstrange.com/posts/photoshop-scripting/">
+      <div class="summary-tagged__image-container summary-tagged__image-wrapper" data-ani="fan" data-category="NONE" data-group-size="2" data-list-index="" data-position="right" data-hwm="" style="--list-index:;">
+        <img class="tag-group-icon" src="/image/icon/tag/photoshop.svg" style="--d:-5s" />
+        <img class="tag-group-icon" src="/image/icon/tag/js.svg" style="--d:-10s" />
+      </div>
+    </a>
+    <div class="summary-classic__content">
+      <header>
+        <h5 class="title h5"><a href='http://somethingstrange.com/posts/photoshop-scripting/'>Photoshop Scripting</a></h5>
+        <h6 class="subtitle caption">
+          <time title="Written On" dir="ltr">📅&nbsp;Nov 1, 2021</time><span class="single__info dot">·</span><span title="Reading Time" dir="ltr">☕&nbsp;1&nbsp;min read</span>
+        </h6>
+      </header>
+      <div>
+        <div class="summary-classic__text p2">
+          Markdown Cheat Sheet. YEAH!
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  </article>
+
+      
+      
+
+    </div>
+    <div class="search-result" data-display="none">
+  <div class="search-result__header">
+    <div class="search-result__close" data-dir="ltr">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div class="search-result__body">
+    <ul>
+      <li class="search-result__item">
+        <div class="search-result__item--title">
+        </div>
+        <div class="search-result__item--desc">
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
-<div class=summary__container data-display=block>
-<article class=summary-classic data-ani=true>
-<div class=summary-classic__flex-box>
-<a class=summary-tagged__image-anchor-left data-ani=true href=http://somethingstrange.com/posts/photoshop-scripting/>
-<div class="summary-tagged__image-container summary-tagged__image-wrapper" data-ani=fan data-category=NONE data-group-size=2 data-list-index data-position=right data-hwm style=--list-index:>
-<img class=tag-group-icon src=/image/icon/tag/photoshop.svg style=--d:-3s>
-<img class=tag-group-icon src=/image/icon/tag/js.svg style=--d:-8s>
+  </div>
+
+  
+    <aside class="list__sidebar r" data-dir="ltr">
+      
+
+<ul class="sidebar">
+    
+
+<div class="search">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </span>
+  <input id="search" aria-label="Site Search" class="input" type="text" placeholder="Search" autocomplete="off">
+  <div id="search-results" class="dropdown">
+    <div id="search-menu" class="dropdown-menu" role="menu">
+    </div>
+  </div>
 </div>
-</a>
-<div class=summary-classic__content>
-<header>
-<h5 class="title h5"><a href=http://somethingstrange.com/posts/photoshop-scripting/>Photoshop Scripting</a></h5>
-<h6 class="subtitle caption">
-<time title="Written On" dir=ltr>📅&nbsp;Nov 1, 2021</time><span class="single__info dot">·</span><span title="Reading Time" dir=ltr>☕&nbsp;1&nbsp;min read</span>
-</h6>
-</header>
-<div>
-<div class="summary-classic__text p2">
-Markdown Cheat Sheet. YEAH!
-</div>
-</div>
-</div>
-</div>
-<hr>
-</article>
-</div>
-<div class=search-result data-display=none>
-<div class=search-result__header>
-<div class=search-result__close data-dir=ltr><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentcolor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41.0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
-</div>
-</div>
-<div class=search-result__body>
-<ul>
-<li class=search-result__item>
-<div class=search-result__item--title>
-</div>
-<div class=search-result__item--desc>
-</div>
-</li>
+
+
+    
+    
+    
+    
+        
+        <li class="sidebar-recent">
+            <a href="/posts/photoshop-scripting/" class="sidebar-recent__title p1">Photoshop Scripting</a>
+        </li>
+        
+        <hr class="hr-fade sidebar-hr" />
+    
 </ul>
+<div class="taxo-root">
+
+<div class="taxo">
+    <section>
+        <span class="title p2">
+            <a href="/tags/" class="taxo__title">
+                Tags
+            </a>
+        </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/hugo/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        hugo
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/js/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        js
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/markdown/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        markdown
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/photoshop/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        Photoshop
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/tags/shortcode/" class="is-tags taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        shortcode
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        1
+                    </span>
+                </a>
+            </span>
+        
+        
+    </section>
 </div>
+
+
+<div class="taxo">
+    <section>
+        <span class="title p2">
+            <a href="/categories/" class="taxo__title">
+                Categories
+            </a>
+        </span>
+        
+        
+        
+            <span class="tag">
+                <a href="/categories/webdev/" class="is-categories taxo__link" data-dir="ltr">
+                    <span class="taxo__text">
+                        WebDev
+                    </span>
+                    <span class="taxo__num" dir="auto">
+                        2
+                    </span>
+                </a>
+            </span>
+        
+        
+    </section>
 </div>
+
+
+
 </div>
-<aside class="list__sidebar r" data-dir=ltr>
-<ul class=sidebar>
-<div class=search>
-<span class=icon><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentcolor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49.0s.41-1.08.0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-</span>
-<input id=search aria-label="Site Search" class=input type=text placeholder=Search autocomplete=off>
-<div id=search-results class=dropdown>
-<div id=search-menu class=dropdown-menu role=menu>
-</div>
-</div>
-</div>
-<li class=sidebar-recent>
-<a href=/posts/photoshop-scripting/ class="sidebar-recent__title p1">Photoshop Scripting</a>
-</li>
-<hr class="hr-fade sidebar-hr">
-</ul>
-<div class=taxo-root>
-<div class=taxo>
-<section>
-<span class="title p2">
-<a href=/tags/ class=taxo__title>
-Tags
-</a>
-</span>
-<span class=tag>
-<a href=/tags/hugo/ class="is-tags taxo__link" data-dir=ltr>
-<span class=taxo__text>
-hugo
-</span>
-<span class=taxo__num dir=auto>
-1
-</span>
-</a>
-</span>
-<span class=tag>
-<a href=/tags/js/ class="is-tags taxo__link" data-dir=ltr>
-<span class=taxo__text>
-js
-</span>
-<span class=taxo__num dir=auto>
-1
-</span>
-</a>
-</span>
-<span class=tag>
-<a href=/tags/markdown/ class="is-tags taxo__link" data-dir=ltr>
-<span class=taxo__text>
-markdown
-</span>
-<span class=taxo__num dir=auto>
-2
-</span>
-</a>
-</span>
-<span class=tag>
-<a href=/tags/photoshop/ class="is-tags taxo__link" data-dir=ltr>
-<span class=taxo__text>
-Photoshop
-</span>
-<span class=taxo__num dir=auto>
-1
-</span>
-</a>
-</span>
-<span class=tag>
-<a href=/tags/shortcode/ class="is-tags taxo__link" data-dir=ltr>
-<span class=taxo__text>
-shortcode
-</span>
-<span class=taxo__num dir=auto>
-1
-</span>
-</a>
-</span>
-</section>
-</div>
-<div class=taxo>
-<section>
-<span class="title p2">
-<a href=/categories/ class=taxo__title>
-Categories
-</a>
-</span>
-<span class=tag>
-<a href=/categories/webdev/ class="is-categories taxo__link" data-dir=ltr>
-<span class=taxo__text>
-WebDev
-</span>
-<span class=taxo__num dir=auto>
-2
-</span>
-</a>
-</span>
-</section>
-</div>
-</div>
-</aside>
+
+
+    </aside>
+  
 </main>
-<script>var sidebarPosition=JSON.parse('"right"'),enableSidebar=JSON.parse("true"),listMainElem=document.querySelector('.list__main'),listSideElem=document.querySelector('.list__sidebar'),gridSmall='l',gridBig='mr',gridFull='lmr';sidebarPosition==="right"&&(gridSmall='r',gridBig='lm'),enquire.register("screen and (max-width: 769px)",{match:function(){enableSidebar?(listMainElem.classList.remove(gridBig),listMainElem.classList.add(gridFull),listSideElem.classList.remove(gridSmall),listSideElem.classList.add('hide')):(listMainElem&&!listMainElem.classList.contains(gridFull)&&(listMainElem.classList.remove(gridBig),listMainElem.classList.add(gridFull)),listSideElem&&!listSideElem.classList.contains('hide')&&listSideElem.classList.add('hide'))},unmatch:function(){var b,a;enableSidebar?(listMainElem.classList.remove(gridFull),listMainElem.classList.add(gridBig),listSideElem.classList.add(gridSmall),listSideElem.classList.remove('hide')):(listMainElem&&!listMainElem.classList.contains(gridFull)&&(listMainElem.classList.remove(gridBig),listMainElem.classList.add(gridFull)),listSideElem&&!listSideElem.classList.contains('hide')&&listSideElem.classList.add('hide')),b=document.querySelector('.navbar__burger'),a=document.getElementsByClassName('navbarm__collapse')[0],a&&(a.setAttribute('data-open',!1),a.style.maxHeight=0,b.classList.remove('is-active')),document.getElementsByClassName('navbar__menu')[0]&&document.getElementsByClassName('navbar__menu')[0].classList.remove('is-active'),document.getElementsByClassName('mobile-search')[0]&&document.getElementsByClassName('mobile-search')[0].classList.add('hide')},setup:function(){},deferSetup:!0,destroy:function(){}})</script>
-<footer class=footer>
-<div class=footer__social>
-<div class=social>
-<a href=mailto:michael@somethingstrange.com title=email aria-label=email><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentcolor" d="M20 4H4c-1.1.0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1.0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25-7.07 4.42c-.32.2-.74.2-1.06.0L4.4 8.25c-.25-.16-.4-.43-.4-.72.0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72.0.29-.15.56-.4.72z"/></svg>
-</a>
-<a href=https://www.facebook.com/michael.ryan title=facebook aria-label=facebook><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24"><g id="surface2747"><path fill="currentcolor" d="M11.664062 2.003906C6.621094 2.171875 2.375 6.25 2.023438 11.289062c-.367188 5.328126 3.445312 9.832032 8.484374 10.589844V14.648438H8.890625C8.164062 14.648438 7.578125 14.0625 7.578125 13.335938c0-.726563000000001.585937-1.3125 1.3125-1.3125h1.613281v-1.75c0-2.894532 1.410156-4.167969 3.820313-4.167969C14.679688 6.105469 14.984375 6.113281 15.242188 6.128906 15.878906 6.15625 16.371094 6.6875 16.371094 7.324219c0 .664062-.535155999999999 1.199219-1.199219 1.199219H14.730469c-1.019531.0-1.378907.96875-1.378907 2.0625v1.4375h1.871094c.589843999999999.0 1.042969.527343.953125 1.109374L16.066406 13.835938C15.992188 14.304688 15.589844 14.652344 15.113281 14.652344H13.351562v7.246094C18.234375 21.234375 22 17.0625 22 12c0-5.632812-4.660156-10.179688-10.335938-9.996094zm0 0"/></g></svg>
-</a>
-<a href=https://github.com/somethingSTRANGE title=github aria-label=github><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24"><g id="surface3680"><path fill="currentcolor" d="M10.898438 2.101562c-4.597657.5-8.296876 4.199219-8.796876 8.699219-.5 4.699219 2.199219 8.898438 6.296876 10.5C8.699219 21.398438 9 21.199219 9 20.800781V19.199219S8.601562 19.300781 8.101562 19.300781c-1.402343.0-2-1.199219-2.101562-1.902343C5.898438 17 5.699219 16.699219 5.398438 16.398438 5.101562 16.300781 5 16.300781 5 16.199219 5 16 5.300781 16 5.398438 16 6 16 6.5 16.699219 6.699219 17c.5.800781000000001 1.101562 1 1.402343 1C8.5 18 8.800781 17.898438 9 17.800781 9.101562 17.101562 9.398438 16.398438 10 16c-2.300781-.5-4-1.800781-4-4 0-1.101562.5-2.199219 1.199219-3C7.101562 8.800781 7 8.300781 7 7.601562c0-.402343.0-1 .300781-1.601562.0.0 1.398438.0 2.800781 1.300781C10.601562 7.101562 11.300781 7 12 7s1.398438.101562 2 .300781C15.300781 6 16.800781 6 16.800781 6 17 6.601562 17 7.199219 17 7.601562 17 8.398438 16.898438 8.800781 16.800781 9 17.5 9.800781 18 10.800781 18 12c0 2.199219-1.699219 3.5-4 4 .601562.5 1 1.398438 1 2.300781v2.597657C15 21.199219 15.300781 21.5 15.699219 21.398438 19.398438 19.898438 22 16.300781 22 12.101562c0-6-5.101562-10.703124-11.101562-10zm0 0"/></g></svg>
-</a>
-<a href=https://www.linkedin.com/in/michaelthomasryan title=linkedin aria-label=linkedin><svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 30 30" width="32" height="32"><path fill="currentcolor" d="M24 4H6C4.895 4 4 4.895 4 6v18c0 1.105.895 2 2 2h18c1.105.0 2-.895 2-2V6c0-1.105-.895-2-2-2zM10.954 22h-2.95v-9.492h2.95V22zM9.449 11.151c-.951.0-1.72-.771-1.72-1.72s.77-1.719 1.72-1.719c.948.0 1.719.771 1.719 1.719C11.168 10.38 10.397 11.151 9.449 11.151zM22.004 22h-2.948v-4.616c0-1.101-.02-2.517-1.533-2.517-1.535.0-1.771 1.199-1.771 2.437V22h-2.948v-9.492h2.83v1.297h.04c.394-.746 1.356-1.533 2.791-1.533 2.987.0 3.539 1.966 3.539 4.522V22z"/></svg>
-</a>
-<a href=https://steamcommunity.com/id/somethingSTRANGE title=steam aria-label=steam><svg fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32" height="32"><path fill="currentcolor" d="M25 3C13.59 3 4.209375 11.680781 3.109375 22.800781l11.191406 5.728516C15.430781 27.579297 16.9 27 18.5 27H18.550781C18.940781 26.4 19.389375 25.649141 19.859375 24.869141c.98-1.61 2.080156-3.430079 3.160156-4.830079C23.259531 15.569063 26.97 12 31.5 12c4.69.0 8.5 3.81 8.5 8.5.0 4.53-3.569063 8.240469-8.039062 8.480469-1.4 1.08-3.210079 2.18039-4.830079 3.15039C26.350859 32.610859 25.6 33.059219 25 33.449219V33.5c0 3.59-2.91 6.5-6.5 6.5S12 37.09 12 33.5C12 33.33 12.009531 33.17 12.019531 33L3.2792969 28.519531C4.9692969 38.999531 14.05 47 25 47c12.15.0 22-9.85 22-22C47 12.85 37.15 3 25 3zm6.5 11c-3.58.0-6.5 2.92-6.5 6.5S27.92 27 31.5 27 38 24.08 38 20.5 35.08 14 31.5 14zm0 2c2.49.0 4.5 2.01 4.5 4.5S33.99 25 31.5 25c-2.49.0-4.5-2.01-4.5-4.5S29.01 16 31.5 16zm-13 13C17.71 29 16.960313 29.200312 16.320312 29.570312l3.320313 1.699219c1.23.629999999999999 1.709844 2.141094 1.089844 3.371094C20.280469 35.500625 19.41 36 18.5 36 18.11 36 17.729375 35.910469 17.359375 35.730469l-3.330078-1.710938C14.289297 36.259531 16.19 38 18.5 38c2.49.0 4.5-2.01 4.5-4.5.0-2.49-2.01-4.5-4.5-4.5z"/></svg>
-</a>
-<a href=https://www.twitch.tv/creepydeadboy title=twitch aria-label=twitch><svg fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32" height="32"><path fill="currentcolor" d="M6 4 4 8V24H9v3h4l3-3h4l6-6V4H6zM8 6H24V17l-3 3H15l-3 3V20H8V6zm5 3v7h2V9H13zm4 0v7h2V9H17z"/></svg>
-</a>
-<a href=https://twitter.com/creepyDeadBoy title=twitter aria-label=twitter><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g id="surface676"><path fill="currentcolor" d="M28 8.558594C27.117188 8.949219 26.167969 9.214844 25.171875 9.332031c1.015625-.609375 1.796875-1.574219 2.164063-2.722656-.949218999999999.5625-2.003907.972656-3.125 1.195313C23.3125 6.847656 22.03125 6.246094 20.617188 6.246094c-2.71875.0-4.925782 2.207031-4.925782 4.925781C15.691406 11.558594 15.734375 11.933594 15.820312 12.292969c-4.09375-.203125-7.722656-2.164063-10.148437-5.144531C5.246094 7.875 5.003906 8.722656 5.003906 9.625c0 1.707031.867188000000001 3.214844 2.191406 4.097656C6.386719 13.695312 5.628906 13.476562 4.964844 13.105469c0 .0234370000000013.0.0429690000000011.0.0625.0 2.386719 1.695312 4.378906 3.949218 4.828125C8.5 18.109375 8.066406 18.171875 7.617188 18.171875c-.316407.0-.628907-.03125-.925782-.0898439999999994.625 1.957031 2.445313 3.378907 4.597656 3.421875-1.683593 1.320313-3.808593 2.105469-6.113281 2.105469C4.777344 23.609375 4.386719 23.585938 4 23.539062c2.179688 1.398438 4.765625 2.214844 7.546875 2.214844 9.058594.0 14.011719-7.503906 14.011719-14.011718C25.558594 11.53125 25.550781 11.316406 25.542969 11.105469 26.503906 10.410156 27.339844 9.542969 28 8.558594zm0 0"/></g></svg>
-</a>
+
+<script>
+    
+    var sidebarPosition = JSON.parse("\"right\"");
+    
+    var enableSidebar = JSON.parse("true");
+
+    var listMainElem = document.querySelector('.list__main');
+    var listSideElem = document.querySelector('.list__sidebar');
+
+    var gridSmall = 'l';
+    var gridBig = 'mr';
+    var gridFull = 'lmr'
+
+    if (sidebarPosition === "right") {
+        gridSmall = 'r';
+        gridBig = 'lm'
+    }
+
+    enquire.register("screen and (max-width: 769px)", {
+        match: function () {
+            if (enableSidebar) {
+                listMainElem.classList.remove(gridBig);
+                listMainElem.classList.add(gridFull);
+                listSideElem.classList.remove(gridSmall);
+                listSideElem.classList.add('hide');
+            } else {
+                if (listMainElem && !listMainElem.classList.contains(gridFull)) {
+                    listMainElem.classList.remove(gridBig);
+                    listMainElem.classList.add(gridFull);
+                }
+
+                if (listSideElem && !listSideElem.classList.contains('hide')) {
+                    listSideElem.classList.add('hide');
+                }
+            }
+
+        },
+        unmatch: function () {
+            if (enableSidebar) {
+                listMainElem.classList.remove(gridFull);
+                listMainElem.classList.add(gridBig);
+                listSideElem.classList.add(gridSmall);
+                listSideElem.classList.remove('hide');
+            } else {
+                if (listMainElem && !listMainElem.classList.contains(gridFull)) {
+                    listMainElem.classList.remove(gridBig);
+                    listMainElem.classList.add(gridFull);
+                }
+
+                if (listSideElem && !listSideElem.classList.contains('hide')) {
+                    listSideElem.classList.add('hide');
+                }
+            }
+
+            var navCollapseBtn = document.querySelector('.navbar__burger');
+            var navCollapse = document.getElementsByClassName('navbarm__collapse')[0];
+            if (navCollapse) {
+                navCollapse.setAttribute('data-open', false);
+                navCollapse.style.maxHeight = 0;
+                navCollapseBtn.classList.remove('is-active');
+            }
+            if (document.getElementsByClassName('navbar__menu')[0]) {
+                document.getElementsByClassName('navbar__menu')[0].classList.remove('is-active');
+            }
+            if (document.getElementsByClassName('mobile-search')[0]) {
+                document.getElementsByClassName('mobile-search')[0].classList.add('hide');
+            }
+        },
+        setup: function () { },
+        deferSetup: true,
+        destroy: function () { },
+    });
+</script>
+
+
+
+            
+            <footer class="footer">
+    
+    
+<div class="footer__social">
+  <div class="social">
+    
+            
+    
+            
+    
+            
+    
+      
+      <a href="mailto:michael@somethingstrange.com" title="email" aria-label="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
+      </a>
+            
+    
+      
+      <a href="https://www.facebook.com/michael.ryan" title="facebook" aria-label="facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24" version="1.1"><g id="surface2747"><path fill="currentColor" d="M 11.664062 2.003906 C 6.621094 2.171875 2.375 6.25 2.023438 11.289062 C 1.65625 16.617188 5.46875 21.121094 10.507812 21.878906 L 10.507812 14.648438 L 8.890625 14.648438 C 8.164062 14.648438 7.578125 14.0625 7.578125 13.335938 C 7.578125 12.609375 8.164062 12.023438 8.890625 12.023438 L 10.503906 12.023438 L 10.503906 10.273438 C 10.503906 7.378906 11.914062 6.105469 14.324219 6.105469 C 14.679688 6.105469 14.984375 6.113281 15.242188 6.128906 C 15.878906 6.15625 16.371094 6.6875 16.371094 7.324219 C 16.371094 7.988281 15.835938 8.523438 15.171875 8.523438 L 14.730469 8.523438 C 13.710938 8.523438 13.351562 9.492188 13.351562 10.585938 L 13.351562 12.023438 L 15.222656 12.023438 C 15.8125 12.023438 16.265625 12.550781 16.175781 13.132812 L 16.066406 13.835938 C 15.992188 14.304688 15.589844 14.652344 15.113281 14.652344 L 13.351562 14.652344 L 13.351562 21.898438 C 18.234375 21.234375 22 17.0625 22 12 C 22 6.367188 17.339844 1.820312 11.664062 2.003906 Z M 11.664062 2.003906 "/></g></svg>
+      </a>
+            
+    
+            
+    
+      
+      <a href="https://github.com/somethingSTRANGE" title="github" aria-label="github">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24" version="1.1"><g id="surface3680"><path fill="currentColor" d="M 10.898438 2.101562 C 6.300781 2.601562 2.601562 6.300781 2.101562 10.800781 C 1.601562 15.5 4.300781 19.699219 8.398438 21.300781 C 8.699219 21.398438 9 21.199219 9 20.800781 L 9 19.199219 C 9 19.199219 8.601562 19.300781 8.101562 19.300781 C 6.699219 19.300781 6.101562 18.101562 6 17.398438 C 5.898438 17 5.699219 16.699219 5.398438 16.398438 C 5.101562 16.300781 5 16.300781 5 16.199219 C 5 16 5.300781 16 5.398438 16 C 6 16 6.5 16.699219 6.699219 17 C 7.199219 17.800781 7.800781 18 8.101562 18 C 8.5 18 8.800781 17.898438 9 17.800781 C 9.101562 17.101562 9.398438 16.398438 10 16 C 7.699219 15.5 6 14.199219 6 12 C 6 10.898438 6.5 9.800781 7.199219 9 C 7.101562 8.800781 7 8.300781 7 7.601562 C 7 7.199219 7 6.601562 7.300781 6 C 7.300781 6 8.699219 6 10.101562 7.300781 C 10.601562 7.101562 11.300781 7 12 7 C 12.699219 7 13.398438 7.101562 14 7.300781 C 15.300781 6 16.800781 6 16.800781 6 C 17 6.601562 17 7.199219 17 7.601562 C 17 8.398438 16.898438 8.800781 16.800781 9 C 17.5 9.800781 18 10.800781 18 12 C 18 14.199219 16.300781 15.5 14 16 C 14.601562 16.5 15 17.398438 15 18.300781 L 15 20.898438 C 15 21.199219 15.300781 21.5 15.699219 21.398438 C 19.398438 19.898438 22 16.300781 22 12.101562 C 22 6.101562 16.898438 1.398438 10.898438 2.101562 Z M 10.898438 2.101562 "/></g></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+      
+      <a href="https://www.linkedin.com/in/michaelthomasryan" title="linkedin" aria-label="linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 30 30" width="32" height="32"><path fill="currentColor" d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+      
+      <a href="https://steamcommunity.com/id/somethingSTRANGE" title="steam" aria-label="steam">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32" height="32"><path fill="currentColor" d="M 25 3 C 13.59 3 4.209375 11.680781 3.109375 22.800781 L 14.300781 28.529297 C 15.430781 27.579297 16.9 27 18.5 27 L 18.550781 27 C 18.940781 26.4 19.389375 25.649141 19.859375 24.869141 C 20.839375 23.259141 21.939531 21.439062 23.019531 20.039062 C 23.259531 15.569063 26.97 12 31.5 12 C 36.19 12 40 15.81 40 20.5 C 40 25.03 36.430937 28.740469 31.960938 28.980469 C 30.560938 30.060469 28.750859 31.160859 27.130859 32.130859 C 26.350859 32.610859 25.6 33.059219 25 33.449219 L 25 33.5 C 25 37.09 22.09 40 18.5 40 C 14.91 40 12 37.09 12 33.5 C 12 33.33 12.009531 33.17 12.019531 33 L 3.2792969 28.519531 C 4.9692969 38.999531 14.05 47 25 47 C 37.15 47 47 37.15 47 25 C 47 12.85 37.15 3 25 3 z M 31.5 14 C 27.92 14 25 16.92 25 20.5 C 25 24.08 27.92 27 31.5 27 C 35.08 27 38 24.08 38 20.5 C 38 16.92 35.08 14 31.5 14 z M 31.5 16 C 33.99 16 36 18.01 36 20.5 C 36 22.99 33.99 25 31.5 25 C 29.01 25 27 22.99 27 20.5 C 27 18.01 29.01 16 31.5 16 z M 18.5 29 C 17.71 29 16.960313 29.200312 16.320312 29.570312 L 19.640625 31.269531 C 20.870625 31.899531 21.350469 33.410625 20.730469 34.640625 C 20.280469 35.500625 19.41 36 18.5 36 C 18.11 36 17.729375 35.910469 17.359375 35.730469 L 14.029297 34.019531 C 14.289297 36.259531 16.19 38 18.5 38 C 20.99 38 23 35.99 23 33.5 C 23 31.01 20.99 29 18.5 29 z"/></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+      
+      <a href="https://www.twitch.tv/creepydeadboy" title="twitch" aria-label="twitch">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="32" height="32"><path fill="currentColor" d="M 6 4 L 4 8 L 4 24 L 9 24 L 9 27 L 13 27 L 16 24 L 20 24 L 26 18 L 26 4 L 6 4 z M 8 6 L 24 6 L 24 17 L 21 20 L 15 20 L 12 23 L 12 20 L 8 20 L 8 6 z M 13 9 L 13 16 L 15 16 L 15 9 L 13 9 z M 17 9 L 17 16 L 19 16 L 19 9 L 17 9 z"/></svg>
+      </a>
+            
+    
+      
+      <a href="https://twitter.com/creepyDeadBoy" title="twitter" aria-label="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" version="1.1"><g id="surface676"><path fill="currentColor" d="M 28 8.558594 C 27.117188 8.949219 26.167969 9.214844 25.171875 9.332031 C 26.1875 8.722656 26.96875 7.757812 27.335938 6.609375 C 26.386719 7.171875 25.332031 7.582031 24.210938 7.804688 C 23.3125 6.847656 22.03125 6.246094 20.617188 6.246094 C 17.898438 6.246094 15.691406 8.453125 15.691406 11.171875 C 15.691406 11.558594 15.734375 11.933594 15.820312 12.292969 C 11.726562 12.089844 8.097656 10.128906 5.671875 7.148438 C 5.246094 7.875 5.003906 8.722656 5.003906 9.625 C 5.003906 11.332031 5.871094 12.839844 7.195312 13.722656 C 6.386719 13.695312 5.628906 13.476562 4.964844 13.105469 C 4.964844 13.128906 4.964844 13.148438 4.964844 13.167969 C 4.964844 15.554688 6.660156 17.546875 8.914062 17.996094 C 8.5 18.109375 8.066406 18.171875 7.617188 18.171875 C 7.300781 18.171875 6.988281 18.140625 6.691406 18.082031 C 7.316406 20.039062 9.136719 21.460938 11.289062 21.503906 C 9.605469 22.824219 7.480469 23.609375 5.175781 23.609375 C 4.777344 23.609375 4.386719 23.585938 4 23.539062 C 6.179688 24.9375 8.765625 25.753906 11.546875 25.753906 C 20.605469 25.753906 25.558594 18.25 25.558594 11.742188 C 25.558594 11.53125 25.550781 11.316406 25.542969 11.105469 C 26.503906 10.410156 27.339844 9.542969 28 8.558594 Z M 28 8.558594 "/></g></svg>
+      </a>
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+    
+
+  </div>
 </div>
+
+    
+<div id="gtt">
+  <div class="gtt">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 14.71L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.39-.39-1.02-.39-1.41 0L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.38 1.03.39 1.42 0z"/></svg>
+  </div>
 </div>
-<div id=gtt>
-<div class=gtt><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentcolor" d="M8.12 14.71 12 10.83l3.88 3.88c.39.39 1.02.39 1.41.0s.39-1.02.0-1.41L12.7 8.71c-.39-.39-1.02-.39-1.41.0L6.7 13.3c-.39.39-.39 1.02.0 1.41.39.38 1.03.39 1.42.0z"/></svg>
-</div>
-</div>
-<hr>
-<div class="basicflex flexwrap">
-</div>
-<div class=footer__poweredby>
-<p class=caption>
-©2021. All content is licensed under <a target=_blank rel="external noopener" href=https://www.apache.org/licenses/LICENSE-2.0>Apache License 2.0</a>.
-</p>
-<p class=caption>Powered by <a href=https://gohugo.io/ target=_blank rel=noreferrer>Hugo</a> and the <a href=https://github.com/zzossig/hugo-theme-zzo target=_blank rel=noreferrer>Zzo theme</a></p>
-</div>
+
+    <hr />
+
+    <div class="basicflex flexwrap">
+        
+            
+        
+            
+        
+    </div>
+
+    <div class="footer__poweredby">
+        
+                
+            <p class="caption">
+                
+                    ©2021. All content is licensed under <a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.
+                
+            </p>
+        
+
+        
+            <p class="caption">Powered by <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://github.com/zzossig/hugo-theme-zzo" target="_blank" rel="noreferrer">Zzo theme</a></p>
+        
+        
+    </div> 
 </footer>
+        </div>
+        
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
+  <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
 </div>
-<div class="wrapper__right hide" data-pad=true dir=ltr>
-<script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
-</div>
-</div>
+
+    </div>
 </body>
+
 </html>

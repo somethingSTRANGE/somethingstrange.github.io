@@ -1,6 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>WebDev on somethingSTRANGE</title><link>http://somethingstrange.com/categories/webdev/</link><description>Recent content in WebDev on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&amp;copy;{year}. All content is licensed under &lt;a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0&lt;/a>.</copyright><lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://somethingstrange.com/categories/webdev/index.xml" rel="self" type="application/rss+xml"/><item><title>An Indent Shortcode for Hugo</title><link>http://somethingstrange.com/posts/hugo-indent-shortcode/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><atom:modified>Wed, 27 Oct 2021 00:00:00 +0000</atom:modified><guid>http://somethingstrange.com/posts/hugo-indent-shortcode/</guid><description>Indenting markdown usually isn&amp;rsquo;t difficult, however there could be a few gotchas. Skip down to the end for a quick little Hugo shortcode for inserting indents in markdown.
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>WebDev on somethingSTRANGE</title>
+    <link>http://somethingstrange.com/categories/webdev/</link>
+    <description>Recent content in WebDev on somethingSTRANGE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}. All content is licensed under &lt;a target=&#39;_blank&#39; rel=&#39;external noopener&#39; href=&#39;https://www.apache.org/licenses/LICENSE-2.0&#39;&gt;Apache License 2.0&lt;/a&gt;.</copyright>
+    <lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://somethingstrange.com/categories/webdev/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>An Indent Shortcode for Hugo</title>
+        <link>http://somethingstrange.com/posts/hugo-indent-shortcode/</link>
+        <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <atom:modified>Wed, 27 Oct 2021 00:00:00 +0000</atom:modified>
+        <guid>http://somethingstrange.com/posts/hugo-indent-shortcode/</guid>
+        <description>Indenting markdown usually isn&amp;rsquo;t difficult, however there could be a few gotchas. Skip down to the end for a quick little Hugo shortcode for inserting indents in markdown.
 The Problem Earlier today, I wanted to indent a markdown page element that included a link, but for some reason, the HTML that wrapped the markdown link was breaking the things.
-Search the web for how to &amp;ldquo;indent without adding a bullet or number in markdown&amp;rdquo; and you&amp;rsquo;ll likely come across multiple suggestions that rely on a mix of HTML tags and CSS styles.</description><dc:creator>Michael Ryan</dc:creator><media:content url="http://somethingstrange.com/images/posts/windows-terminal.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>markdown</category><category>hugo</category><category>shortcode</category><category>WebDev</category></item><item><title>The Markdown Grimoire</title><link>http://somethingstrange.com/posts/the-markdown-grimoire/</link><pubDate>Fri, 31 Oct 0730 00:00:00 +0000</pubDate><atom:modified>Fri, 31 Oct 0730 00:00:00 +0000</atom:modified><guid>http://somethingstrange.com/posts/the-markdown-grimoire/</guid><description>Gathered from various sources, including The Markdown Guide, GitHub, and others.
+Search the web for how to &amp;ldquo;indent without adding a bullet or number in markdown&amp;rdquo; and you&amp;rsquo;ll likely come across multiple suggestions that rely on a mix of HTML tags and CSS styles.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        <media:content url="http://somethingstrange.com/images/posts/windows-terminal.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>shortcode</category>
+            
+          
+        
+        
+          
+            
+              <category>WebDev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>The Markdown Grimoire</title>
+        <link>http://somethingstrange.com/posts/the-markdown-grimoire/</link>
+        <pubDate>Fri, 31 Oct 0730 00:00:00 +0000</pubDate>
+        
+        <atom:modified>Fri, 31 Oct 0730 00:00:00 +0000</atom:modified>
+        <guid>http://somethingstrange.com/posts/the-markdown-grimoire/</guid>
+        <description>Gathered from various sources, including The Markdown Guide, GitHub, and others.
 Personal reference and for testing this site&amp;rsquo;s theme to ensure markdown is rendered correctly.
 This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic syntax and extended syntax.
-Basic Syntax These are the elements outlined in John Gruber’s original design document.</description><dc:creator>Michael Ryan</dc:creator><category>markdown</category><category>WebDev</category></item></channel></rss>
+Basic Syntax These are the elements outlined in John Gruber’s original design document.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>markdown</category>
+            
+          
+        
+        
+          
+            
+              <category>WebDev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
