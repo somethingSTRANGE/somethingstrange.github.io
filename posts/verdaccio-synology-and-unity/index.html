@@ -20,7 +20,7 @@
 <meta name=description content="An assemblage of art, code, and other odds and ends.">
 <meta name=keywords content="Synology,Verdaccio,Docker,Unity,npm">
 <meta name=created content="2022-03-01T13:30:03-0800">
-<meta name=modified content="2022-03-01T23:29:44-0800">
+<meta name=modified content="2022-03-01T23:46:12-0800">
 <meta property="article:published_time" content="2022-03-01T13:30:03-0800">
 <meta name=author content="Michael Ryan">
 <meta property="og:site_name" content="somethingSTRANGE">
@@ -57,7 +57,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=msapplication-TileImage content="/ms-icon-144x144.png">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"Verdaccio, Synology, and Unity. Oh My!","datePublished":"2022-03-01T13:30:03-08:00","dateModified":"2022-03-01T23:29:44-08:00","url":"http://somethingstrange.com/posts/verdaccio-synology-and-unity/","description":"Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.","keywords":["Synology","Verdaccio","Docker","Unity","npm"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://somethingstrange.com/"},"publisher":{"@type":"Organization","name":"somethingSTRANGE","url":"http://somethingstrange.com/"}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebPage","headline":"Verdaccio, Synology, and Unity. Oh My!","datePublished":"2022-03-01T13:30:03-08:00","dateModified":"2022-03-01T23:46:12-08:00","url":"http://somethingstrange.com/posts/verdaccio-synology-and-unity/","description":"Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.","keywords":["Synology","Verdaccio","Docker","Unity","npm"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://somethingstrange.com/"},"publisher":{"@type":"Organization","name":"somethingSTRANGE","url":"http://somethingstrange.com/"}}</script>
 </head><body id=root class=theme__dark>
 <script>const localTheme=localStorage.getItem("theme");localTheme&&(document.getElementById("root").className="theme__"+localTheme)</script>
 <div id=container>
@@ -206,7 +206,7 @@ npm get registry
 sudo chown 10001 plugins/
 sudo chown 10001 conf/
 </code></pre></li><li>
-<p>Verify that the owernship has change then then logout with <code>exit</code>.</p></li><li>
+<p>Verify that folder ownership has changed then then logout with <code>exit</code>.</p></li><li>
 <p>Disable SSH again via DSM <em>Control Panel</em> > <em>Terminal & SNMP</em> > <em>Enable SSH service</em>.</p></li></ol></td></tr></table><h2 id=unity-scoped-registry-setup>Unity Scoped Registry Setup</h2><table style=margin:0;box-shadow:none><tr><td style="vertical-align:top;font-size:2rem;border:0;filter:drop-shadow(0 2px 2px rgba(0,0,0,.5))">
 <span class=fontawesome-inline-svg style=display:inline-block;height:.9em;width:.9em;top:.1em;position:relative><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentcolor" d="M498.11 206.4 445.31 14.72 248.2 66.08 219 116.14l-59.2-.43L15.54 256 159.82 396.32l59.17-.43 29.24 50 197.08 51.36 52.8-191.62-30-49.63zM223.77 124.2 374.55 86.51 288 232.33H114.87zm0 263.63-108.9-108.12H288l86.55 145.81zm193 14L330.17 256l86.58-145.84L458.56 256z"/></svg></span>
 <p><span class=fontawesome-inline-svg style=display:inline-block;height:.9em;width:.9em;top:.1em;position:relative><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M509.5 184.6 458.9 32.8C452.4 13.2 434.1.0 413.4.0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7.0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5.0 48-21.5 48-48V224H0z"/></svg></span></p></td><td style=vertical-align:top;border:0>
