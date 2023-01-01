@@ -17,29 +17,35 @@
 
 	<link href="/favicon.ico" rel="shortcut icon">
 
+	<!-- Primary Meta Tags -->
+	<meta content="Tab" name="title">
 	<meta content="Michael Ryan" name="author">
 	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." name="description">
 	<meta content="tab title name icon note message markdown" name="keywords">
 	<meta content="2022-12-16T00:00:00&#43;0000" name="created">
 	<meta content="2022-12-16T00:00:00&#43;0000" name="modified">
 
-	<meta content="somethingSTRANGE" property="og:site_name">
-	<meta content="Tab" property="og:title">
-	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="og:description">
-	<meta content="icon.png" property="og:image">
+	<!-- Open Graph / Facebook -->
 	<meta content="website" property="og:type">
 	<meta content="https://somethingstrange.com/tab.html" property="og:url">
+	<meta content="Tab" property="og:title">
+	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="og:description">
+	<meta content="https://somethingstrange.com/tab/meta_image.png" property="og:image">
+	<meta content="somethingSTRANGE" property="og:site_name">
 
+	<!-- Twitter -->
+	<meta content="summary_large_image" property="twitter:card">
+	<meta content="https://somethingstrange.com/tab.html" property="twitter:url">
+	<meta content="Tab" property="twitter:title">
+	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="twitter:description">
+	<meta content="https://somethingstrange.com/tab/meta_image.png" property="twitter:image">
+
+	<!-- Other -->
 	<meta content="#fff" name="apple-mobile-web-app-status-bar-style">
 	<meta content="#fff" name="theme-color">
-
-	<meta content="somethingSTRANGE" name="twitter:app:name:iphone">
-	<meta content="summary_large_image" name="twitter:card">
-	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="twitter:description">
-	<meta content="Tab" property="twitter:title">
 </head>
 
-<body id="tab" class="theme__dark">
+<body class="theme__dark" id="tab">
 	<nav class="top-bar" role="navigation"></nav>
 	<div id="tab-panes">
 		<div id="tab-pane-toolbar">
@@ -164,6 +170,11 @@
 			<div class="tab-editor-textarea">
 				<div class="tab-label-row">
 					<label for="tab-note" id="tab-note-label">Note</label>
+					<div class="tab-editor-options">
+						<button class="tab-editor-option-button" data-enabled="0" id="option-line-wrap" onclick="onToggleLineWrapClick()" title="Line Wrap">
+							<span style="line-height:1em; vertical-align:middle;"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><use style="--faPC:currentColor;--faPO:1;--faSC:currentColor;--faSO:0.4;" xlink:href="#solid-turn-down-left"/></svg></span>
+						</button>
+					</div>
 					<div class="tab-chars-remaining-label">Characters remaining:&#x2007<span class="tab-chars-remaining">0</span></div>
 				</div>
 				<textarea id="tab-note" maxlength="1400" onchange="save()" oninput="onNoteInput()"></textarea>
@@ -178,6 +189,7 @@
 		<svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><g id="duotone-edit"><path class="fa-secondary" d="M564.6 60.2l-48.8-48.8a39.11 39.11 0 0 0-55.2 0l-35.4 35.4a9.78 9.78 0 0 0 0 13.8l90.2 90.2a9.78 9.78 0 0 0 13.8 0l35.4-35.4a39.11 39.11 0 0 0 0-55.2zM427.5 297.6l-40 40a12.3 12.3 0 0 0-3.5 8.5v101.8H64v-320h229.8a12.3 12.3 0 0 0 8.5-3.5l40-40a12 12 0 0 0-8.5-20.5H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V306.1a12 12 0 0 0-20.5-8.5z" style="fill:var(--faSC); opacity:var(--faSO)"/><path class="fa-primary" d="M492.8 173.3a9.78 9.78 0 0 1 0 13.8L274.4 405.5l-92.8 10.3a19.45 19.45 0 0 1-21.5-21.5l10.3-92.8L388.8 83.1a9.78 9.78 0 0 1 13.8 0z" style="fill:var(--faPC); opacity:var(--faPO)"/></g></svg>
 		<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><g id="duotone-save"><path class="fa-secondary" d="M288 352a64 64 0 1 1-64-64 64 64 0 0 1 64 64z" style="fill:var(--faSC); opacity:var(--faSO)"/><path class="fa-primary" d="M433.94 129.94l-83.88-83.88A48 48 0 0 0 316.12 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V163.88a48 48 0 0 0-14.06-33.94zM224 416a64 64 0 1 1 64-64 64 64 0 0 1-64 64zm96-204a12 12 0 0 1-12 12H76a12 12 0 0 1-12-12V108a12 12 0 0 1 12-12h228.52a12 12 0 0 1 8.48 3.52l3.48 3.48a12 12 0 0 1 3.52 8.48z" style="fill:var(--faPC); opacity:var(--faPO)"/></g></svg>
 		<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="duotone-icons"><path class="fa-secondary" d="M137.86 22.44L128 32.58l-9.85-10.14C93.05-3.5 52.25-7.7 24.86 15.64c-31.41 26.78-33 74.85-5 103.88l96.75 99.83a15.68 15.68 0 0 0 22.65 0l96.75-99.83c28.14-29 26.5-77.1-4.91-103.88C203.75-7.7 163-3.5 137.86 22.44zM499.4 352.1h-60.58l22.36-50.75c2.1-6.65-3.94-13.21-12.18-13.21h-75.6c-6.3 0-11.65 3.9-12.49 9.1l-16.8 106.93c-1 6.3 4.88 11.89 12.49 11.89h62.32l-24.2 83c-1.89 6.65 4.2 12.9 12.23 12.9a13.26 13.26 0 0 0 10.92-5.25l92.4-138.91c4.88-6.91-1.16-15.7-10.87-15.7z" style="fill:var(--faSC); opacity:var(--faSO)"/><path class="fa-primary" d="M260.57 319.84h-48l-7.08-14.24a27.39 27.39 0 0 0-25.66-17.78h-71.71a27.39 27.39 0 0 0-25.66 17.78l-7 14.24h-48A27.45 27.45 0 0 0 0 347.3v137.25A27.45 27.45 0 0 0 27.43 512h233.14A27.45 27.45 0 0 0 288 484.55V347.3a27.45 27.45 0 0 0-27.43-27.46zM144 468a52 52 0 1 1 52-52 52 52 0 0 1-52 52zM478.08.33L329.51 23.17C314.87 25.42 304 38.92 304 54.83V161.6a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V99.66l112-17.22v47.18a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V32c0-19.48-16-34.42-33.92-31.67z" style="fill:var(--faPC); opacity:var(--faPO)"/></g></svg>
+		<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="solid-turn-down-left"><path class="fa-primary" d="M5.7 274.3L143.7 136.3c5.3-5.3 12.5-8.3 20-8.3c15.6 0 28.3 12.7 28.3 28.3l0 83.7 208 0c8.8 0 16-7.2 16-16l0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160c0 61.9-50.1 112-112 112l-208 0 0 83.7c0 15.6-12.7 28.3-28.3 28.3c-7.5 0-14.7-3-20-8.3L5.7 301.6C2 298 0 293.1 0 288s2-10 5.7-13.7z" style="fill:var(--faPC); opacity:var(--faPO)"/></g></svg>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
@@ -195,6 +207,8 @@
 		const tabNoteRemaining = tabNote.parentNode.querySelector('.tab-chars-remaining');
 		const tabIconPanel = document.querySelector('.tab-icon-dropdown--content');
 
+		const tabOptionLineWrap = document.getElementById('option-line-wrap');
+
 		const tabTitleMaxLength = 32;
 		const tabIconMaxLength = 64;
 		const tabNoteMaxLength = 1400;
@@ -203,6 +217,7 @@
 		const tokenIcon = 'i';
 		const tokenNote = 'n';
 		const tokenTitle = 't';
+		const tokenOptionLineWrap = 'w';
 
 		const converter = new showdown.Converter();
 		converter.setOption('tables', 'true');
@@ -241,6 +256,9 @@
 				tabState.classList.add('tab-editor--enabled');
 			}
 
+			let optionEnabled = (url.searchParams.get(tokenOptionLineWrap) ?? "1") === "1";
+			setOption(tabOptionLineWrap, optionEnabled, tabNote, 'tab-editor-option-wrap');
+
 			tabEdit.dataset.mode = isEditEnabled ? "1" : "0";
 			tabTitle.value = Base64Decode(title);
 			tabIcon.value = Base64Decode(icon);
@@ -263,6 +281,8 @@
 			setSearchParam(url, tokenTitle, Base64Encode(tabTitle.value), "");
 			setSearchParam(url, tokenIcon, Base64Encode(tabIcon.value), "");
 			setSearchParam(url, tokenNote, Base64Encode(tabNote.value), "");
+			setSearchParam(url, tokenOptionLineWrap, tabOptionLineWrap.dataset.enabled, "1");
+
 
 			window.location.href = url.href;
 			markSaved();
@@ -312,6 +332,26 @@
 
 		function onIconDropdownClick() {
 			document.getElementById("tab-icon-dropdown").classList.toggle("tab-icon-dropdown--show");
+		}
+
+		function toggleOption(option, target, className) {
+			let enabled = option.dataset.enabled === "1";
+			setOption(option, !enabled, target, className);
+		}
+
+		function setOption(option, enabled, target, className) {
+			option.dataset.enabled = enabled ? "1" : "0";
+			if (enabled) {
+				target.classList.add(className);
+			} else {
+				target.classList.remove(className);
+			}
+		}
+
+		function onToggleLineWrapClick() {
+			toggleOption(tabOptionLineWrap, tabNote, 'tab-editor-option-wrap');
+			markDirty();
+			save();
 		}
 
 		// Close the dropdown if the user clicks outside of it
