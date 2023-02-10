@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Tab</title>
+	<title>Tab!</title>
 
 	<link href="/css/main.min.css" rel="stylesheet">
 	<style>
@@ -18,31 +19,31 @@
 	<link href="/favicon.ico" rel="shortcut icon">
 
 	<!-- Primary Meta Tags -->
-	<meta content="Tab" name="title">
-	<meta content="Michael Ryan" name="author">
-	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." name="description">
-	<meta content="tab title name icon note message markdown" name="keywords">
-	<meta content="2022-12-16T00:00:00&#43;0000" name="created">
-	<meta content="2022-12-16T00:00:00&#43;0000" name="modified">
+	<meta name="title" content="Tab!">
+	<meta name="author" content="Michael Ryan">
+	<meta name="description" content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon.">
+	<meta name="keywords" content="tab,title,name,icon,note,message,markdown">
+	<meta name="created" content="2022-12-16T00:00:00&#43;0000">
+	<meta name="modified" content="2022-12-16T00:00:00&#43;0000">
 
 	<!-- Open Graph / Facebook -->
-	<meta content="website" property="og:type">
-	<meta content="https://somethingstrange.com/tab.html" property="og:url">
-	<meta content="Tab" property="og:title">
-	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="og:description">
-	<meta content="https://somethingstrange.com/tab/meta_image.png" property="og:image">
-	<meta content="somethingSTRANGE" property="og:site_name">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://somethingstrange.com/tab.html">
+	<meta property="og:title" content="Tab!">
+	<meta property="og:description" content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon.">
+	<meta property="og:image" content="https://somethingstrange.com/tab/meta_image.png">
+	<meta property="og:site_name" content="somethingSTRANGE">
 
 	<!-- Twitter -->
-	<meta content="summary_large_image" property="twitter:card">
-	<meta content="https://somethingstrange.com/tab.html" property="twitter:url">
-	<meta content="Tab" property="twitter:title">
-	<meta content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon." property="twitter:description">
-	<meta content="https://somethingstrange.com/tab/meta_image.png" property="twitter:image">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://somethingstrange.com/tab.html">
+	<meta property="twitter:title" content="Tab!">
+	<meta property="twitter:description" content="A utility page that can be used as a tab bar spacer. It allows the user to store notes in markdown and customize the tab title and icon.">
+	<meta property="twitter:image" content="https://somethingstrange.com/tab/meta_image.png">
 
 	<!-- Other -->
-	<meta content="#fff" name="apple-mobile-web-app-status-bar-style">
-	<meta content="#fff" name="theme-color">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<meta name="theme-color" content="#fff">
 </head>
 
 <body class="theme__dark" id="tab">
@@ -381,8 +382,18 @@
 			el.innerHTML = value;
 		}
 
+		function replacePatterns(text) {
+			const vineRegex = /]\((@vine:\s*(\S*)\s*)\)/igm;
+			text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?$2)');
+
+			const cardsRegex = /^(\|\{CARDS}\|)$/igm;
+			text = text.replaceAll(cardsRegex, '|Card|Need|Bots|\n|---|:--:|---|');
+
+			return text;
+		}
+
 		function updatePreview(forceUpdate = false) {
-			let text = tabNote.value;
+			let text = replacePatterns(tabNote.value);
 			let html = converter.makeHtml(text);
 			if (preview.innerHTML !== html) {
 				preview.innerHTML = html;
