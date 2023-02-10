@@ -384,7 +384,7 @@
 
 		function replacePatterns(text) {
 			const vineRegex = /]\((@vine:\s*(\S*)\s*)\)/igm;
-			text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?$2)');
+			text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?search=$2)');
 
 			const cardsRegex = /^(\|\{CARDS}\|)$/igm;
 			text = text.replaceAll(cardsRegex, '|Card|Need|Bots|\n|---|:--:|---|');
