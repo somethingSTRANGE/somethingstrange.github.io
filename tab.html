@@ -387,7 +387,7 @@
 			text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?search=$2)');
 
 			const cardsRegex = /^(\|\{CARDS}\|)$/igm;
-			text = text.replaceAll(cardsRegex, '|Card|Need|Bots|\n|---|:--:|---|\n\n🍒 1:1 [H] - [W] -\n\n1:1 trades within this same set. Thanks!');
+			text = text.replaceAll(cardsRegex, '🍒 1:1 [H] - [W] -\n\n1:1 trades within this same set. Thanks!\n\n|Card|Need|Bots|\n|---|:--:|---|');
 
 			return text;
 		}
