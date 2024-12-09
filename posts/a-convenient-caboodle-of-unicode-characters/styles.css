@@ -1,0 +1,9 @@
+.single__end {
+	font-family: 'REDRUM', cursive, sans-serif;
+	font-size:5rem;
+	position: relative;
+	font-weight: 900;
+	text-align: center;
+	background-image: linear-gradient(to bottom, #f00 20%, #900 80%);
+	text-shadow: -3px 4px 2px #6006;
+}
