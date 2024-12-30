@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" label_pos="right" textcol="none">
+	<label>Close Duplicate Tabs</label>
+	<tip>Close duplicate tabs in the active lister</tip>
+	<icon1>#closetab</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>function OnClick(clickData) {</instruction>
+		<instruction>	DOpus.ClearOutput();</instruction>
+		<instruction>	var cmd = clickData.func.command;</instruction>
+		<instruction>	cmd.deselect = false;</instruction>
+		<instruction />
+		<instruction>	var lister = DOpus.listers.lastactive;</instruction>
+		<instruction>	var sortedTabs = FilterAndSort(lister.tabs);</instruction>
+		<instruction />
+		<instruction>	CloseDuplicateTabs(cmd, sortedTabs);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function FilterAndSort(collection) {</instruction>
+		<instruction>	var filteredArray = [];</instruction>
+		<instruction />
+		<instruction>	// Convert collection to array</instruction>
+		<instruction>	for (var i = 0; i &lt; collection.count; i++) {</instruction>
+		<instruction>		filteredArray.push(collection[i]);</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Sort the array</instruction>
+		<instruction>	filteredArray.sort(function(a, b) {</instruction>
+		<instruction>		// First criteria: source or dest</instruction>
+		<instruction>		if ((a.source &amp;&amp; !b.source) || (a.dest &amp;&amp; !b.dest)) return -1;</instruction>
+		<instruction>		if ((!a.source &amp;&amp; b.source) || (!a.dest &amp;&amp; b.dest)) return 1;</instruction>
+		<instruction />
+		<instruction>		// Second criteria: locked</instruction>
+		<instruction>		if (a.lock !== &quot;off&quot; &amp;&amp; b.lock === &quot;off&quot;) return -1;</instruction>
+		<instruction>		if (a.lock === &quot;off&quot; &amp;&amp; b.lock !== &quot;off&quot;) return 1;</instruction>
+		<instruction />
+		<instruction>		// Default order if all criteria are equal</instruction>
+		<instruction>		return 0;</instruction>
+		<instruction>	});</instruction>
+		<instruction />
+		<instruction>	return filteredArray;</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function CloseDuplicateTabs(cmd, tabs) {</instruction>
+		<instruction>	// A temporary &quot;isDuplicate&quot; flag is added to each tab during the</instruction>
+		<instruction>	// removal process</instruction>
+		<instruction>	CreateDuplicateFlag(tabs);</instruction>
+		<instruction />
+		<instruction>	// Identify the duplicate tabs, while always retaining source, dest, and</instruction>
+		<instruction>	// locked tabs</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		for (var j = tabs.length - 1; j &gt; i; j--) {</instruction>
+		<instruction>			var a = tabs[i];</instruction>
+		<instruction>			var b = tabs[j];</instruction>
+		<instruction>			if (!b.source &amp;&amp; !b.dest &amp;&amp; b.lock === &quot;off&quot; &amp;&amp; a.path.def_value === b.path.def_value) {</instruction>
+		<instruction>				tabs[j].vars.Set(&quot;isDuplicate&quot;, true);</instruction>
+		<instruction>			}</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Close the duplicate tabs from the end of the collection first. Since</instruction>
+		<instruction>	// the full tab list includes all left tabs followed by all right tabs,</instruction>
+		<instruction>	// right tab duplicates will be removed first.</instruction>
+		<instruction>	for (var i = tabs.length - 1; i &gt;= 0; i--) {</instruction>
+		<instruction>		var tab = tabs[i];</instruction>
+		<instruction>		if (tab.vars.Get(&quot;isDuplicate&quot;) === true) {</instruction>
+		<instruction>			cmd.RunCommand(&quot;Go TABCLOSE=&quot; + tab);</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Clear the temporary &quot;isDuplicate&quot; flag from the tabs</instruction>
+		<instruction>	DeleteDuplicateFlag(tabs);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function CreateDuplicateFlag(tabs) {</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		tabs[i].vars.Set(&quot;isDuplicate&quot;, false);</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function DeleteDuplicateFlag(tabs) {</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		tabs[i].vars.Delete(&quot;isDuplicate&quot;);</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>

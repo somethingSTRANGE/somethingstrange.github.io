@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" label_pos="right" textcol="none">
+	<label>Close Duplicate Tabs</label>
+	<tip>Close duplicate tabs in the active lister</tip>
+	<icon1>#closetab</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>function OnClick(clickData) {</instruction>
+		<instruction>	DOpus.ClearOutput();</instruction>
+		<instruction>	var cmd = clickData.func.command;</instruction>
+		<instruction>	cmd.deselect = false;</instruction>
+		<instruction />
+		<instruction>	var lister = DOpus.listers.lastactive;</instruction>
+		<instruction>	var sortedTabs = FilterAndSort(lister.tabs);</instruction>
+		<instruction />
+		<instruction>	LogOpenTabSummary();</instruction>
+		<instruction />
+		<instruction />
+		<instruction>	CloseDuplicateTabs(cmd, sortedTabs);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function FilterAndSort(collection) {</instruction>
+		<instruction>	var filteredArray = [];</instruction>
+		<instruction />
+		<instruction>	// Convert collection to array</instruction>
+		<instruction>	for (var i = 0; i &lt; collection.count; i++) {</instruction>
+		<instruction>		filteredArray.push(collection[i]);</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Sort the array</instruction>
+		<instruction>	filteredArray.sort(function(a, b) {</instruction>
+		<instruction>		// First criteria: source or dest</instruction>
+		<instruction>		if ((a.source &amp;&amp; !b.source) || (a.dest &amp;&amp; !b.dest)) return -1;</instruction>
+		<instruction>		if ((!a.source &amp;&amp; b.source) || (!a.dest &amp;&amp; b.dest)) return 1;</instruction>
+		<instruction />
+		<instruction>		// Second criteria: locked</instruction>
+		<instruction>		if (a.lock !== &quot;off&quot; &amp;&amp; b.lock === &quot;off&quot;) return -1;</instruction>
+		<instruction>		if (a.lock === &quot;off&quot; &amp;&amp; b.lock !== &quot;off&quot;) return 1;</instruction>
+		<instruction />
+		<instruction>		// Default order if all criteria are equal</instruction>
+		<instruction>		return 0;</instruction>
+		<instruction>	});</instruction>
+		<instruction />
+		<instruction>	return filteredArray;</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function CloseDuplicateTabs(cmd, tabs) {</instruction>
+		<instruction>	// A temporary &quot;isDuplicate&quot; flag is added to each tab during the</instruction>
+		<instruction>	// removal process</instruction>
+		<instruction>	CreateDuplicateFlag(tabs);</instruction>
+		<instruction />
+		<instruction>	// Identify the duplicate tabs, while always retaining source, dest, and</instruction>
+		<instruction>	// locked tabs</instruction>
+		<instruction>	Log(&quot;-----\nIdentify duplicate tabs ...&quot;)</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		for (var j = tabs.length - 1; j &gt; i; j--) {</instruction>
+		<instruction>			var a = tabs[i];</instruction>
+		<instruction>			var b = tabs[j];</instruction>
+		<instruction>			if (!b.source &amp;&amp; !b.dest &amp;&amp; b.lock === &quot;off&quot; &amp;&amp; a.path.def_value === b.path.def_value) {</instruction>
+		<instruction>				tabs[j].vars.Set(&quot;isDuplicate&quot;, true);</instruction>
+		<instruction>			}</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Log the results</instruction>
+		<instruction>	LogTabs(tabs);</instruction>
+		<instruction />
+		<instruction>	// Close the duplicate tabs from the end of the collection first. Since</instruction>
+		<instruction>	// the full tab list includes all left tabs followed by all right tabs,</instruction>
+		<instruction>	// right tab duplicates will be removed first.</instruction>
+		<instruction>	Log(&quot;-----\nClose duplicate tabs ...&quot;)</instruction>
+		<instruction>	for (var i = tabs.length - 1; i &gt;= 0; i--) {</instruction>
+		<instruction>		var tab = tabs[i];</instruction>
+		<instruction>		if (tab.vars.Get(&quot;isDuplicate&quot;) === true) {</instruction>
+		<instruction>			LogTab(tabs, i);</instruction>
+		<instruction>			cmd.RunCommand(&quot;Go TABCLOSE=&quot; + tab);</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	Log(&quot;-----&quot;)</instruction>
+		<instruction />
+		<instruction>	// Clear the temporary &quot;isDuplicate&quot; flag from the tabs</instruction>
+		<instruction>	DeleteDuplicateFlag(tabs);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function CreateDuplicateFlag(tabs) {</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		tabs[i].vars.Set(&quot;isDuplicate&quot;, false);</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function DeleteDuplicateFlag(tabs) {</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		tabs[i].vars.Delete(&quot;isDuplicate&quot;);</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function Log(message) {</instruction>
+		<instruction>	return;</instruction>
+		<instruction>	// -----</instruction>
+		<instruction>	DOpus.Output(message);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function LogOpenTabSummary() {</instruction>
+		<instruction>	return;</instruction>
+		<instruction>	// -----</instruction>
+		<instruction>	Log(&quot;ALL: &quot; + lister.tabs.count</instruction>
+		<instruction>    	+ &quot;, LEFT: &quot; + lister.tabsleft.count</instruction>
+		<instruction>		+ &quot;, RIGHT: &quot; + lister.tabsright.count</instruction>
+		<instruction>		+ &quot;, ACTIVE: &quot; + lister.activetab + &quot; (&quot; + lister.activetab.source + &quot;)&quot;</instruction>
+		<instruction>		+ &quot;, DEST: &quot; + lister.desttab + &quot; (&quot; + lister.desttab.source + &quot;)&quot;);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function LogTab(tabs, i) {</instruction>
+		<instruction>	return;</instruction>
+		<instruction>	// -----</instruction>
+		<instruction>	var digits = CountDigits(tabs.length - 1);</instruction>
+		<instruction>	var tab = tabs[i];</instruction>
+		<instruction>	Log(&quot;[&quot; + PadLeft(i, &apos;0&apos;, digits) + &quot;] &quot;</instruction>
+		<instruction>		+ (tab.source ? &quot;S&quot;</instruction>
+		<instruction>			: tab.dest ? &quot;D&quot; : (tab.lock !== &quot;off&quot;) ? &quot;L&quot;</instruction>
+		<instruction>			: tab.vars.Get(&quot;isDuplicate&quot;) ? &quot;X&quot;</instruction>
+		<instruction>			: &quot; &quot;)</instruction>
+		<instruction>		+ PadLeft(tab, &apos; &apos;, 10)</instruction>
+		<instruction>		+ &quot; &quot; + tab.path</instruction>
+		<instruction>	);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function LogTabs(tabs) {</instruction>
+		<instruction>	for (var i = 0; i &lt; tabs.length; i++) {</instruction>
+		<instruction>		LogTab(tabs, i);</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function CountDigits(number) {</instruction>
+		<instruction>	//Math.floor(Math.log10(Math.abs(number))) + 1; // Math.log10 doesn&apos;t exist</instruction>
+		<instruction>	if (number === 0) return 1;</instruction>
+		<instruction>	number = Math.abs(number);</instruction>
+		<instruction>	return Math.floor(Math.log(number) / Math.LN10) + 1;</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function PadLeft(obj, character, length) {</instruction>
+		<instruction>	// string.padStart(9, &apos; &apos;) causes failure, doesn&apos;t exist</instruction>
+		<instruction>    var str = &quot;&quot; + obj;</instruction>
+		<instruction>    while (str.length &lt; length) {</instruction>
+		<instruction>		str = character + str;</instruction>
+		<instruction>	}</instruction>
+		<instruction>	return str;</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>

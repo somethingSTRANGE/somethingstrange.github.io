@@ -1,0 +1,29 @@
+.post-columns-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+	column-gap: 2em;
+}
+
+.post-column-expand {
+	flex: 1;
+	min-width: 300px;
+}
+
+.post-column-figure {
+	flex-shrink: 0;
+	width: 170px;
+}
+
+.post-column-figure .sc-picture__caption {
+	font-size: 0.875em;
+	text-align: center;
+}
+
+.post-column-figure .sc-picture__caption .sc-picture__title {
+	display: block;
+	font-size: 1.142857142857143em;
+	font-weight: bold;
+}

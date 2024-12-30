@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" label_pos="right" textcol="none">
+	<label>Sort Tabs by Path</label>
+	<tip>Sort tabs by their lock state and then by their associated file or folder path</tip>
+	<icon1>#sort_alpha</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>function OnClick(clickData) {</instruction>
+		<instruction>	var cmd = clickData.func.command;</instruction>
+		<instruction>	cmd.deselect = false; // Prevent automatic deselection</instruction>
+		<instruction>	cmd.ClearFiles();</instruction>
+		<instruction />
+		<instruction>	SortTabs(cmd, clickData.func.sourcetab.lister.tabsleft);</instruction>
+		<instruction>	SortTabs(cmd, clickData.func.sourcetab.lister.tabsright);</instruction>
+		<instruction>}</instruction>
+		<instruction />
+		<instruction>function SortTabs(cmd, tabList) {</instruction>
+		<instruction>	var setLabels = DOpus.Create.StringSet();</instruction>
+		<instruction>	var mapLabelToTabVec = DOpus.Create.Map();</instruction>
+		<instruction />
+		<instruction>	for (var eTabs = new Enumerator(tabList); !eTabs.atEnd(); eTabs.moveNext()) {</instruction>
+		<instruction>		var tab = eTabs.item();</instruction>
+		<instruction>		var label = tab.path.def_value.toLowerCase();</instruction>
+		<instruction />
+		<instruction>		setLabels.insert(label);</instruction>
+		<instruction />
+		<instruction>		if (!mapLabelToTabVec.exists(label)) {</instruction>
+		<instruction>			mapLabelToTabVec(label) = DOpus.Create.Vector();</instruction>
+		<instruction>		}</instruction>
+		<instruction>		mapLabelToTabVec(label).push_back(tab);</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	var vecLabels = DOpus.Create.Vector();</instruction>
+		<instruction />
+		<instruction>	for (var eLabels = new Enumerator(setLabels); !eLabels.atEnd(); eLabels.moveNext()) {</instruction>
+		<instruction>		vecLabels.push_back(eLabels.item());</instruction>
+		<instruction>	}</instruction>
+		<instruction>	vecLabels.sort();</instruction>
+		<instruction />
+		<instruction>	cmd.Clear();</instruction>
+		<instruction>	var tabPos = 0;</instruction>
+		<instruction />
+		<instruction>	// Locked Tabs</instruction>
+		<instruction>	for (var eLabels = new Enumerator(vecLabels); !eLabels.atEnd(); eLabels.moveNext()) {</instruction>
+		<instruction>		var vecTabs = mapLabelToTabVec(eLabels.item());</instruction>
+		<instruction>		for (var eTabs = new Enumerator(vecTabs); !eTabs.atEnd(); eTabs.moveNext()) {</instruction>
+		<instruction>			var tab = eTabs.item();</instruction>
+		<instruction>			if (tab.lock !== &quot;off&quot;) {</instruction>
+		<instruction>				cmd.AddLine(&quot;Go TABPOS=&quot; + tabPos + &quot;,&quot; + tab);</instruction>
+		<instruction>				++tabPos;</instruction>
+		<instruction>			}</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	// Unlocked Tabs</instruction>
+		<instruction>	for (var eLabels = new Enumerator(vecLabels); !eLabels.atEnd(); eLabels.moveNext()) {</instruction>
+		<instruction>		var vecTabs = mapLabelToTabVec(eLabels.item());</instruction>
+		<instruction>		for (var eTabs = new Enumerator(vecTabs); !eTabs.atEnd(); eTabs.moveNext()) {</instruction>
+		<instruction>			var tab = eTabs.item();</instruction>
+		<instruction>			if (tab.lock === &quot;off&quot;) {</instruction>
+		<instruction>				cmd.AddLine(&quot;Go TABPOS=&quot; + tabPos + &quot;,&quot; + tab);</instruction>
+		<instruction>				++tabPos;</instruction>
+		<instruction>			}</instruction>
+		<instruction>		}</instruction>
+		<instruction>	}</instruction>
+		<instruction />
+		<instruction>	if (tabPos &gt; 1) {</instruction>
+		<instruction>		cmd.Run();</instruction>
+		<instruction>	}</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>
