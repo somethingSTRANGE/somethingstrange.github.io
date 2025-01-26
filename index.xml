@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>somethingSTRANGE</title><link>http://somethingstrange.com/</link><description>Recent content on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://somethingstrange.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Commenting with Giscus</title><link>http://somethingstrange.com/posts/commenting-with-giscus/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sun, 12 Jan 2025 11:18:37 -0800</atom:modified><guid>http://somethingstrange.com/posts/commenting-with-giscus/</guid><description>&lt;p>For a while now, this website has been powered by &lt;a href="https://gohugo.io/">Hugo&lt;/a>, a fantastic static site generator that ensures the site content is compiled into static files, making it swift and efficient. As a static website, there is no backend server running scripts, which means fewer points of failure and faster load times.&lt;/p>
-&lt;p>I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>giscus</category><category>github</category><category>hugo</category><category>webdev</category></item><item><title>Tab</title><link>http://somethingstrange.com/tab/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sat, 11 Jan 2025 13:42:04 -0800</atom:modified><guid>http://somethingstrange.com/tab/</guid><description>&lt;div id="tab-panes">
+&lt;p>I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>giscus</category><category>github</category><category>hugo</category><category>webdev</category></item><item><title>Tab</title><link>http://somethingstrange.com/tab/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sun, 26 Jan 2025 12:49:56 -0800</atom:modified><guid>http://somethingstrange.com/tab/</guid><description>&lt;div id="tab-panes">
 &lt;div id="tab-pane-toolbar">
 &lt;div data-mode="0" id="tab-mode">
 &lt;button id="mode-edit-disabled" onclick="editEnabled()">
@@ -40,102 +40,102 @@
 &lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-icons"/>&lt;/svg>&lt;/span>
 &lt;/button>
 &lt;div class="tab-icon-dropdown--content" id="tab-icon-dropdown">
-&lt;button data-icon="none">&lt;/button>
-&lt;button data-icon="markdown">&lt;/button>
-&lt;button data-icon="bones">&lt;/button>
-&lt;button data-icon="steam-card">&lt;/button>
-&lt;button data-icon="boost">&lt;/button>
-&lt;button data-icon="fa-left">&lt;/button>
-&lt;button data-icon="fa-right">&lt;/button>
-&lt;button data-icon="fa-right-left">&lt;/button>
-&lt;button data-icon="fa-code">&lt;/button>
-&lt;button data-icon="fa-markup">&lt;/button>
-&lt;button data-icon="fa-list">&lt;/button>
-&lt;button data-icon="fa-checklist">&lt;/button>
-&lt;button data-icon="fa-memo-pad">&lt;/button>
-&lt;button data-icon="fa-note">&lt;/button>
-&lt;button data-icon="fa-store">&lt;/button>
-&lt;button data-icon="fa-cart-shopping">&lt;/button>
-&lt;button data-icon="alpha-0">&lt;/button>
-&lt;button data-icon="alpha-1">&lt;/button>
-&lt;button data-icon="alpha-2">&lt;/button>
-&lt;button data-icon="alpha-3">&lt;/button>
-&lt;button data-icon="alpha-4">&lt;/button>
-&lt;button data-icon="alpha-5">&lt;/button>
-&lt;button data-icon="alpha-6">&lt;/button>
-&lt;button data-icon="alpha-7">&lt;/button>
-&lt;button data-icon="alpha-8">&lt;/button>
-&lt;button data-icon="alpha-9">&lt;/button>
-&lt;button data-icon="alpha-a">&lt;/button>
-&lt;button data-icon="alpha-b">&lt;/button>
-&lt;button data-icon="alpha-c">&lt;/button>
-&lt;button data-icon="alpha-d">&lt;/button>
-&lt;button data-icon="alpha-e">&lt;/button>
-&lt;button data-icon="alpha-f">&lt;/button>
-&lt;button data-icon="emoji-check">&lt;/button>
-&lt;button data-icon="emoji-cross">&lt;/button>
-&lt;button data-icon="emoji-question">&lt;/button>
-&lt;button data-icon="emoji-exclamation">&lt;/button>
-&lt;button data-icon="emoji-bangbang">&lt;/button>
-&lt;button data-icon="emoji-interrobang">&lt;/button>
-&lt;button data-icon="emoji-100">&lt;/button>
-&lt;button data-icon="emoji-pushpin">&lt;/button>
-&lt;button data-icon="emoji-light-bulb">&lt;/button>
-&lt;button data-icon="emoji-heart">&lt;/button>
-&lt;button data-icon="emoji-poo">&lt;/button>
-&lt;button data-icon="emoji-rocket">&lt;/button>
-&lt;button data-icon="emoji-happy">&lt;/button>
-&lt;button data-icon="emoji-mad">&lt;/button>
-&lt;button data-icon="emoji-devil">&lt;/button>
-&lt;button data-icon="emoji-melting-face">&lt;/button>
-&lt;button data-icon="emoji-eyes">&lt;/button>
-&lt;button data-icon="emoji-thumbs-up">&lt;/button>
-&lt;button data-icon="emoji-thumbs-down">&lt;/button>
-&lt;button data-icon="emoji-horns">&lt;/button>
-&lt;button data-icon="emoji-game-die">&lt;/button>
-&lt;button data-icon="emoji-alien-monster">&lt;/button>
-&lt;button data-icon="emoji-joystick">&lt;/button>
-&lt;button data-icon="emoji-controller">&lt;/button>
-&lt;button data-icon="emoji-search">&lt;/button>
-&lt;button data-icon="emoji-alien">&lt;/button>
-&lt;button data-icon="emoji-jack-o-lantern">&lt;/button>
-&lt;button data-icon="emoji-skull">&lt;/button>
-&lt;button data-icon="emoji-spider">&lt;/button>
-&lt;button data-icon="emoji-christmas-tree">&lt;/button>
-&lt;button data-icon="emoji-gift">&lt;/button>
-&lt;button data-icon="emoji-party-popper">&lt;/button>
-&lt;button data-icon="emoji-apple">&lt;/button>
-&lt;button data-icon="emoji-cherries">&lt;/button>
-&lt;button data-icon="emoji-grapes">&lt;/button>
-&lt;button data-icon="emoji-lemon">&lt;/button>
-&lt;button data-icon="emoji-strawberry">&lt;/button>
-&lt;button data-icon="emoji-pretzel">&lt;/button>
-&lt;button data-icon="emoji-hamburger">&lt;/button>
-&lt;button data-icon="emoji-french-fries">&lt;/button>
-&lt;button data-icon="emoji-pizza">&lt;/button>
-&lt;button data-icon="emoji-taco">&lt;/button>
-&lt;button data-icon="emoji-sun">&lt;/button>
-&lt;button data-icon="emoji-moon">&lt;/button>
-&lt;button data-icon="emoji-star">&lt;/button>
-&lt;button data-icon="emoji-sparkles">&lt;/button>
-&lt;button data-icon="emoji-trophy">&lt;/button>
-&lt;button data-icon="emoji-fire">&lt;/button>
-&lt;button data-icon="emoji-ruler">&lt;/button>
-&lt;button data-icon="emoji-compass">&lt;/button>
-&lt;button data-icon="emoji-clock">&lt;/button>
-&lt;button data-icon="emoji-calendar">&lt;/button>
-&lt;button data-icon="emoji-folder">&lt;/button>
-&lt;button data-icon="emoji-memo">&lt;/button>
-&lt;button data-icon="emoji-scroll">&lt;/button>
-&lt;button data-icon="emoji-paperclip">&lt;/button>
-&lt;button data-icon="emoji-locked">&lt;/button>
-&lt;button data-icon="emoji-unlocked">&lt;/button>
-&lt;button data-icon="emoji-floppy-disk">&lt;/button>
-&lt;button data-icon="emoji-gem-stone">&lt;/button>
-&lt;button data-icon="emoji-evil-eye">&lt;/button>
-&lt;button data-icon="emoji-musical-notes">&lt;/button>
-&lt;button data-icon="emoji-ticket">&lt;/button>
-&lt;button data-icon="emoji-gear">&lt;/button>
+&lt;button title="none">&lt;/button>
+&lt;button title="markdown">&lt;/button>
+&lt;button title="bones">&lt;/button>
+&lt;button title="steam-card">&lt;/button>
+&lt;button title="boost">&lt;/button>
+&lt;button title="fa-left">&lt;/button>
+&lt;button title="fa-right">&lt;/button>
+&lt;button title="fa-right-left">&lt;/button>
+&lt;button title="fa-code">&lt;/button>
+&lt;button title="fa-markup">&lt;/button>
+&lt;button title="fa-list">&lt;/button>
+&lt;button title="fa-checklist">&lt;/button>
+&lt;button title="fa-memo-pad">&lt;/button>
+&lt;button title="fa-note">&lt;/button>
+&lt;button title="fa-store">&lt;/button>
+&lt;button title="fa-cart-shopping">&lt;/button>
+&lt;button title="alpha-0">&lt;/button>
+&lt;button title="alpha-1">&lt;/button>
+&lt;button title="alpha-2">&lt;/button>
+&lt;button title="alpha-3">&lt;/button>
+&lt;button title="alpha-4">&lt;/button>
+&lt;button title="alpha-5">&lt;/button>
+&lt;button title="alpha-6">&lt;/button>
+&lt;button title="alpha-7">&lt;/button>
+&lt;button title="alpha-8">&lt;/button>
+&lt;button title="alpha-9">&lt;/button>
+&lt;button title="alpha-a">&lt;/button>
+&lt;button title="alpha-b">&lt;/button>
+&lt;button title="alpha-c">&lt;/button>
+&lt;button title="alpha-d">&lt;/button>
+&lt;button title="alpha-e">&lt;/button>
+&lt;button title="alpha-f">&lt;/button>
+&lt;button title="emoji-check">&lt;/button>
+&lt;button title="emoji-cross">&lt;/button>
+&lt;button title="emoji-question">&lt;/button>
+&lt;button title="emoji-exclamation">&lt;/button>
+&lt;button title="emoji-bangbang">&lt;/button>
+&lt;button title="emoji-interrobang">&lt;/button>
+&lt;button title="emoji-100">&lt;/button>
+&lt;button title="emoji-pushpin">&lt;/button>
+&lt;button title="emoji-light-bulb">&lt;/button>
+&lt;button title="emoji-heart">&lt;/button>
+&lt;button title="emoji-poo">&lt;/button>
+&lt;button title="emoji-rocket">&lt;/button>
+&lt;button title="emoji-happy">&lt;/button>
+&lt;button title="emoji-mad">&lt;/button>
+&lt;button title="emoji-devil">&lt;/button>
+&lt;button title="emoji-melting-face">&lt;/button>
+&lt;button title="emoji-eyes">&lt;/button>
+&lt;button title="emoji-thumbs-up">&lt;/button>
+&lt;button title="emoji-thumbs-down">&lt;/button>
+&lt;button title="emoji-horns">&lt;/button>
+&lt;button title="emoji-game-die">&lt;/button>
+&lt;button title="emoji-alien-monster">&lt;/button>
+&lt;button title="emoji-joystick">&lt;/button>
+&lt;button title="emoji-controller">&lt;/button>
+&lt;button title="emoji-search">&lt;/button>
+&lt;button title="emoji-alien">&lt;/button>
+&lt;button title="emoji-jack-o-lantern">&lt;/button>
+&lt;button title="emoji-skull">&lt;/button>
+&lt;button title="emoji-spider">&lt;/button>
+&lt;button title="emoji-christmas-tree">&lt;/button>
+&lt;button title="emoji-gift">&lt;/button>
+&lt;button title="emoji-party-popper">&lt;/button>
+&lt;button title="emoji-apple">&lt;/button>
+&lt;button title="emoji-cherries">&lt;/button>
+&lt;button title="emoji-grapes">&lt;/button>
+&lt;button title="emoji-lemon">&lt;/button>
+&lt;button title="emoji-strawberry">&lt;/button>
+&lt;button title="emoji-pretzel">&lt;/button>
+&lt;button title="emoji-hamburger">&lt;/button>
+&lt;button title="emoji-french-fries">&lt;/button>
+&lt;button title="emoji-pizza">&lt;/button>
+&lt;button title="emoji-taco">&lt;/button>
+&lt;button title="emoji-sun">&lt;/button>
+&lt;button title="emoji-moon">&lt;/button>
+&lt;button title="emoji-star">&lt;/button>
+&lt;button title="emoji-sparkles">&lt;/button>
+&lt;button title="emoji-trophy">&lt;/button>
+&lt;button title="emoji-fire">&lt;/button>
+&lt;button title="emoji-ruler">&lt;/button>
+&lt;button title="emoji-compass">&lt;/button>
+&lt;button title="emoji-clock">&lt;/button>
+&lt;button title="emoji-calendar">&lt;/button>
+&lt;button title="emoji-folder">&lt;/button>
+&lt;button title="emoji-memo">&lt;/button>
+&lt;button title="emoji-scroll">&lt;/button>
+&lt;button title="emoji-paperclip">&lt;/button>
+&lt;button title="emoji-locked">&lt;/button>
+&lt;button title="emoji-unlocked">&lt;/button>
+&lt;button title="emoji-floppy-disk">&lt;/button>
+&lt;button title="emoji-gem-stone">&lt;/button>
+&lt;button title="emoji-evil-eye">&lt;/button>
+&lt;button title="emoji-musical-notes">&lt;/button>
+&lt;button title="emoji-ticket">&lt;/button>
+&lt;button title="emoji-gear">&lt;/button>
 &lt;/div>
 &lt;/div>
 &lt;div class="tab-chars-remaining">0&lt;/div>
@@ -342,28 +342,44 @@ initDropdownIcon(buttons[i]);
 }
 }
 function initDropdownIcon(el) {
-let icon = el.dataset.icon;
-if (icon === undefined) {
-console.warn('Dropdown icon has bad or missing data');
+let iconTitle = el.title;
+if (iconTitle === undefined) {
+console.warn('Dropdown icon has bad or missing title attribute');
 return;
 }
 el.onclick = function () {
-setIcon(icon)
+setIcon(iconTitle)
 };
-el.title = icon;
 let img = document.createElement('img');
-img.src = '/tab/' + icon + '.ico';
+img.src = '/tab/icon/' + iconTitle + '/24.png';
 el.appendChild(img);
 }
-function setIcon(icon = '') {
-tabIcon.value = 'tab/' + icon + '.ico';
+function setIcon(iconTitle = '') {
+tabIcon.value = 'icon:' + iconTitle;
 onIconInput();
 save();
 }
 function updateIcon(forceUpdate = false) {
 let icon = tabIcon.value.trim();
-let link = document.querySelector("link[rel~='icon']");
-link.href = icon.length > 0 ? icon : '/favicon/favicon-32x32.png';
+const appleTouchIcons = document.querySelectorAll("link[rel='apple-touch-icon']");
+const pngIcons = document.querySelectorAll("link[rel='icon'][type='image/png']");
+const msTileImage = document.querySelector("meta[name='msapplication-TileImage']");
+const getIconPath = (size) => {
+if (icon.startsWith('icon:')) {
+const iconName = icon.replace('icon:', '').replace('/', '');
+return `icon/${iconName}/${size}.png`;
+}
+return icon.length > 0 ? icon : `/favicon/${size}.png`;
+};
+appleTouchIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+pngIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+msTileImage.setAttribute('content', getIconPath(144));
 if (!forceUpdate) {
 markDirty();
 }
