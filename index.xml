@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>somethingSTRANGE</title><link>http://somethingstrange.com/</link><description>Recent content on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://somethingstrange.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Commenting with Giscus</title><link>http://somethingstrange.com/posts/commenting-with-giscus/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sun, 12 Jan 2025 11:18:37 -0800</atom:modified><guid>http://somethingstrange.com/posts/commenting-with-giscus/</guid><description>&lt;p>For a while now, this website has been powered by &lt;a href="https://gohugo.io/">Hugo&lt;/a>, a fantastic static site generator that ensures the site content is compiled into static files, making it swift and efficient. As a static website, there is no backend server running scripts, which means fewer points of failure and faster load times.&lt;/p>
-&lt;p>I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>giscus</category><category>github</category><category>hugo</category><category>webdev</category></item><item><title>Tab</title><link>http://somethingstrange.com/tab/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Fri, 31 Jan 2025 22:54:36 -0800</atom:modified><guid>http://somethingstrange.com/tab/</guid><description>&lt;div id="tab-panes">
+&lt;p>I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>giscus</category><category>github</category><category>hugo</category><category>webdev</category></item><item><title>Tab</title><link>http://somethingstrange.com/tab/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 15:16:29 -0800</atom:modified><guid>http://somethingstrange.com/tab/</guid><description>&lt;div id="tab-panes">
 &lt;div id="tab-pane-toolbar">
 &lt;div data-mode="0" id="tab-mode">
 &lt;button id="mode-edit-disabled" onclick="editEnabled()">
@@ -29,12 +29,11 @@
 &lt;div id="tab-pane-editor">
 &lt;div class="tab-editor-textfield tab-title">
 &lt;label for="tab-title" id="tab-title-label">Name&lt;/label>
-&lt;input id="tab-title" maxlength="32" onchange="save()" oninput="onTitleInput()">
-&lt;div class="tab-chars-remaining">0&lt;/div>
+&lt;input id="tab-title" maxlength="50" onchange="save()" oninput="onTitleInput()">
 &lt;/div>
 &lt;div class="tab-editor-textfield">
 &lt;label for="tab-icon" id="tab-icon-label">Icon&lt;/label>
-&lt;input id="tab-icon" maxlength="64" onchange="save()" oninput="onIconInput()">
+&lt;input id="tab-icon" maxlength="300" onchange="save()" oninput="onIconInput()">
 &lt;div class="tab-icon-dropdown">
 &lt;button class="tab-icon-dropdown-button" onclick="onIconDropdownClick()">
 &lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-icons"/>&lt;/svg>&lt;/span>
@@ -138,7 +137,6 @@
 &lt;button title="emoji-gear">&lt;/button>
 &lt;/div>
 &lt;/div>
-&lt;div class="tab-chars-remaining">0&lt;/div>
 &lt;/div>
 &lt;div class="tab-editor-textarea">
 &lt;div class="tab-label-row">
@@ -150,7 +148,7 @@
 &lt;/div>
 &lt;div class="tab-chars-remaining-label">Characters remaining:&amp;#x2007&lt;span class="tab-chars-remaining">0&lt;/span>&lt;/div>
 &lt;/div>
-&lt;textarea id="tab-note" maxlength="1400" onchange="save()" oninput="onNoteInput()">&lt;/textarea>
+&lt;textarea id="tab-note" maxlength="1520" onchange="save()" oninput="onNoteInput()">&lt;/textarea>
 &lt;/div>
 &lt;/div>
 &lt;div id="tab-pane-preview">&lt;/div>
@@ -171,20 +169,22 @@ const tabEdit = document.getElementById('tab-mode');
 const tabState = document.getElementById('tab-state');
 const tabTitle = document.getElementById('tab-title');
 const tabIcon = document.getElementById('tab-icon');
-const tabNote = document.getElementById('tab-note');
-const tabTitleRemaining = tabTitle.parentNode.querySelector('.tab-chars-remaining');
-const tabIconRemaining = tabIcon.parentNode.querySelector('.tab-chars-remaining');
-const tabNoteRemaining = tabNote.parentNode.querySelector('.tab-chars-remaining');
 const tabIconPanel = document.querySelector('.tab-icon-dropdown--content');
 const tabOptionLineWrap = document.getElementById('option-line-wrap');
-const tabTitleMaxLength = 32;
-const tabIconMaxLength = 64;
-const tabNoteMaxLength = 1400;
-const tokenEdit = 'e';
-const tokenIcon = 'i';
-const tokenNote = 'n';
-const tokenTitle = 't';
-const tokenOptionLineWrap = 'w';
+const tabNote = document.getElementById('tab-note');
+const tabNoteRemaining = tabNote.parentNode.querySelector('.tab-chars-remaining');
+const serializationSeparator = "\u001f"; // US :: Unit Separator
+const tokenData = 'd';
+const uriUpToQueryLength = getUriUpToQueryLength(tokenData);
+const maxSerializedLength = calculateMaxSerializedLength(uriUpToQueryLength);
+const tabNoteMaxLength = maxSerializedLength;
+// LOG("tokenData: " + tokenData);
+// LOG("uriUpToQueryLength: " + uriUpToQueryLength);
+// LOG("maxSerializedLength: " + maxSerializedLength);
+// LOG("tabNoteMaxLength: " + tabNoteMaxLength);
+const booleanToDigit = (bool) => bool ? '1' : '0';
+const digitToBoolean = (digit) => digit === '1';
+const removeUnitSeparator = (text) => text.replace(/\u001f/g, '');
 const converter = new showdown.Converter();
 converter.setOption('tables', 'true');
 converter.setOption('tasklists', 'true');
@@ -195,6 +195,22 @@ converter.setOption('literalMidWordUnderscores', 'true');
 converter.setOption('moreStyling', 'true');
 converter.setOption('parseImgDimensions', 'true');
 converter.setOption('omitExtraWLInCodeBlocks', 'true');
+function calculateMaxSerializedLength(uriUpToQueryLength) {
+const maxUrlLength = 2048;
+const remainingLength = maxUrlLength - uriUpToQueryLength;
+const maxGroups = Math.floor(remainingLength / 4) - 1; // bump down to allow for `==` encode expansion
+const maxSerializedLength = maxGroups * 3;
+return maxSerializedLength;
+}
+function deserialize(data) {
+let parts = data.split(serializationSeparator);
+let mode = digitToBoolean(parts[0]);
+let lineWrap = digitToBoolean(parts[1]);
+let title = parts[2];
+let icon = parts[3];
+let note = parts[4];
+return { mode, lineWrap, title, icon, note };
+}
 function editDisabled() {
 tabEdit.dataset.mode = "0";
 markDirty();
@@ -205,141 +221,23 @@ tabEdit.dataset.mode = "1";
 markDirty();
 save();
 }
-function load() {
-let url = new URL(window.location.href);
-let mode = url.searchParams.get(tokenEdit) ?? "0";
-let icon = url.searchParams.get(tokenIcon) ?? "";
-let note = url.searchParams.get(tokenNote) ?? "";
-let title = url.searchParams.get(tokenTitle) ?? "";
-let isEditEnabled = mode === "1";
-if (isEditEnabled) {
-editor.classList.add('tab-editor--enabled');
-tabState.classList.add('tab-editor--enabled');
+// Function to get the computed style value as a number
+function getComputedStyleValue(element, property) {
+const computedStyle = window.getComputedStyle(element);
+const value = computedStyle.getPropertyValue(property);
+return parseFloat(value); // Convert to numeric value
 }
-let optionEnabled = (url.searchParams.get(tokenOptionLineWrap) ?? "1") === "1";
-setOption(tabOptionLineWrap, optionEnabled, tabNote, 'tab-editor-option-wrap');
-tabEdit.dataset.mode = isEditEnabled ? "1" : "0";
-tabTitle.value = Base64Decode(title);
-tabIcon.value = Base64Decode(icon);
-tabNote.value = Base64Decode(note);
-onTitleInput(true);
-onIconInput(true);
-onNoteInput(true);
-markSaved();
-}
-function save() {
-if (!isDirty()) {
-return;
-}
-let url = new URL(window.location.href);
-setSearchParam(url, tokenEdit, tabEdit.dataset.mode, "0");
-setSearchParam(url, tokenTitle, Base64Encode(tabTitle.value), "");
-setSearchParam(url, tokenIcon, Base64Encode(tabIcon.value), "");
-setSearchParam(url, tokenNote, Base64Encode(tabNote.value), "");
-setSearchParam(url, tokenOptionLineWrap, tabOptionLineWrap.dataset.enabled, "1");
-window.location.href = url.href;
-markSaved();
-}
-function setSearchParam(url, key, value, defaultValue) {
-url.searchParams.delete(key);
-if (value !== defaultValue) {
-url.searchParams.set(key, value);
-}
-}
-function markDirty() {
-tabState.dataset.dirty = 'true';
-}
-function markSaved() {
-tabState.dataset.dirty = 'false';
-}
-function isDirty() {
-return tabState.dataset.dirty === 'true';
-}
-function Base64Decode(base64) {
-return atob(decodeURIComponent(base64));
-}
-function Base64Encode(data) {
-return encodeURIComponent(btoa(data));
-}
-function onTitleInput(forceUpdate = false) {
-updateRemaining(tabTitleRemaining, tabTitleMaxLength - tabTitle.value.length);
-updateTitle(forceUpdate);
-}
-function onIconInput(forceUpdate = false) {
-updateRemaining(tabIconRemaining, tabIconMaxLength - tabIcon.value.length);
-updateIcon(forceUpdate);
-}
-function onNoteInput(forceUpdate = false) {
-updateRemaining(tabNoteRemaining, tabNoteMaxLength - tabNote.value.length);
-updatePreview(forceUpdate);
-}
-function onIconDropdownClick() {
-document.getElementById("tab-icon-dropdown").classList.toggle("tab-icon-dropdown--show");
-resizeDropdown();
-}
-function toggleOption(option, target, className) {
-let enabled = option.dataset.enabled === "1";
-setOption(option, !enabled, target, className);
-}
-function setOption(option, enabled, target, className) {
-option.dataset.enabled = enabled ? "1" : "0";
-if (enabled) {
-target.classList.add(className);
-} else {
-target.classList.remove(className);
-}
-}
-function onToggleLineWrapClick() {
-toggleOption(tabOptionLineWrap, tabNote, 'tab-editor-option-wrap');
-markDirty();
-save();
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-if (!tabIconPanel.classList.contains('tab-icon-dropdown--show')) {
-return;
-}
-let el = event.target.closest('.tab-icon-dropdown-button');
-if (el === null &amp;&amp; event.target !== tabIconPanel) {
-tabIconPanel.classList.remove('tab-icon-dropdown--show');
-// console.log(event.target);
-// // if (!event.target.matches('.tab-icon-dropdown-button svg use')) {
-// let dropdowns = document.getElementsByClassName("tab-icon-dropdown--content");
-// console.log('dropdowns: ' + dropdowns.length);
-// let i;
-// for (i = 0; i &lt; dropdowns.length; i++) {
-// let openDropdown = dropdowns[i];
-// if (openDropdown.classList.contains('tab-icon-dropdown--show')) {
-// openDropdown.classList.remove('tab-icon-dropdown--show');
-// }
-// }
-}
-}
-function updateRemaining(el, value) {
-el.innerHTML = value;
-}
-function replacePatterns(text) {
-const vineRegex = /]\((@vine:\s*(\S*)\s*)\)/igm;
-text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?search=$2)');
-const cardsRegex = /^(\|\{CARDS}\|)$/igm;
-text = text.replaceAll(cardsRegex, '🍒 1:1 [H] - [W] -\n\n1:1 trades within this same set. Thanks!\n\n|Card|Need|Bots|\n|---|:--:|---|');
-return text;
-}
-function updatePreview(forceUpdate = false) {
-let text = replacePatterns(tabNote.value);
-let html = converter.makeHtml(text);
-if (preview.innerHTML !== html) {
-preview.innerHTML = html;
-if (!forceUpdate) {
-markDirty();
-}
-}
-}
-function initDropdownIcons() {
-let buttons = document.getElementById('tab-icon-dropdown').getElementsByTagName('button');
-for (let i = 0, n = buttons.length; i &lt; n; i++) {
-initDropdownIcon(buttons[i]);
-}
+function getUriUpToQueryLength(queryToken) {
+const protocol = window.location.protocol; // e.g., "https:"
+const domain = window.location.host; // e.g., "example.com", "127.0.0.1:12345", or "localhost:12345"
+const path = window.location.pathname; // e.g., "/tab/"
+// Construct the base URI up to the query assignment, and return the length
+const baseUri = `${protocol}//${domain}${path}?${queryToken}=`;
+// LOG(protocol.length + ": " + protocol);
+// LOG(domain.length + ": " + domain);
+// LOG(path.length + ": " + path);
+// LOG(baseUri.length + ": " + baseUri);
+return baseUri.length;
 }
 function initDropdownIcon(el) {
 let iconTitle = el.title;
@@ -354,57 +252,76 @@ let img = document.createElement('img');
 img.src = '/tab/icon/' + iconTitle + '/24.png';
 el.appendChild(img);
 }
-function setIcon(iconTitle = '') {
-tabIcon.value = 'icon:' + iconTitle;
-onIconInput();
-save();
-}
-function updateIcon(forceUpdate = false) {
-let icon = tabIcon.value.trim();
-const appleTouchIcons = document.querySelectorAll("link[rel='apple-touch-icon']");
-const pngIcons = document.querySelectorAll("link[rel='icon'][type='image/png']");
-const msTileImage = document.querySelector("meta[name='msapplication-TileImage']");
-const getIconPath = (size) => {
-if (icon.startsWith('icon:')) {
-const iconName = icon.replace('icon:', '').replace('/', '');
-return `icon/${iconName}/${size}.png`;
-}
-return icon.length > 0 ? icon : `/favicon/${size}.png`;
-};
-appleTouchIcons.forEach(iconLink => {
-const size = iconLink.getAttribute('sizes').split('x')[0];
-iconLink.href = getIconPath(size);
-});
-pngIcons.forEach(iconLink => {
-const size = iconLink.getAttribute('sizes').split('x')[0];
-iconLink.href = getIconPath(size);
-});
-msTileImage.setAttribute('content', getIconPath(144));
-if (!forceUpdate) {
-markDirty();
+function initDropdownIcons() {
+let buttons = document.getElementById('tab-icon-dropdown').getElementsByTagName('button');
+for (let i = 0, n = buttons.length; i &lt; n; i++) {
+initDropdownIcon(buttons[i]);
 }
 }
-function updateTitle(forceUpdate = false) {
-const ZeroWidthSpace = '\u200B';
-let title = tabTitle.value.trim();
-document.title = title.length > 0 ? title : ZeroWidthSpace;
-if (!forceUpdate) {
-markDirty();
+function isDirty() {
+return tabState.dataset.dirty === 'true';
 }
+function load() {
+let url = new URL(window.location.href);
+let encodedData = url.searchParams.get(tokenData) ?? "";
+if (encodedData) {
+let base64Data = decodeURIComponent(encodedData);
+let serializedData = atob(base64Data);
+let { mode, lineWrap, title, icon, note } = deserialize(serializedData);
+let isEditEnabled = mode;
+if (isEditEnabled) {
+editor.classList.add('tab-editor--enabled');
+tabState.classList.add('tab-editor--enabled');
+}
+let optionEnabled = lineWrap;
+setOption(tabOptionLineWrap, optionEnabled, tabNote, 'tab-editor-option-wrap');
+tabEdit.dataset.mode = isEditEnabled ? "1" : "0";
+tabTitle.value = title;
+tabIcon.value = icon;
+tabNote.value = note;
+updateTitle(true);
+updateIcon(true);
+onNoteInput(true);
+}
+markSaved();
 }
 function LOG(obj) {
 console.log(obj);
 }
-DOMRect.prototype.toString = function() {
-return `DOMRect(${parseFloat(this.x.toFixed(2)).toString()}, ${parseFloat(this.y.toFixed(2)).toString()}, ${parseFloat(this.width.toFixed(2)).toString()}, ${parseFloat(this.height.toFixed(2)).toString()}) (${parseFloat(this.top.toFixed(2)).toString()}, ${parseFloat(this.right.toFixed(2)).toString()}, ${parseFloat(this.bottom.toFixed(2)).toString()}, ${parseFloat(this.left.toFixed(2)).toString()})`;
-};
-// Function to get the computed style value as a number
-function getComputedStyleValue(element, property) {
-const computedStyle = window.getComputedStyle(element);
-const value = computedStyle.getPropertyValue(property);
-return parseFloat(value); // Convert to numeric value
+function markDirty() {
+tabState.dataset.dirty = 'true';
 }
-let dropdownInitialMaxWidth;
+function markSaved() {
+tabState.dataset.dirty = 'false';
+}
+function onIconDropdownClick() {
+document.getElementById("tab-icon-dropdown").classList.toggle("tab-icon-dropdown--show");
+resizeDropdown();
+}
+function onIconInput(forceUpdate = false) {
+updateIcon(forceUpdate);
+updateRemaining(tabNoteRemaining);
+}
+function onNoteInput(forceUpdate = false) {
+updatePreview(forceUpdate);
+updateRemaining(tabNoteRemaining);
+}
+function onTitleInput(forceUpdate = false) {
+updateRemaining(tabNoteRemaining);
+updateTitle(forceUpdate);
+}
+function onToggleLineWrapClick() {
+toggleOption(tabOptionLineWrap, tabNote, 'tab-editor-option-wrap');
+markDirty();
+save();
+}
+function replacePatterns(text) {
+const vineRegex = /]\((@vine:\s*(\S*)\s*)\)/igm;
+text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?search=$2)');
+const cardsRegex = /^(\|\{CARDS}\|)$/igm;
+text = text.replaceAll(cardsRegex, '🍒 1:1 [H] - [W] -\n\n1:1 trades within this same set. Thanks!\n\n|Card|Need|Bots|\n|---|:--:|---|');
+return text;
+}
 function resizeDropdown() {
 const contentElement = document.getElementById('tab-panes');
 const dropdownElement = document.getElementById('tab-icon-dropdown');
@@ -438,6 +355,129 @@ dropdownElement.style.maxWidth = `${Math.min(Math.max(maxWidth, 0), dropdownInit
 // LOG('dropdownRect: ' + dropdownRect.toString());
 // LOG('previewRect: ' + previewRect.toString());
 }
+function save() {
+if (!isDirty()) {
+return;
+}
+let serializedData = serialize(
+maxSerializedLength,
+digitToBoolean(tabEdit.dataset.mode),
+digitToBoolean(tabOptionLineWrap.dataset.enabled),
+tabTitle.value,
+tabIcon.value,
+tabNote.value
+);
+let base64Data = btoa(serializedData);
+let uriEncodedData = encodeURIComponent(base64Data);
+let url = new URL(window.location.href);
+url.search = '';
+setSearchParam(url, tokenData, uriEncodedData, "1");
+window.location.href = url.href;
+markSaved();
+}
+function serialize(maxLength, mode, lineWrap, title, icon, note) {
+let data = [
+booleanToDigit(mode),
+booleanToDigit(lineWrap),
+removeUnitSeparator(title),
+removeUnitSeparator(icon),
+removeUnitSeparator(note)
+].join(serializationSeparator);
+let truncated = data.substring(0, maxLength);
+if (truncated.length != data.length)
+{
+console.log(`The serialized data was truncated to allow the URI to fit within the 2048-character limit. ${data.length - truncated.length} were lost.`);
+}
+return truncated;
+}
+function setIcon(iconTitle = '') {
+tabIcon.value = 'icon:' + iconTitle;
+onIconInput();
+save();
+}
+function setOption(option, enabled, target, className) {
+option.dataset.enabled = enabled ? "1" : "0";
+if (enabled) {
+target.classList.add(className);
+} else {
+target.classList.remove(className);
+}
+}
+function setSearchParam(url, key, value, defaultValue) {
+url.searchParams.delete(key);
+if (value !== defaultValue) {
+url.searchParams.set(key, value);
+}
+}
+function toggleOption(option, target, className) {
+let enabled = option.dataset.enabled === "1";
+setOption(option, !enabled, target, className);
+}
+function updateIcon(forceUpdate = false) {
+let icon = tabIcon.value.trim();
+const appleTouchIcons = document.querySelectorAll("link[rel='apple-touch-icon']");
+const pngIcons = document.querySelectorAll("link[rel='icon'][type='image/png']");
+const msTileImage = document.querySelector("meta[name='msapplication-TileImage']");
+const getIconPath = (size) => {
+if (icon.startsWith('icon:')) {
+const iconName = icon.replace('icon:', '').replace('/', '');
+return `icon/${iconName}/${size}.png`;
+}
+return icon.length > 0 ? icon : `/favicon/${size}.png`;
+};
+appleTouchIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+pngIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+msTileImage.setAttribute('content', getIconPath(144));
+if (!forceUpdate) {
+markDirty();
+}
+}
+function updatePreview(forceUpdate = false) {
+let text = replacePatterns(tabNote.value);
+let html = converter.makeHtml(text);
+if (preview.innerHTML !== html) {
+preview.innerHTML = html;
+if (!forceUpdate) {
+markDirty();
+}
+}
+}
+function updateRemaining(el) {
+// There are five fields consisting of three text (name, icon, and note) and two boolean (mode and lineWrap).
+// The fields are separated by a single control code character. Therefore, the remaining characters should be
+// decreased by the length of the text fields, 2 for the bool, and 4 for the separators.
+const value = tabNoteMaxLength - tabNote.value.length - tabTitle.value.length - tabIcon.value.length - 2 - 4;
+el.innerHTML = (value >= 0) ? value
+: `&lt;span class="tab-chars-remaining-warning" title="Too many characters - some won't be saved">${value}&lt;/span>`;
+}
+function updateTitle(forceUpdate = false) {
+const ZeroWidthSpace = '\u200B';
+let title = tabTitle.value.trim();
+document.title = title.length > 0 ? title : ZeroWidthSpace;
+if (!forceUpdate) {
+markDirty();
+}
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+if (!tabIconPanel.classList.contains('tab-icon-dropdown--show')) {
+return;
+}
+let el = event.target.closest('.tab-icon-dropdown-button');
+if (el === null &amp;&amp; event.target !== tabIconPanel) {
+tabIconPanel.classList.remove('tab-icon-dropdown--show');
+}
+}
+DOMRect.prototype.toString = function() {
+return `DOMRect(${parseFloat(this.x.toFixed(2)).toString()}, ${parseFloat(this.y.toFixed(2)).toString()}, ${parseFloat(this.width.toFixed(2)).toString()}, ${parseFloat(this.height.toFixed(2)).toString()}) (${parseFloat(this.top.toFixed(2)).toString()}, ${parseFloat(this.right.toFixed(2)).toString()}, ${parseFloat(this.bottom.toFixed(2)).toString()}, ${parseFloat(this.left.toFixed(2)).toString()})`;
+};
+let dropdownInitialMaxWidth;
 window.addEventListener('resize', resizeDropdown);
 load();
 initDropdownIcons();
