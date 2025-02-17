@@ -1,1 +1,499 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>tabs on somethingSTRANGE</title><link>https://somethingstrange.com/tags/tabs/</link><description>Recent content in tabs on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Sat, 15 Feb 2025 10:28:45 -0800</lastBuildDate><atom:link href="https://somethingstrange.com/tags/tabs/index.xml" rel="self" type="application/rss+xml"/><item><title>Got Tabs?</title><link>https://somethingstrange.com/posts/got-tabs/</link><pubDate>Sat, 15 Feb 2025 10:28:45 -0800</pubDate><atom:modified>Mon, 17 Feb 2025 01:47:39 -0800</atom:modified><guid>https://somethingstrange.com/posts/got-tabs/</guid><description>&lt;p>Hey there! Ever find yourself wanting a simple way to create tab spacers without resorting to browser extensions? That was me a while back, and that&amp;rsquo;s when the idea for this little &lt;a href="https://somethingstrange.com/tab/">Tab&lt;/a> app popped into my head. It started with a simple goal: to add tab bar spaces without titles. But as I tinkered and tailored it, it blossomed into something much more robust and versatile. Let me take you through its journey and highlight the cool features it now boasts.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>app</category><category>browser</category><category>customization</category><category>icons</category><category>markdown</category><category>productivity</category><category>tabs</category><category>general</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>tabs on somethingSTRANGE</title><link>https://somethingstrange.com/tags/tabs/</link><description>Recent content in tabs on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Sat, 15 Feb 2025 10:28:45 -0800</lastBuildDate><atom:link href="https://somethingstrange.com/tags/tabs/index.xml" rel="self" type="application/rss+xml"/><item><title>Got Tabs?</title><link>https://somethingstrange.com/posts/got-tabs/</link><pubDate>Sat, 15 Feb 2025 10:28:45 -0800</pubDate><atom:modified>Mon, 17 Feb 2025 01:47:39 -0800</atom:modified><guid>https://somethingstrange.com/posts/got-tabs/</guid><description>&lt;p>Hey there! Ever find yourself wanting a simple way to create tab spacers without resorting to browser extensions? That was me a while back, and that&amp;rsquo;s when the idea for this little &lt;a href="https://somethingstrange.com/tab/">Tab&lt;/a> app popped into my head. It started with a simple goal: to add tab bar spaces without titles. But as I tinkered and tailored it, it blossomed into something much more robust and versatile. Let me take you through its journey and highlight the cool features it now boasts.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>app</category><category>browser</category><category>customization</category><category>icons</category><category>markdown</category><category>productivity</category><category>tabs</category><category>general</category></item><item><title>Tab</title><link>https://somethingstrange.com/tab/</link><pubDate>Sat, 15 Feb 2025 08:20:45 -0800</pubDate><atom:modified>Mon, 17 Feb 2025 02:41:51 -0800</atom:modified><guid>https://somethingstrange.com/tab/</guid><description>&lt;div id="tab-panes">
+&lt;div id="tab-pane-toolbar">
+&lt;div data-mode="0" id="tab-mode">
+&lt;button id="mode-edit-disabled" onclick="editEnabled()">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-caret-square-right"/>&lt;/svg>&lt;/span>
+&lt;/button>
+&lt;button id="mode-edit-enabled" onclick="editDisabled()">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-caret-square-down"/>&lt;/svg>&lt;/span>
+&lt;/button>
+&lt;/div>
+&lt;div data-dirty="0" id="tab-state">
+&lt;div id="state-dirty">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-edit"/>&lt;/svg>&lt;/span>
+&lt;div class="state-label">Edited&lt;/div>
+&lt;/div>
+&lt;div id="state-saved">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-save"/>&lt;/svg>&lt;/span>
+&lt;div class="state-label">Saved&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="flex-grow">&lt;/div>
+&lt;div class="site-logo">
+&lt;a class="site-link" href="https://somethingstrange.com/" rel="home" title="somethingSTRANGE">
+&lt;span class="logo-svg">&lt;svg height="96" viewBox="0 0 128 96" width="128" xmlns="http://www.w3.org/2000/svg">&lt;path clip-rule="evenodd" d="m36 32c0-16 12-28 28-28s28 12 28 28c0 8-2 12-2 12s-2 6.25-2 8.125 1 3.875 3 5.875 3 2.5 5 3h1e-4c2 0.5 3.9999 1 5.9999 0 1-0.5 2-1.375 3-2.25s2-1.75 3-2.25c2-1 3.5-1.5 6-1.5s7 2 7 5-1 5-4 7c-2 1.5-3.5 1-4 0.5s-1-1.5-1-1.5 2 0 3-0.5 2-2 2-4-1-2.5-3-2.5-4 1-7 4-4.5 4-6 4.5-4.5 0.5-7-0.5-7-3-7-3 2 3 3 7 7 5 9.5 5 7-0.5 8.5-2 1.5-3 1.5-3l0.5 1s0.5 1.5-0.5 3.5-5.5 3.5-10 4-9 0.5-11.5-1.5c-1.2978-1.0382-1.7871-2.3459-2.3773-3.9231-0.5467-1.461-1.18-3.1533-2.6227-5.0769-2.3858-3.1811-2.8743-3.8323-3.4772-3.9657-0.1553-0.0343-0.3181-0.0343-0.5228-0.0343-1 0-2 0-2 1.5 0 0.4035 0.0724 0.8432 0.1587 1.3678 0.2346 1.4253 0.5723 3.4772-0.1587 7.1322-0.1065 0.5324-0.213 1.0478-0.3158 1.5456l-5e-4 0.0023-8e-4 0.0039-2e-4 0.0011c-0.8624 4.1732-1.4687 7.1076 0.3173 8.4471 1.568 1.176 3.136 1.1227 5.4269 1.0448 0.6311-0.0215 1.3171-0.0448 2.0731-0.0448 3.5 0 7-2 7-2s3.5-2 7.5-2 7.5 2.5 7.5 2.5 2 1 5.5 1 7-4.5 7-4.5 1.5 0 1.5 1-0.5 3-2.5 5c-0.292 0.2918-0.562 0.5836-0.827 0.8692-1.55 1.6718-2.902 3.1308-7.173 3.1308-2.5 0-4-0.75-5.5-1.5s-3-1.5-5.5-1.5c-2.9912 0-4.5509 1.2526-6.0706 2.4732-1.0206 0.8198-2.0233 1.625-3.4294 2.0268-1.6076 0.4593-2.8987 0.2857-4.2126 0.1091-1.5466-0.208-3.1246-0.4201-5.2874 0.3909-4 1.5-6.5 1-9 0s-5-3.5-5-6c0-1.1931 0.2277-2.1584 0.4659-3.1677 0.2608-1.1056 0.5341-2.264 0.5341-3.8323 0-1.5684-0.2733-2.8634-0.5341-4.0994-0.2382-1.1284-0.4659-2.2076-0.4659-3.4006v-4.5c0-2-1-2-1-2h-2l-1 2s-1 4 0 10-0.5 10-0.5 10-2 4-7 5-6.5 0.5-10.5-1c-2.7335-1.0251-4.066-1.8166-5.2741-2.5343-0.5597-0.3325-1.0927-0.6491-1.7259-0.9657-2-1-5.5-2-8-2-2.1353 0-3.541 0.7295-5.1519 1.5654-0.2752 0.1428-0.5563 0.2887-0.8481 0.4346-2 1-6.5 2-9.5 1.5s-4-1.5-5.5-3-2-3-2-4 0.5-2 0.5-2 1 0 1.5 1c0.07602 0.152 0.14049 0.3041 0.20569 0.4579l3e-5 1e-4c0.36366 0.8577 0.75049 1.7701 3.2943 3.042 3 1.5 6.5 1 9.5-1.5s5.5-3 8-3 6 0.5 9.5 2.5 8 3.5 9.5 3.5 3.5-0.5 4.5-2 1.5-3.5 1-6-0.5-3-0.5-5 1-6.5 1-6.5-2 3.5-4 4.5c-0.3246 0.1623-0.6754 0.3246-1.0356 0.4911-1.8591 0.8598-3.9644 1.8335-3.9644 3.5089 0 2 2 3 4 2 1 1-0.5 3-2 3.5s-3.5 0-3.5 0c-2.7324-1.7992-3.631-4.2374-2.5-7.5l4.5-7c1.3743-1.9413 1.4258-2.4981-0.5-2-3.8706 3.1725-6.2716 4.6073-11 6.5-4.4646 1.72-7.5311 2.0505-14 1.5-4.279-0.5754-6.5-1.5-9-4s-2.5-5.5-2-8.5 4-5.5 6-5.5c1.959 0 3.2761 0.6922 3.958 2.3919 0.1879 1.5095-0.0451 1.9427-0.958 2.1081-0.8004-2.19-2-2.5-3.5-2s-2 1.5-2.5 3-0.5 5 2.5 7c6.5 3.5 13.5 0.5 20.5-5.5 1.5-1.2857 3-3 4-5s1-2.75 1-4.875-2-8.125-2-8.125-2-4-2-12zm-17.03 25.423-0.0124-0.0311-2e-4 -0.0015 0.0126 0.0326zm0 0 0.0151 0.0388 0.0145 0.0382-0.0296-0.077zm62.03-13.423c0 4.4183-2.2386 8-5 8s-5-3.5817-5-8 2.2386-8 5-8 5 3.5817 5 8zm-29 8c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5 2.2386 5 5 5zm8-14v-0.5c-0.2125 0-0.3347 0-0.4433 0.0384-0.147 0.0519-0.2692 0.1741-0.5567 0.4616-0.5 0.5-1 1-4.5-1-0.2188-0.1459-0.427-0.2917-0.6307-0.4345l-1e-4 -1e-4c-1.1929-0.8359-2.2339-1.5654-4.3692-1.5654-1.5 0-3.5 1-4.5 2s-2.5 1-2.5 1 0 1 1.5 1c0.6547 0 1.2142-0.3811 1.8448-0.8105 0.814-0.5544 1.7464-1.1895 3.1552-1.1895 2.1353 0 3.541 0.7295 5.1519 1.5654l2e-4 1e-4c0.2751 0.1428 0.5562 0.2886 0.8479 0.4345 1.1875 0.5937 1.6699 0.8349 2.1798 0.9329 0.349 0.0671 0.7108 0.0671 1.3202 0.0671 1.5 0 1.5-2 1.5-2zm12-7.5s1 0.5 4-1.5 4-2 5.5-2 2.5 1 3.5 2c0.7133 0.7133 0.9178 0.9178 1.1579 0.9764 0.0965 0.0236 0.1988 0.0236 0.3421 0.0236 0.5 0 0.5-1 0.5-1s-1-0.5-2.5-2-2.5-2-4.5-2-4 2-4 2l-2 1.5s-0.5 0.5-2 0.5-3-0.5-3-0.5v0.5s0 0.5 1 1 2 0.5 2 0.5z" fill="currentColor" fill-rule="evenodd">&lt;/path>&lt;path d="m100 12c-4 4-7 6-7 6s3 6 3 14-3 15-3 15l-1 4 1 2s2.5-7 5-7 6 7 6 7 3.5-15 10-15 12 4 12 4-5-10-9-22-4-17-5-17.5-1-0.5-2-0.5-6 6-10 10z" fill="currentColor">&lt;/path>&lt;path d="m28 12c4 4 7 6 7 6s-3 6-3 14 3 15 3 15l1 4-1 2s-2.5-7-5-7-6 7-6 7-3.5-15-10-15-12 4-12 4 5-10 9-22 4-17 5-17.5 1-0.5 2-0.5 6 6 10 10z" fill="currentColor">&lt;/path>&lt;/svg>&lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div id="tab-pane-editor">
+&lt;div class="tab-editor-textfield tab-title">
+&lt;label for="tab-title" id="tab-title-label">Name&lt;/label>
+&lt;input id="tab-title" maxlength="50" onchange="save()" oninput="onTitleInput()">
+&lt;/div>
+&lt;div class="tab-editor-textfield">
+&lt;label for="tab-icon" id="tab-icon-label">Icon&lt;/label>
+&lt;input id="tab-icon" maxlength="300" onchange="save()" oninput="onIconInput()">
+&lt;div class="tab-icon-dropdown">
+&lt;button class="tab-icon-dropdown-button" onclick="onIconDropdownClick()">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg style="height:1em; width:1em" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#duotone-icons"/>&lt;/svg>&lt;/span>
+&lt;/button>
+&lt;div class="tab-icon-dropdown--content" id="tab-icon-dropdown">
+&lt;button title="none">&lt;/button>
+&lt;button title="markdown">&lt;/button>
+&lt;button title="bones">&lt;/button>
+&lt;button title="steam-card">&lt;/button>
+&lt;button title="boost">&lt;/button>
+&lt;button title="fa-left">&lt;/button>
+&lt;button title="fa-right">&lt;/button>
+&lt;button title="fa-right-left">&lt;/button>
+&lt;button title="fa-code">&lt;/button>
+&lt;button title="fa-markup">&lt;/button>
+&lt;button title="fa-list">&lt;/button>
+&lt;button title="fa-checklist">&lt;/button>
+&lt;button title="fa-memo-pad">&lt;/button>
+&lt;button title="fa-note">&lt;/button>
+&lt;button title="fa-store">&lt;/button>
+&lt;button title="fa-cart-shopping">&lt;/button>
+&lt;button title="alpha-0">&lt;/button>
+&lt;button title="alpha-1">&lt;/button>
+&lt;button title="alpha-2">&lt;/button>
+&lt;button title="alpha-3">&lt;/button>
+&lt;button title="alpha-4">&lt;/button>
+&lt;button title="alpha-5">&lt;/button>
+&lt;button title="alpha-6">&lt;/button>
+&lt;button title="alpha-7">&lt;/button>
+&lt;button title="alpha-8">&lt;/button>
+&lt;button title="alpha-9">&lt;/button>
+&lt;button title="alpha-a">&lt;/button>
+&lt;button title="alpha-b">&lt;/button>
+&lt;button title="alpha-c">&lt;/button>
+&lt;button title="alpha-d">&lt;/button>
+&lt;button title="alpha-e">&lt;/button>
+&lt;button title="alpha-f">&lt;/button>
+&lt;button title="emoji-check">&lt;/button>
+&lt;button title="emoji-cross">&lt;/button>
+&lt;button title="emoji-question">&lt;/button>
+&lt;button title="emoji-exclamation">&lt;/button>
+&lt;button title="emoji-bangbang">&lt;/button>
+&lt;button title="emoji-interrobang">&lt;/button>
+&lt;button title="emoji-100">&lt;/button>
+&lt;button title="emoji-pushpin">&lt;/button>
+&lt;button title="emoji-light-bulb">&lt;/button>
+&lt;button title="emoji-heart">&lt;/button>
+&lt;button title="emoji-poo">&lt;/button>
+&lt;button title="emoji-rocket">&lt;/button>
+&lt;button title="emoji-happy">&lt;/button>
+&lt;button title="emoji-mad">&lt;/button>
+&lt;button title="emoji-devil">&lt;/button>
+&lt;button title="emoji-melting-face">&lt;/button>
+&lt;button title="emoji-eyes">&lt;/button>
+&lt;button title="emoji-thumbs-up">&lt;/button>
+&lt;button title="emoji-thumbs-down">&lt;/button>
+&lt;button title="emoji-horns">&lt;/button>
+&lt;button title="emoji-game-die">&lt;/button>
+&lt;button title="emoji-alien-monster">&lt;/button>
+&lt;button title="emoji-joystick">&lt;/button>
+&lt;button title="emoji-controller">&lt;/button>
+&lt;button title="emoji-search">&lt;/button>
+&lt;button title="emoji-alien">&lt;/button>
+&lt;button title="emoji-jack-o-lantern">&lt;/button>
+&lt;button title="emoji-skull">&lt;/button>
+&lt;button title="emoji-spider">&lt;/button>
+&lt;button title="emoji-christmas-tree">&lt;/button>
+&lt;button title="emoji-gift">&lt;/button>
+&lt;button title="emoji-party-popper">&lt;/button>
+&lt;button title="emoji-apple">&lt;/button>
+&lt;button title="emoji-cherries">&lt;/button>
+&lt;button title="emoji-grapes">&lt;/button>
+&lt;button title="emoji-lemon">&lt;/button>
+&lt;button title="emoji-strawberry">&lt;/button>
+&lt;button title="emoji-pretzel">&lt;/button>
+&lt;button title="emoji-hamburger">&lt;/button>
+&lt;button title="emoji-french-fries">&lt;/button>
+&lt;button title="emoji-pizza">&lt;/button>
+&lt;button title="emoji-taco">&lt;/button>
+&lt;button title="emoji-sun">&lt;/button>
+&lt;button title="emoji-moon">&lt;/button>
+&lt;button title="emoji-star">&lt;/button>
+&lt;button title="emoji-sparkles">&lt;/button>
+&lt;button title="emoji-trophy">&lt;/button>
+&lt;button title="emoji-fire">&lt;/button>
+&lt;button title="emoji-ruler">&lt;/button>
+&lt;button title="emoji-compass">&lt;/button>
+&lt;button title="emoji-clock">&lt;/button>
+&lt;button title="emoji-calendar">&lt;/button>
+&lt;button title="emoji-folder">&lt;/button>
+&lt;button title="emoji-memo">&lt;/button>
+&lt;button title="emoji-scroll">&lt;/button>
+&lt;button title="emoji-paperclip">&lt;/button>
+&lt;button title="emoji-locked">&lt;/button>
+&lt;button title="emoji-unlocked">&lt;/button>
+&lt;button title="emoji-floppy-disk">&lt;/button>
+&lt;button title="emoji-gem-stone">&lt;/button>
+&lt;button title="emoji-evil-eye">&lt;/button>
+&lt;button title="emoji-musical-notes">&lt;/button>
+&lt;button title="emoji-ticket">&lt;/button>
+&lt;button title="emoji-gear">&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="tab-editor-textarea">
+&lt;div class="tab-label-row">
+&lt;label for="tab-note" id="tab-note-label">Note&lt;/label>
+&lt;div class="tab-editor-options">
+&lt;button class="tab-editor-option-button" data-enabled="0" id="option-line-wrap" onclick="onToggleLineWrapClick()" title="Line Wrap">
+&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;use style="--fa-pc:currentColor;--fa-po:1;--fa-sc:currentColor;--fa-so:0.4;" xlink:href="#solid-turn-down-left"/>&lt;/svg>&lt;/span>
+&lt;/button>
+&lt;/div>
+&lt;div class="tab-chars-remaining-label">Characters remaining:&amp;#x2007&lt;span class="tab-chars-remaining">0&lt;/span>&lt;/div>
+&lt;/div>
+&lt;textarea id="tab-note" maxlength="1520" onchange="save()" oninput="onNoteInput()">&lt;/textarea>
+&lt;/div>
+&lt;/div>
+&lt;div id="tab-pane-preview">&lt;/div>
+&lt;/div>
+&lt;div id="svg-use-src" style="display:none">
+&lt;svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="duotone-caret-square-right">&lt;path class="fa-secondary" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-83.82 232L182.29 380.65c-8.22 7.16-22.29 2.09-22.29-8V139.4c0-10.14 14.06-15.21 22.29-8.05L316.18 248a10.38 10.38 0 0 1 0 16z" style="fill:var(--fa-sc); opacity:var(--fa-so)"/>&lt;path class="fa-primary" d="M316.18 264L182.29 380.65c-8.22 7.16-22.29 2.09-22.29-8V139.4c0-10.14 14.07-15.21 22.29-8.05L316.18 248a10.38 10.38 0 0 1 0 16z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="duotone-caret-square-down">&lt;path class="fa-secondary" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-51.37 182.31L232.06 348.16a10.38 10.38 0 0 1-16.12 0L99.37 214.31C92.17 206 97.28 192 107.43 192h233.14c10.15 0 15.26 14 8.06 22.31z" style="fill:var(--fa-sc); opacity:var(--fa-so)"/>&lt;path class="fa-primary" d="M348.63 214.31L232.06 348.16a10.38 10.38 0 0 1-16.12 0L99.37 214.31C92.17 206 97.28 192 107.43 192h233.14c10.15 0 15.26 14 8.06 22.31z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="duotone-edit">&lt;path class="fa-secondary" d="M564.6 60.2l-48.8-48.8a39.11 39.11 0 0 0-55.2 0l-35.4 35.4a9.78 9.78 0 0 0 0 13.8l90.2 90.2a9.78 9.78 0 0 0 13.8 0l35.4-35.4a39.11 39.11 0 0 0 0-55.2zM427.5 297.6l-40 40a12.3 12.3 0 0 0-3.5 8.5v101.8H64v-320h229.8a12.3 12.3 0 0 0 8.5-3.5l40-40a12 12 0 0 0-8.5-20.5H48a48 48 0 0 0-48 48v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V306.1a12 12 0 0 0-20.5-8.5z" style="fill:var(--fa-sc); opacity:var(--fa-so)"/>&lt;path class="fa-primary" d="M492.8 173.3a9.78 9.78 0 0 1 0 13.8L274.4 405.5l-92.8 10.3a19.45 19.45 0 0 1-21.5-21.5l10.3-92.8L388.8 83.1a9.78 9.78 0 0 1 13.8 0z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="duotone-save">&lt;path class="fa-secondary" d="M288 352a64 64 0 1 1-64-64 64 64 0 0 1 64 64z" style="fill:var(--fa-sc); opacity:var(--fa-so)"/>&lt;path class="fa-primary" d="M433.94 129.94l-83.88-83.88A48 48 0 0 0 316.12 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V163.88a48 48 0 0 0-14.06-33.94zM224 416a64 64 0 1 1 64-64 64 64 0 0 1-64 64zm96-204a12 12 0 0 1-12 12H76a12 12 0 0 1-12-12V108a12 12 0 0 1 12-12h228.52a12 12 0 0 1 8.48 3.52l3.48 3.48a12 12 0 0 1 3.52 8.48z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="duotone-icons">&lt;path class="fa-secondary" d="M137.86 22.44L128 32.58l-9.85-10.14C93.05-3.5 52.25-7.7 24.86 15.64c-31.41 26.78-33 74.85-5 103.88l96.75 99.83a15.68 15.68 0 0 0 22.65 0l96.75-99.83c28.14-29 26.5-77.1-4.91-103.88C203.75-7.7 163-3.5 137.86 22.44zM499.4 352.1h-60.58l22.36-50.75c2.1-6.65-3.94-13.21-12.18-13.21h-75.6c-6.3 0-11.65 3.9-12.49 9.1l-16.8 106.93c-1 6.3 4.88 11.89 12.49 11.89h62.32l-24.2 83c-1.89 6.65 4.2 12.9 12.23 12.9a13.26 13.26 0 0 0 10.92-5.25l92.4-138.91c4.88-6.91-1.16-15.7-10.87-15.7z" style="fill:var(--fa-sc); opacity:var(--fa-so)"/>&lt;path class="fa-primary" d="M260.57 319.84h-48l-7.08-14.24a27.39 27.39 0 0 0-25.66-17.78h-71.71a27.39 27.39 0 0 0-25.66 17.78l-7 14.24h-48A27.45 27.45 0 0 0 0 347.3v137.25A27.45 27.45 0 0 0 27.43 512h233.14A27.45 27.45 0 0 0 288 484.55V347.3a27.45 27.45 0 0 0-27.43-27.46zM144 468a52 52 0 1 1 52-52 52 52 0 0 1-52 52zM478.08.33L329.51 23.17C314.87 25.42 304 38.92 304 54.83V161.6a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V99.66l112-17.22v47.18a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V32c0-19.48-16-34.42-33.92-31.67z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">&lt;g id="solid-turn-down-left">&lt;path class="fa-primary" d="M5.7 274.3L143.7 136.3c5.3-5.3 12.5-8.3 20-8.3c15.6 0 28.3 12.7 28.3 28.3l0 83.7 208 0c8.8 0 16-7.2 16-16l0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160c0 61.9-50.1 112-112 112l-208 0 0 83.7c0 15.6-12.7 28.3-28.3 28.3c-7.5 0-14.7-3-20-8.3L5.7 301.6C2 298 0 293.1 0 288s2-10 5.7-13.7z" style="fill:var(--fa-pc); opacity:var(--fa-po)"/>&lt;/g>&lt;/svg>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js">&lt;/script>
+&lt;script>
+const preview = document.getElementById('tab-pane-preview');
+const editor = document.getElementById('tab-pane-editor');
+const tabEdit = document.getElementById('tab-mode');
+const tabState = document.getElementById('tab-state');
+const tabTitle = document.getElementById('tab-title');
+const tabIcon = document.getElementById('tab-icon');
+const tabIconPanel = document.querySelector('.tab-icon-dropdown--content');
+const tabOptionLineWrap = document.getElementById('option-line-wrap');
+const tabNote = document.getElementById('tab-note');
+const tabNoteRemaining = tabNote.parentNode.querySelector('.tab-chars-remaining');
+const serializationSeparator = "\u001f"; // US :: Unit Separator
+const tokenData = 'd';
+const uriUpToQueryLength = getUriUpToQueryLength(tokenData);
+const maxSerializedLength = calculateMaxSerializedLength(uriUpToQueryLength);
+const tabNoteMaxLength = maxSerializedLength;
+// LOG("tokenData: " + tokenData);
+// LOG("uriUpToQueryLength: " + uriUpToQueryLength);
+// LOG("maxSerializedLength: " + maxSerializedLength);
+// LOG("tabNoteMaxLength: " + tabNoteMaxLength);
+const booleanToDigit = (bool) => bool ? '1' : '0';
+const digitToBoolean = (digit) => digit === '1';
+const removeUnitSeparator = (text) => text.replace(/\u001f/g, '');
+const converter = new showdown.Converter();
+converter.setOption('tables', 'true');
+converter.setOption('tasklists', 'true');
+converter.setOption('emoji', 'true');
+converter.setOption('underline', 'true');
+converter.setOption('strikethrough', 'true');
+converter.setOption('literalMidWordUnderscores', 'true');
+converter.setOption('moreStyling', 'true');
+converter.setOption('parseImgDimensions', 'true');
+converter.setOption('omitExtraWLInCodeBlocks', 'true');
+function calculateMaxSerializedLength(uriUpToQueryLength) {
+const maxUrlLength = 2048;
+const remainingLength = maxUrlLength - uriUpToQueryLength;
+const maxGroups = Math.floor(remainingLength / 4) - 1; // bump down to allow for `==` encode expansion
+const maxSerializedLength = maxGroups * 3;
+return maxSerializedLength;
+}
+function deserialize(data) {
+let parts = data.split(serializationSeparator);
+let mode = digitToBoolean(parts[0]);
+let lineWrap = digitToBoolean(parts[1]);
+let title = parts[2];
+let icon = parts[3];
+let note = parts[4];
+return { mode, lineWrap, title, icon, note };
+}
+function editDisabled() {
+tabEdit.dataset.mode = "0";
+markDirty();
+save();
+}
+function editEnabled() {
+tabEdit.dataset.mode = "1";
+markDirty();
+save();
+}
+// Function to get the computed style value as a number
+function getComputedStyleValue(element, property) {
+const computedStyle = window.getComputedStyle(element);
+const value = computedStyle.getPropertyValue(property);
+return parseFloat(value); // Convert to numeric value
+}
+function getUriUpToQueryLength(queryToken) {
+const protocol = window.location.protocol; // e.g., "https:"
+const domain = window.location.host; // e.g., "example.com", "127.0.0.1:12345", or "localhost:12345"
+const path = window.location.pathname; // e.g., "/tab/"
+// Construct the base URI up to the query assignment, and return the length
+const baseUri = `${protocol}//${domain}${path}?${queryToken}=`;
+// LOG(protocol.length + ": " + protocol);
+// LOG(domain.length + ": " + domain);
+// LOG(path.length + ": " + path);
+// LOG(baseUri.length + ": " + baseUri);
+return baseUri.length;
+}
+function initDropdownIcon(el) {
+let iconTitle = el.title;
+if (iconTitle === undefined) {
+console.warn('Dropdown icon has bad or missing title attribute');
+return;
+}
+el.onclick = function () {
+setIcon(iconTitle)
+};
+let img = document.createElement('img');
+img.src = '/tab/icon/' + iconTitle + '/24.png';
+el.appendChild(img);
+}
+function initDropdownIcons() {
+let buttons = document.getElementById('tab-icon-dropdown').getElementsByTagName('button');
+for (let i = 0, n = buttons.length; i &lt; n; i++) {
+initDropdownIcon(buttons[i]);
+}
+}
+function isDirty() {
+return tabState.dataset.dirty === 'true';
+}
+function load() {
+let url = new URL(window.location.href);
+let encodedData = url.searchParams.get(tokenData) ?? "";
+if (encodedData) {
+let base64Data = decodeURIComponent(encodedData);
+let serializedData = atob(base64Data);
+let { mode, lineWrap, title, icon, note } = deserialize(serializedData);
+let isEditEnabled = mode;
+if (isEditEnabled) {
+editor.classList.add('tab-editor--enabled');
+tabState.classList.add('tab-editor--enabled');
+}
+let optionEnabled = lineWrap;
+setOption(tabOptionLineWrap, optionEnabled, tabNote, 'tab-editor-option-wrap');
+tabEdit.dataset.mode = isEditEnabled ? "1" : "0";
+tabTitle.value = title;
+tabIcon.value = icon;
+tabNote.value = note;
+} else {
+let mode = url.searchParams.get('e') ?? "0";
+let icon = url.searchParams.get('i') ?? "";
+let note = url.searchParams.get('n') ?? "";
+let title = url.searchParams.get('t') ?? "";
+let isEditEnabled = mode === "1";
+if (isEditEnabled) {
+editor.classList.add('tab-editor--enabled');
+tabState.classList.add('tab-editor--enabled');
+}
+let optionEnabled = (url.searchParams.get('w') ?? "1") === "1";
+setOption(tabOptionLineWrap, optionEnabled, tabNote, 'tab-editor-option-wrap');
+tabEdit.dataset.mode = isEditEnabled ? "1" : "0";
+tabTitle.value = atob(decodeURIComponent(title));
+tabIcon.value = atob(decodeURIComponent(icon));
+tabNote.value = atob(decodeURIComponent(note));
+}
+updateTitle(true);
+updateIcon(true);
+onNoteInput(true);
+markSaved();
+}
+function LOG(obj) {
+console.log(obj);
+}
+function markDirty() {
+tabState.dataset.dirty = 'true';
+}
+function markSaved() {
+tabState.dataset.dirty = 'false';
+}
+function onIconDropdownClick() {
+document.getElementById("tab-icon-dropdown").classList.toggle("tab-icon-dropdown--show");
+resizeDropdown();
+}
+function onIconInput(forceUpdate = false) {
+updateIcon(forceUpdate);
+updateRemaining(tabNoteRemaining);
+}
+function onNoteInput(forceUpdate = false) {
+updatePreview(forceUpdate);
+updateRemaining(tabNoteRemaining);
+}
+function onTitleInput(forceUpdate = false) {
+updateRemaining(tabNoteRemaining);
+updateTitle(forceUpdate);
+}
+function onToggleLineWrapClick() {
+toggleOption(tabOptionLineWrap, tabNote, 'tab-editor-option-wrap');
+markDirty();
+save();
+}
+function replacePatterns(text) {
+const vineRegex = /]\((@vine:\s*(\S*)\s*)\)/igm;
+text = text.replaceAll(vineRegex, '](https://www.amazon.com/vine/vine-items?search=$2)');
+const cardsRegex = /^(\|\{CARDS}\|)$/igm;
+text = text.replaceAll(cardsRegex, '🍒 1:1 [H] - [W] -\n\n1:1 trades within this same set. Thanks!\n\n|Card|Need|Bots|\n|---|:--:|---|');
+return text;
+}
+function resizeDropdown() {
+const contentElement = document.getElementById('tab-panes');
+const dropdownElement = document.getElementById('tab-icon-dropdown');
+const buttonElement = dropdownElement.parentElement;
+const previewElement = document.getElementById('tab-pane-preview');
+const contentRect = contentElement.getBoundingClientRect();
+const buttonRect = buttonElement.getBoundingClientRect();
+const dropdownRect = dropdownElement.getBoundingClientRect();
+const previewRect = previewElement.getBoundingClientRect();
+// Calculate and set the maximum height for dropdownElement, so that the bottom of
+// the element is less than or equal to the bottom of previewElement.
+const maxHeight = previewRect.bottom - dropdownRect.top;
+dropdownElement.style.maxHeight = `${Math.max(maxHeight, 0)}px`;
+// if (maxHeight > 0) {
+// dropdownElement.style.maxHeight = `${maxHeight}px`;
+// } else {
+// dropdownElement.style.maxHeight = '0px'; // Ensure it's not negative
+// }
+// Get the initial maxWidth value only once
+if (dropdownInitialMaxWidth === undefined) {
+dropdownInitialMaxWidth = getComputedStyleValue(dropdownElement, 'max-width');
+}
+// Calculate and set the maximum width for dropdownElement, so that the right side of
+// the element is less than or equal to the right side of previewElement.
+const maxWidth = previewRect.right - dropdownRect.left;
+dropdownElement.style.maxWidth = `${Math.min(Math.max(maxWidth, 0), dropdownInitialMaxWidth)}px`;
+// LOG('----------');
+// LOG('window.innerWidth: ' + window.innerWidth);
+// LOG('contentRect: ' + contentRect.toString());
+// LOG('buttonRect: ' + buttonRect.toString());
+// LOG('dropdownRect: ' + dropdownRect.toString());
+// LOG('previewRect: ' + previewRect.toString());
+}
+function save() {
+if (!isDirty()) {
+return;
+}
+let serializedData = serialize(
+maxSerializedLength,
+digitToBoolean(tabEdit.dataset.mode),
+digitToBoolean(tabOptionLineWrap.dataset.enabled),
+tabTitle.value,
+tabIcon.value,
+tabNote.value
+);
+let base64Data = btoa(serializedData);
+let uriEncodedData = encodeURIComponent(base64Data);
+let url = new URL(window.location.href);
+url.search = '';
+setSearchParam(url, tokenData, uriEncodedData, "1");
+window.location.href = url.href;
+markSaved();
+}
+function serialize(maxLength, mode, lineWrap, title, icon, note) {
+let data = [
+booleanToDigit(mode),
+booleanToDigit(lineWrap),
+removeUnitSeparator(title),
+removeUnitSeparator(icon),
+removeUnitSeparator(note)
+].join(serializationSeparator);
+let truncated = data.substring(0, maxLength);
+if (truncated.length != data.length)
+{
+console.log(`The serialized data was truncated to allow the URI to fit within the 2048-character limit. ${data.length - truncated.length} were lost.`);
+}
+return truncated;
+}
+function setIcon(iconTitle = '') {
+tabIcon.value = 'icon:' + iconTitle;
+onIconInput();
+save();
+}
+function setOption(option, enabled, target, className) {
+option.dataset.enabled = enabled ? "1" : "0";
+if (enabled) {
+target.classList.add(className);
+} else {
+target.classList.remove(className);
+}
+}
+function setSearchParam(url, key, value, defaultValue) {
+url.searchParams.delete(key);
+if (value !== defaultValue) {
+url.searchParams.set(key, value);
+}
+}
+function toggleOption(option, target, className) {
+let enabled = option.dataset.enabled === "1";
+setOption(option, !enabled, target, className);
+}
+function updateIcon(forceUpdate = false) {
+let icon = tabIcon.value.trim();
+const appleTouchIcons = document.querySelectorAll("link[rel='apple-touch-icon']");
+const pngIcons = document.querySelectorAll("link[rel='icon'][type='image/png']");
+const msTileImage = document.querySelector("meta[name='msapplication-TileImage']");
+const getIconPath = (size) => {
+if (icon.startsWith('icon:')) {
+const iconName = icon.replace('icon:', '').replace('/', '');
+return `icon/${iconName}/${size}.png`;
+}
+return icon.length > 0 ? icon : `/favicon/${size}.png`;
+};
+appleTouchIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+pngIcons.forEach(iconLink => {
+const size = iconLink.getAttribute('sizes').split('x')[0];
+iconLink.href = getIconPath(size);
+});
+msTileImage.setAttribute('content', getIconPath(144));
+if (!forceUpdate) {
+markDirty();
+}
+}
+function updatePreview(forceUpdate = false) {
+let text = replacePatterns(tabNote.value);
+let html = converter.makeHtml(text);
+if (preview.innerHTML !== html) {
+preview.innerHTML = html;
+if (!forceUpdate) {
+markDirty();
+}
+}
+}
+function updateRemaining(el) {
+// There are five fields consisting of three text (name, icon, and note) and two boolean (mode and lineWrap).
+// The fields are separated by a single control code character. Therefore, the remaining characters should be
+// decreased by the length of the text fields, 2 for the bool, and 4 for the separators.
+const value = tabNoteMaxLength - tabNote.value.length - tabTitle.value.length - tabIcon.value.length - 2 - 4;
+el.innerHTML = (value >= 0) ? value
+: `&lt;span class="tab-chars-remaining-warning" title="Too many characters - some won't be saved">${value}&lt;/span>`;
+}
+function updateTitle(forceUpdate = false) {
+const ZeroWidthSpace = '\u200B';
+let title = tabTitle.value.trim();
+document.title = title.length > 0 ? title : ZeroWidthSpace;
+if (!forceUpdate) {
+markDirty();
+}
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+if (!tabIconPanel.classList.contains('tab-icon-dropdown--show')) {
+return;
+}
+let el = event.target.closest('.tab-icon-dropdown-button');
+if (el === null &amp;&amp; event.target !== tabIconPanel) {
+tabIconPanel.classList.remove('tab-icon-dropdown--show');
+}
+}
+DOMRect.prototype.toString = function() {
+return `DOMRect(${parseFloat(this.x.toFixed(2)).toString()}, ${parseFloat(this.y.toFixed(2)).toString()}, ${parseFloat(this.width.toFixed(2)).toString()}, ${parseFloat(this.height.toFixed(2)).toString()}) (${parseFloat(this.top.toFixed(2)).toString()}, ${parseFloat(this.right.toFixed(2)).toString()}, ${parseFloat(this.bottom.toFixed(2)).toString()}, ${parseFloat(this.left.toFixed(2)).toString()})`;
+};
+let dropdownInitialMaxWidth;
+window.addEventListener('resize', resizeDropdown);
+load();
+initDropdownIcons();
+&lt;/script></description><dc:creator>Michael Ryan</dc:creator><category>app</category><category>browser</category><category>customization</category><category>icons</category><category>markdown</category><category>productivity</category><category>tabs</category><category>general</category></item></channel></rss>
