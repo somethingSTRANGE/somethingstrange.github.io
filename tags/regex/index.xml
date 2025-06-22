@@ -1,1 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>regex on somethingSTRANGE</title><link>https://somethingstrange.com/tags/regex/</link><description>Recent content in regex on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Fri, 20 Jun 2025 14:20:00 -0700</lastBuildDate><atom:link href="https://somethingstrange.com/tags/regex/index.xml" rel="self" type="application/rss+xml"/><item><title>RegEx Cheatsheet</title><link>https://somethingstrange.com/posts/regex-cheatsheet/</link><pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate><atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified><guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid><description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description><dc:creator>Michael Ryan</dc:creator><category>regex</category><category>gamedev</category><category>webdev</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>regex on somethingSTRANGE</title>
+    <link>https://somethingstrange.com/tags/regex/</link>
+    <description>Recent content in regex on somethingSTRANGE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>©2025. All content is licensed under <a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright>
+    <lastBuildDate>Fri, 20 Jun 2025 14:20:00 -0700</lastBuildDate>
+    
+        <atom:link href="https://somethingstrange.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>RegEx Cheatsheet</title>
+        <link>https://somethingstrange.com/posts/regex-cheatsheet/</link>
+        <pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate>
+        
+        <atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified>
+        <guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid>
+        <description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>regex</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+            
+              <category>webdev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

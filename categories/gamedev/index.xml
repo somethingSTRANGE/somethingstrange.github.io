@@ -1,128 +1,337 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>GameDev on somethingSTRANGE</title><link>https://somethingstrange.com/categories/gamedev/</link><description>Recent content in GameDev on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Fri, 28 Jan 2022 17:23:00 -0800</lastBuildDate><atom:link href="https://somethingstrange.com/categories/gamedev/index.xml" rel="self" type="application/rss+xml"/><item><title>RegEx Cheatsheet</title><link>https://somethingstrange.com/posts/regex-cheatsheet/</link><pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate><atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified><guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid><description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description><dc:creator>Michael Ryan</dc:creator><category>regex</category><category>gamedev</category><category>webdev</category></item><item><title>GameView Sizes in Unity</title><link>https://somethingstrange.com/posts/game-view-sizes-in-unity/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/game-view-sizes-in-unity/</guid><description>&lt;style>
-body {
-overflow-x: hidden;
-width: 100%;
-}
-.now-you-know .sc-picture__composite {
-max-width: 320px;
-}
-.now-you-know .sc-picture__caption {
-text-align: center;
-font-family: "Army Rangers", sans-serif;
-font-size: 1.2em;
-font-style: normal;
-position: relative;
-left: 1em;
-text-shadow: 1px 1px black;
-}
-.now-you-know .sc-picture__title {
-display: block;
-position: relative;
-left: -0.5em;
-font-size: 2.5em;
-line-height: 1em;
-background: linear-gradient(177deg, #b22234 30%, white 45%, white 55%, #3c3b6e 70%);
-background-size: 100%;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
--webkit-text-stroke: 1px black;
-text-shadow: initial;
-}
-.object-properties {
-margin: 1rem 2rem 2rem;
-/*padding: 1em 0 0 1em;*/
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>GameDev on somethingSTRANGE</title>
+    <link>https://somethingstrange.com/categories/gamedev/</link>
+    <description>Recent content in GameDev on somethingSTRANGE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>©2025. All content is licensed under <a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright>
+    <lastBuildDate>Fri, 28 Jan 2022 17:23:00 -0800</lastBuildDate>
+    
+        <atom:link href="https://somethingstrange.com/categories/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>RegEx Cheatsheet</title>
+        <link>https://somethingstrange.com/posts/regex-cheatsheet/</link>
+        <pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate>
+        
+        <atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified>
+        <guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid>
+        <description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>regex</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+            
+              <category>webdev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>GameView Sizes in Unity</title>
+        <link>https://somethingstrange.com/posts/game-view-sizes-in-unity/</link>
+        <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
+        <guid>https://somethingstrange.com/posts/game-view-sizes-in-unity/</guid>
+        <description>&lt;style&gt;
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .now-you-know .sc-picture__composite {
+        max-width: 320px;
+    }
+
+    .now-you-know .sc-picture__caption {
+        text-align: center;
+        font-family: &#34;Army Rangers&#34;, sans-serif;
+        font-size: 1.2em;
+        font-style: normal;
+        position: relative;
+        left: 1em;
+        text-shadow: 1px 1px black;
+    }
+
+    .now-you-know .sc-picture__title {
+        display: block;
+        position: relative;
+        left: -0.5em;
+        font-size: 2.5em;
+        line-height: 1em;
+
+        background: linear-gradient(177deg, #b22234 30%, white 45%, white 55%, #3c3b6e 70%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px black;
+        text-shadow: initial;
+    }
+
+    .object-properties {
+        margin: 1rem 2rem 2rem;
+        /*padding: 1em 0 0 1em;*/
 /*box-shadow: inset 0 0 16px rgba(0,0,0,0.25);*/
+    }
+    .object-properties table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .object-properties thead {
+        display: none;
+    }
+    .object-properties td {
+        vertical-align: top;
+        padding: 0.375rem 0.25rem;
+    }
+    .object-properties tr:not(:last-child) td {
+     padding-bottom: 1rem;
+     }
+.object-properties  td:not(:last-child) {
+     padding-right: 1rem;
 }
-.object-properties table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-.object-properties thead {
-display: none;
-}
-.object-properties td {
-vertical-align: top;
-padding: 0.375rem 0.25rem;
-}
-.object-properties tr:not(:last-child) td {
-padding-bottom: 1rem;
-}
-.object-properties td:not(:last-child) {
-padding-right: 1rem;
-}
-.object-properties td:first-child {
+    .object-properties td:first-child {
 border-radius: 0.375rem 0 0 0.375rem;
-}
-.object-properties td:last-child {
+    }
+    .object-properties td:last-child {
 border-radius: 0 0.375rem 0.375rem 0;
-width: 100%;
-}
+        width: 100%;
+    }
+
 .object-properties tr:nth-child(even) {
 background-color: blue;
-background-color: hsl(var(--content-box-background-color-h), var(--content-box-background-color-s), calc(var(--content-box-background-color-l) - 3%));
+    background-color: hsl(var(--content-box-background-color-h), var(--content-box-background-color-s), calc(var(--content-box-background-color-l) - 3%));
 }
-.object-properties .hanging-indent {
-padding-left: 2em ;
-text-indent: -2em ;
-}
-&lt;/style>
-&lt;div style="background-color: var(--text-color); height: 100px; width: 100px;">&lt;/div>
-The Unity Game view toolbar has a dropdown that allows you to select various resolutions and aspect ratios presets for testing how your game will look on different monitors. While custom presets may be added to that dropdown menu by clicking the &lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-circle-plus" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> button at the bottom, there's no obvious way of removing items from the list once they're added.
+
+    .object-properties .hanging-indent {
+        padding-left: 2em ;
+        text-indent: -2em ;
+    }
+&lt;/style&gt;
+&lt;div style=&#34;background-color: var(--text-color); height: 100px; width: 100px;&#34;&gt;&lt;/div&gt;
+The Unity Game view toolbar has a dropdown that allows you to select various resolutions and aspect ratios presets for testing how your game will look on different monitors. While custom presets may be added to that dropdown menu by clicking the &lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-circle-plus&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; button at the bottom, there&#39;s no obvious way of removing items from the list once they&#39;re added.
+
 &lt;!--╥─────────────────────────────────╖
-⌦⟩ ║ layouts/shortcodes/picture.html ╟-->
-&lt;figure class="sc-picture__figure">
+ ⌦⟩ ║ layouts/shortcodes/picture.html ╟--&gt;
+&lt;figure class=&#34;sc-picture__figure&#34;&gt;
 &lt;!--╥───────────────────────────────╖
-⌦⟩ ║ layouts/partials/picture.html ╟-->
-&lt;picture>
-&lt;source type="image/avif" srcset="gameview-sizes-menu.avif">
-&lt;source type="image/webp" srcset="gameview-sizes-menu.webp">
-&lt;source type="image/jpeg" srcset="gameview-sizes-menu.jpg">
-&lt;source type="image/png" srcset="gameview-sizes-menu.png">
-&lt;img class="sc-picture__image" src="https://somethingstrange.com/gameview-sizes-menu.png" alt="gameview aspect ratio and screen size menu" decoding="auto" loading="eager">
-&lt;/picture>
+ ⌦⟩ ║ layouts/partials/picture.html ╟--&gt;
+	&lt;picture&gt;
+		&lt;source type=&#34;image/avif&#34; srcset=&#34;gameview-sizes-menu.avif&#34;&gt;
+		&lt;source type=&#34;image/webp&#34; srcset=&#34;gameview-sizes-menu.webp&#34;&gt;
+		&lt;source type=&#34;image/jpeg&#34; srcset=&#34;gameview-sizes-menu.jpg&#34;&gt;
+		&lt;source type=&#34;image/png&#34; srcset=&#34;gameview-sizes-menu.png&#34;&gt;
+		&lt;img class=&#34;sc-picture__image&#34; src=&#34;https://somethingstrange.com/gameview-sizes-menu.png&#34; alt=&#34;gameview aspect ratio and screen size menu&#34; decoding=&#34;auto&#34; loading=&#34;eager&#34;&gt;
+	&lt;/picture&gt;
 &lt;!--╢ layouts/partials/picture.html ║ ⟨⌫
-╙───────────────────────────────╨-->
-&lt;/figure>
+    ╙───────────────────────────────╨--&gt;
+&lt;/figure&gt;
 &lt;!--╢ layouts/shortcodes/picture.html ║ ⟨⌫
-╙─────────────────────────────────╨-->
-&lt;div style="display:flex;gap:2rem;flex-wrap:wrap;">
-&lt;div style="width:60%;min-width:300px;flex-grow:1;">
-&lt;/div>
-&lt;div style="width:35%;min-width:300px;flex-grow:1;align-self:center;">
-&lt;/div>
-&lt;/div>
-&lt;p>Fortunately, there&amp;rsquo;s a configuration file that contains all custom menu entries, and it&amp;rsquo;s a standard Unity YAML data file that can be modified in any plain text editor. The file is called &lt;span class="sc-path">GameViewSizes.asset&lt;/span>, and it&amp;rsquo;s located under your user profile.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><media:content url="https://somethingstrange.com/icon.jpg" medium="image"><media:title type="html">featured image</media:title></media:content><category>unity</category><category>gamedev</category></item><item><title>Command-Line Syntax Key</title><link>https://somethingstrange.com/posts/command-line-syntax-key/</link><pubDate>Wed, 16 Mar 2022 01:10:00 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified><guid>https://somethingstrange.com/posts/command-line-syntax-key/</guid><description>&lt;p>The following table describes the notation used to indicate command-line syntax.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Notation&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Loose Text&lt;/td>
-&lt;td>&lt;em>Required&lt;/em> text that must be typed as shown.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;span class="nowrap">&lt;code>&amp;lt;&lt;/code> … &lt;code>&amp;gt;&lt;/code>&lt;/span>&lt;/td>
-&lt;td>Placeholder for a &lt;em>required&lt;/em> value.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;span class="nowrap">&lt;code>[&lt;/code> … &lt;code>]&lt;/code>&lt;/span>&lt;/td>
-&lt;td>Set of &lt;em>optional&lt;/em> items.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;span class="nowrap">&lt;code>{&lt;/code> … &lt;code>}&lt;/code>&lt;/span>&lt;/td>
-&lt;td>Set of &lt;em>required&lt;/em> items. You must choose one.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>|&lt;/code> (pipe)&lt;/td>
-&lt;td>Pipe separator for mutually exclusive items.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;span class=nowrap>&lt;code>...&lt;/code> (ellipsis)&lt;/span>&lt;/td>
-&lt;td>Items that can be repeated and used multiple times.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table></description><dc:creator>Michael Ryan</dc:creator><category>terminal</category><category>gamedev</category><category>webdev</category></item><item><title>Verdaccio, Synology, and Unity. Oh My!</title><link>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</link><pubDate>Tue, 01 Mar 2022 13:30:03 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified><guid>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</guid><description>Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.</description><dc:creator>Michael Ryan</dc:creator><category>synology</category><category>verdaccio</category><category>docker</category><category>unity</category><category>npm</category><category>gamedev</category></item><item><title>A Convenient Caboodle of Unicode Characters</title><link>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</link><pubDate>Tue, 08 Feb 2022 22:55:31 -0800</pubDate><atom:modified>Wed, 28 May 2025 12:54:08 -0700</atom:modified><guid>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</guid><description>Quick access to some useful Unicode characters.</description><dc:creator>Michael Ryan</dc:creator><category>unicode</category><category>gamedev</category><category>webdev</category></item></channel></rss>
+    ╙─────────────────────────────────╨--&gt;
+&lt;div style=&#34;display:flex;gap:2rem;flex-wrap:wrap;&#34;&gt;
+&lt;div style=&#34;width:60%;min-width:300px;flex-grow:1;&#34;&gt;
+&lt;/div&gt;
+&lt;div style=&#34;width:35%;min-width:300px;flex-grow:1;align-self:center;&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Fortunately, there&amp;rsquo;s a configuration file that contains all custom menu entries, and it&amp;rsquo;s a standard Unity YAML data file that can be modified in any plain text editor. The file is called &lt;span class=&#34;sc-path&#34;&gt;GameViewSizes.asset&lt;/span&gt;, and it&amp;rsquo;s located under your user profile.&lt;/p&gt;</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        <media:content url="https://somethingstrange.com/icon.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>unity</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Command-Line Syntax Key</title>
+        <link>https://somethingstrange.com/posts/command-line-syntax-key/</link>
+        <pubDate>Wed, 16 Mar 2022 01:10:00 -0800</pubDate>
+        
+        <atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified>
+        <guid>https://somethingstrange.com/posts/command-line-syntax-key/</guid>
+        <description>&lt;p&gt;The following table describes the notation used to indicate command-line syntax.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Notation&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Loose Text&lt;/td&gt;
+          &lt;td&gt;&lt;em&gt;Required&lt;/em&gt; text that must be typed as shown.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; … &lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;Placeholder for a &lt;em&gt;required&lt;/em&gt; value.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;[&lt;/code&gt; … &lt;code&gt;]&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;Set of &lt;em&gt;optional&lt;/em&gt; items.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;{&lt;/code&gt; … &lt;code&gt;}&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;Set of &lt;em&gt;required&lt;/em&gt; items. You must choose one.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;|&lt;/code&gt; (pipe)&lt;/td&gt;
+          &lt;td&gt;Pipe separator for mutually exclusive items.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;span class=nowrap&gt;&lt;code&gt;...&lt;/code&gt; (ellipsis)&lt;/span&gt;&lt;/td&gt;
+          &lt;td&gt;Items that can be repeated and used multiple times.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>terminal</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+            
+              <category>webdev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>Verdaccio, Synology, and Unity. Oh My!</title>
+        <link>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</link>
+        <pubDate>Tue, 01 Mar 2022 13:30:03 -0800</pubDate>
+        
+        <atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified>
+        <guid>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</guid>
+        <description>Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>synology</category>
+            
+          
+            
+              <category>verdaccio</category>
+            
+          
+            
+              <category>docker</category>
+            
+          
+            
+              <category>unity</category>
+            
+          
+            
+              <category>npm</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>A Convenient Caboodle of Unicode Characters</title>
+        <link>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</link>
+        <pubDate>Tue, 08 Feb 2022 22:55:31 -0800</pubDate>
+        
+        <atom:modified>Wed, 28 May 2025 12:54:08 -0700</atom:modified>
+        <guid>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</guid>
+        <description>Quick access to some useful Unicode characters.</description>
+        
+        <dc:creator>Michael Ryan</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>unicode</category>
+            
+          
+        
+        
+          
+            
+              <category>gamedev</category>
+            
+          
+            
+              <category>webdev</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
