@@ -975,11 +975,7 @@ background-color: blue;
 &lt;div style=&#34;background-color: var(--text-color); height: 100px; width: 100px;&#34;&gt;&lt;/div&gt;
 The Unity Game view toolbar has a dropdown that allows you to select various resolutions and aspect ratios presets for testing how your game will look on different monitors. While custom presets may be added to that dropdown menu by clicking the &lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-circle-plus&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; button at the bottom, there&#39;s no obvious way of removing items from the list once they&#39;re added.
 
-&lt;!--╥─────────────────────────────────╖
- ⌦⟩ ║ layouts/shortcodes/picture.html ╟--&gt;
 &lt;figure class=&#34;sc-picture__figure&#34;&gt;
-&lt;!--╥───────────────────────────────╖
- ⌦⟩ ║ layouts/partials/picture.html ╟--&gt;
 	&lt;picture&gt;
 		&lt;source type=&#34;image/avif&#34; srcset=&#34;gameview-sizes-menu.avif&#34;&gt;
 		&lt;source type=&#34;image/webp&#34; srcset=&#34;gameview-sizes-menu.webp&#34;&gt;
@@ -987,11 +983,7 @@ The Unity Game view toolbar has a dropdown that allows you to select various res
 		&lt;source type=&#34;image/png&#34; srcset=&#34;gameview-sizes-menu.png&#34;&gt;
 		&lt;img class=&#34;sc-picture__image&#34; src=&#34;https://somethingstrange.com/gameview-sizes-menu.png&#34; alt=&#34;gameview aspect ratio and screen size menu&#34; decoding=&#34;auto&#34; loading=&#34;eager&#34;&gt;
 	&lt;/picture&gt;
-&lt;!--╢ layouts/partials/picture.html ║ ⟨⌫
-    ╙───────────────────────────────╨--&gt;
 &lt;/figure&gt;
-&lt;!--╢ layouts/shortcodes/picture.html ║ ⟨⌫
-    ╙─────────────────────────────────╨--&gt;
 &lt;div style=&#34;display:flex;gap:2rem;flex-wrap:wrap;&#34;&gt;
 &lt;div style=&#34;width:60%;min-width:300px;flex-grow:1;&#34;&gt;
 &lt;/div&gt;
