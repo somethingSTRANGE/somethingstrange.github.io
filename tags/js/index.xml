@@ -1,70 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>JavaScript on somethingSTRANGE</title>
-    <link>https://somethingstrange.com/tags/js/</link>
-    <description>Recent content in JavaScript on somethingSTRANGE</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>©2025. All content is licensed under <a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright>
-    <lastBuildDate>Fri, 28 Jan 2022 17:23:00 -0800</lastBuildDate>
-    
-        <atom:link href="https://somethingstrange.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>Photoshop Scripting</title>
-        <link>https://somethingstrange.com/posts/photoshop-scripting/</link>
-        <pubDate>Mon, 01 Nov 2021 16:53:42 -0800</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/photoshop-scripting/</guid>
-        <description>&lt;h2 id=&#34;the-scriptinglistener-plug-in&#34;&gt;The ScriptingListener plug-in&lt;/h2&gt;
-&lt;p&gt;The ScriptingListener plug-in can record JavaScript to a log file for any operation which is actionable.&lt;/p&gt;
-&lt;p&gt;Install the ScriptingListener plug-in:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Quit Photoshop.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Download the ScriptingListener plug-in package. This package contains the ScriptingListener plug-in in the &amp;ldquo;Utilities&amp;rdquo; folder, scripting documentation, and sample scripts.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 448 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#brands-windows&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;strong&gt;Windows&lt;/strong&gt;:&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://download.adobe.com/pub/adobe/photoshop/win/13.x/Win_Scripting_Plug-In.zip&#34;&gt;Scripting Listener Plug-in for Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 384 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#brands-apple&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;strong&gt;macOS&lt;/strong&gt;:&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://helpx.adobe.com/content/dam/help/en/photoshop/kb/downloadable-plugins-and-content/Scripting_Plug_In_Release.zip&#34;&gt;Scripting Listener Plug-in for macOS&lt;/a&gt; (Photoshop 2020 and later)&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://download.adobe.com/pub/adobe/photoshop/mac/13.x/Scripting_Plug_In_Release.dmg&#34;&gt;Scripting Listener Plug-in for macOS&lt;/a&gt; (Photoshop 2019 and earlier)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;After you download the ScriptingListener plug-in package file above, double-click it to decompress it. If asked, extract all the files.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>photoshop</category>
-            
-          
-            
-              <category>js</category>
-            
-          
-        
-        
-        
-      </item>
-      
-
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>JavaScript on somethingSTRANGE</title><link>https://somethingstrange.com/tags/js/</link><description>Recent content in JavaScript on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Fri, 28 Jan 2022 17:23:00 -0800</lastBuildDate><atom:link href="https://somethingstrange.com/tags/js/index.xml" rel="self" type="application/rss+xml"/><item><title>Photoshop Scripting</title><link>https://somethingstrange.com/posts/photoshop-scripting/</link><pubDate>Mon, 01 Nov 2021 16:53:42 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified><guid>https://somethingstrange.com/posts/photoshop-scripting/</guid><description>&lt;h2 id="the-scriptinglistener-plug-in">The ScriptingListener plug-in&lt;/h2>
+&lt;p>The ScriptingListener plug-in can record JavaScript to a log file for any operation which is actionable.&lt;/p>
+&lt;p>Install the ScriptingListener plug-in:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Quit Photoshop.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Download the ScriptingListener plug-in package. This package contains the ScriptingListener plug-in in the &amp;ldquo;Utilities&amp;rdquo; folder, scripting documentation, and sample scripts.&lt;/p>
+&lt;ul>
+&lt;li>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:1em; width:1em">&lt;use xlink:href="#brands-windows" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;strong>Windows&lt;/strong>:&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://download.adobe.com/pub/adobe/photoshop/win/13.x/Win_Scripting_Plug-In.zip">Scripting Listener Plug-in for Windows&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height:1em; width:1em">&lt;use xlink:href="#brands-apple" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;strong>macOS&lt;/strong>:&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://helpx.adobe.com/content/dam/help/en/photoshop/kb/downloadable-plugins-and-content/Scripting_Plug_In_Release.zip">Scripting Listener Plug-in for macOS&lt;/a> (Photoshop 2020 and later)&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://download.adobe.com/pub/adobe/photoshop/mac/13.x/Scripting_Plug_In_Release.dmg">Scripting Listener Plug-in for macOS&lt;/a> (Photoshop 2019 and earlier)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>After you download the ScriptingListener plug-in package file above, double-click it to decompress it. If asked, extract all the files.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>photoshop</category><category>js</category></item></channel></rss>

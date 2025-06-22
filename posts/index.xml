@@ -1,707 +1,152 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" 
-  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:atom="http://www.w3.org/2005/Atom" 
-  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
-  xmlns:media="http://search.yahoo.com/mrss/">
-  <channel>
-    <title>Posts on somethingSTRANGE</title>
-    <link>https://somethingstrange.com/posts/</link>
-    <description>Recent content in Posts on somethingSTRANGE</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>©2025. All content is licensed under <a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright>
-    <lastBuildDate>Fri, 15 Jan 2021 16:52:17 -0800</lastBuildDate>
-    
-        <atom:link href="https://somethingstrange.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-
-      
-      <item>
-        <title>RegEx Cheatsheet</title>
-        <link>https://somethingstrange.com/posts/regex-cheatsheet/</link>
-        <pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate>
-        
-        <atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified>
-        <guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid>
-        <description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>regex</category>
-            
-          
-        
-        
-          
-            
-              <category>gamedev</category>
-            
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Got Tabs?</title>
-        <link>https://somethingstrange.com/posts/got-tabs/</link>
-        <pubDate>Sat, 15 Feb 2025 10:28:45 -0800</pubDate>
-        
-        <atom:modified>Mon, 17 Feb 2025 01:47:39 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/got-tabs/</guid>
-        <description>&lt;p&gt;Hey there! Ever find yourself wanting a simple way to create tab spacers without resorting to browser extensions? That was me a while back, and that&amp;rsquo;s when the idea for this little &lt;a href=&#34;https://somethingstrange.com/tab/&#34;&gt;Tab&lt;/a&gt; app popped into my head. It started with a simple goal: to add tab bar spaces without titles. But as I tinkered and tailored it, it blossomed into something much more robust and versatile. Let me take you through its journey and highlight the cool features it now boasts.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>app</category>
-            
-          
-            
-              <category>browser</category>
-            
-          
-            
-              <category>customization</category>
-            
-          
-            
-              <category>icons</category>
-            
-          
-            
-              <category>markdown</category>
-            
-          
-            
-              <category>productivity</category>
-            
-          
-            
-              <category>tabs</category>
-            
-          
-        
-        
-          
-            
-              <category>general</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Commenting with Giscus</title>
-        <link>https://somethingstrange.com/posts/commenting-with-giscus/</link>
-        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/commenting-with-giscus/</guid>
-        <description>&lt;p&gt;For a while now, this website has been powered by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, a fantastic static site generator that ensures the site content is compiled into static files, making it swift and efficient. As a static website, there is no backend server running scripts, which means fewer points of failure and faster load times.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>giscus</category>
-            
-          
-            
-              <category>github</category>
-            
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Closing Duplicate Tabs in Directory Opus</title>
-        <link>https://somethingstrange.com/posts/closing-duplicate-tabs-in-dopus/</link>
-        <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/closing-duplicate-tabs-in-dopus/</guid>
-        <description>&lt;p&gt;One of the standout features of &lt;em&gt;Directory Opus&lt;/em&gt; is its capability to manage multiple listers and a multitude of open tabs. However, this flexibility can quickly lead to a cluttered workspace if redundant tabs aren&amp;rsquo;t regularly closed.&lt;/p&gt;
-&lt;p&gt;The script helps simplify tab management by automatically identifying and closing duplicate tabs, ensuring that only unique and necessary tabs remain open. This allows users to maintain a cleaner, more efficient workspace and reduces the time spent manually sorting through tabs.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>directory opus</category>
-            
-          
-        
-        
-          
-            
-              <category>general</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Sorting Tabs in Directory Opus</title>
-        <link>https://somethingstrange.com/posts/sorting-tabs-in-dopus/</link>
-        <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Fri, 13 Jun 2025 12:42:26 -0700</atom:modified>
-        <guid>https://somethingstrange.com/posts/sorting-tabs-in-dopus/</guid>
-        <description>&lt;p&gt;One of the best features of &lt;em&gt;Directory Opus&lt;/em&gt; is the ability to have multiple listers with numerous open tabs. However, if you&amp;rsquo;re not diligent in closing unnecessary tabs, you&amp;rsquo;ll quickly end up with a cluttered mix of relevant and irrelevant tabs.&lt;/p&gt;
-&lt;p&gt;Managing a multitude of tabs can be daunting, especially when you need to keep them organized for efficient workflow. The script in this article aims to streamline this process by automatically sorting your tabs based on their paths. It distinguishes between locked and unlocked tabs, ensuring your most important tabs remain accessible while others are neatly arranged.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>directory opus</category>
-            
-          
-        
-        
-          
-            
-              <category>general</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Using &lt;use&gt; with Font Awesome SVGs</title>
-        <link>https://somethingstrange.com/posts/using-use-with-fontawesome-svgs/</link>
-        <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/using-use-with-fontawesome-svgs/</guid>
-        <description>&lt;p&gt;Throughout this site, I use SVG icons by inlining them directly into the page, ensuring immediate availability without unnecessary network calls. Basic inlining would embed data for each SVG separately, even if the same icon is used multiple times, quickly bloating the page with duplicate data. But there&amp;rsquo;s a solution!&lt;/p&gt;
-&lt;p&gt;SVGs support the &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt; element, which references and duplicates content from another SVG document. This process effectively clones nodes into a hidden DOM and pastes them where the &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt; element is, similar to how &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template&#34;&gt;template elements&lt;/a&gt; are cloned.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>font awesome</category>
-            
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>GameView Sizes in Unity</title>
-        <link>https://somethingstrange.com/posts/game-view-sizes-in-unity/</link>
-        <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/game-view-sizes-in-unity/</guid>
-        <description>&lt;style&gt;
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    .now-you-know .sc-picture__composite {
-        max-width: 320px;
-    }
-
-    .now-you-know .sc-picture__caption {
-        text-align: center;
-        font-family: &#34;Army Rangers&#34;, sans-serif;
-        font-size: 1.2em;
-        font-style: normal;
-        position: relative;
-        left: 1em;
-        text-shadow: 1px 1px black;
-    }
-
-    .now-you-know .sc-picture__title {
-        display: block;
-        position: relative;
-        left: -0.5em;
-        font-size: 2.5em;
-        line-height: 1em;
-
-        background: linear-gradient(177deg, #b22234 30%, white 45%, white 55%, #3c3b6e 70%);
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px black;
-        text-shadow: initial;
-    }
-
-    .object-properties {
-        margin: 1rem 2rem 2rem;
-        /*padding: 1em 0 0 1em;*/
-/*box-shadow: inset 0 0 16px rgba(0,0,0,0.25);*/
-    }
-    .object-properties table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    .object-properties thead {
-        display: none;
-    }
-    .object-properties td {
-        vertical-align: top;
-        padding: 0.375rem 0.25rem;
-    }
-    .object-properties tr:not(:last-child) td {
-     padding-bottom: 1rem;
-     }
-.object-properties  td:not(:last-child) {
-     padding-right: 1rem;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Posts on somethingSTRANGE</title><link>https://somethingstrange.com/posts/</link><description>Recent content in Posts on somethingSTRANGE</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2025. All content is licensed under<a target='_blank' rel='external noopener' href='https://www.apache.org/licenses/LICENSE-2.0'>Apache License 2.0</a>.</copyright><lastBuildDate>Fri, 15 Jan 2021 16:52:17 -0800</lastBuildDate><atom:link href="https://somethingstrange.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>RegEx Cheatsheet</title><link>https://somethingstrange.com/posts/regex-cheatsheet/</link><pubDate>Fri, 20 Jun 2025 14:20:00 -0700</pubDate><atom:modified>Fri, 20 Jun 2025 17:07:15 -0700</atom:modified><guid>https://somethingstrange.com/posts/regex-cheatsheet/</guid><description>A handy cheatsheet and overview of the syntax for various regular expression flavors and implementations.</description><dc:creator>Michael Ryan</dc:creator><category>regex</category><category>gamedev</category><category>webdev</category></item><item><title>Got Tabs?</title><link>https://somethingstrange.com/posts/got-tabs/</link><pubDate>Sat, 15 Feb 2025 10:28:45 -0800</pubDate><atom:modified>Mon, 17 Feb 2025 01:47:39 -0800</atom:modified><guid>https://somethingstrange.com/posts/got-tabs/</guid><description>&lt;p>Hey there! Ever find yourself wanting a simple way to create tab spacers without resorting to browser extensions? That was me a while back, and that&amp;rsquo;s when the idea for this little &lt;a href="https://somethingstrange.com/tab/">Tab&lt;/a> app popped into my head. It started with a simple goal: to add tab bar spaces without titles. But as I tinkered and tailored it, it blossomed into something much more robust and versatile. Let me take you through its journey and highlight the cool features it now boasts.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>app</category><category>browser</category><category>customization</category><category>icons</category><category>markdown</category><category>productivity</category><category>tabs</category><category>general</category></item><item><title>Commenting with Giscus</title><link>https://somethingstrange.com/posts/commenting-with-giscus/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/commenting-with-giscus/</guid><description>&lt;p>For a while now, this website has been powered by &lt;a href="https://gohugo.io/">Hugo&lt;/a>, a fantastic static site generator that ensures the site content is compiled into static files, making it swift and efficient. As a static website, there is no backend server running scripts, which means fewer points of failure and faster load times.&lt;/p>
+&lt;p>I&amp;rsquo;ve been having fun experimenting with CSS and JavaScript to add some dynamic flair, interactive elements, and sleek transitions to bring a modern touch to the site. At its core, however, it&amp;rsquo;s all still a beautifully simple static site.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>giscus</category><category>github</category><category>hugo</category><category>webdev</category></item><item><title>Closing Duplicate Tabs in Directory Opus</title><link>https://somethingstrange.com/posts/closing-duplicate-tabs-in-dopus/</link><pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/closing-duplicate-tabs-in-dopus/</guid><description>&lt;p>One of the standout features of &lt;em>Directory Opus&lt;/em> is its capability to manage multiple listers and a multitude of open tabs. However, this flexibility can quickly lead to a cluttered workspace if redundant tabs aren&amp;rsquo;t regularly closed.&lt;/p>
+&lt;p>The script helps simplify tab management by automatically identifying and closing duplicate tabs, ensuring that only unique and necessary tabs remain open. This allows users to maintain a cleaner, more efficient workspace and reduces the time spent manually sorting through tabs.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>directory opus</category><category>general</category></item><item><title>Sorting Tabs in Directory Opus</title><link>https://somethingstrange.com/posts/sorting-tabs-in-dopus/</link><pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate><atom:modified>Fri, 13 Jun 2025 12:42:26 -0700</atom:modified><guid>https://somethingstrange.com/posts/sorting-tabs-in-dopus/</guid><description>&lt;p>One of the best features of &lt;em>Directory Opus&lt;/em> is the ability to have multiple listers with numerous open tabs. However, if you&amp;rsquo;re not diligent in closing unnecessary tabs, you&amp;rsquo;ll quickly end up with a cluttered mix of relevant and irrelevant tabs.&lt;/p>
+&lt;p>Managing a multitude of tabs can be daunting, especially when you need to keep them organized for efficient workflow. The script in this article aims to streamline this process by automatically sorting your tabs based on their paths. It distinguishes between locked and unlocked tabs, ensuring your most important tabs remain accessible while others are neatly arranged.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>directory opus</category><category>general</category></item><item><title>Using &lt;use> with Font Awesome SVGs</title><link>https://somethingstrange.com/posts/using-use-with-fontawesome-svgs/</link><pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/using-use-with-fontawesome-svgs/</guid><description>&lt;p>Throughout this site, I use SVG icons by inlining them directly into the page, ensuring immediate availability without unnecessary network calls. Basic inlining would embed data for each SVG separately, even if the same icon is used multiple times, quickly bloating the page with duplicate data. But there&amp;rsquo;s a solution!&lt;/p>
+&lt;p>SVGs support the &lt;code>&amp;lt;use&amp;gt;&lt;/code> element, which references and duplicates content from another SVG document. This process effectively clones nodes into a hidden DOM and pastes them where the &lt;code>&amp;lt;use&amp;gt;&lt;/code> element is, similar to how &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">template elements&lt;/a> are cloned.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>font awesome</category><category>hugo</category><category>webdev</category></item><item><title>GameView Sizes in Unity</title><link>https://somethingstrange.com/posts/game-view-sizes-in-unity/</link><pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/game-view-sizes-in-unity/</guid><description>&lt;style>
+body {
+overflow-x: hidden;
+width: 100%;
 }
-    .object-properties td:first-child {
+.now-you-know .sc-picture__composite {
+max-width: 320px;
+}
+.now-you-know .sc-picture__caption {
+text-align: center;
+font-family: "Army Rangers", sans-serif;
+font-size: 1.2em;
+font-style: normal;
+position: relative;
+left: 1em;
+text-shadow: 1px 1px black;
+}
+.now-you-know .sc-picture__title {
+display: block;
+position: relative;
+left: -0.5em;
+font-size: 2.5em;
+line-height: 1em;
+background: linear-gradient(177deg, #b22234 30%, white 45%, white 55%, #3c3b6e 70%);
+background-size: 100%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px black;
+text-shadow: initial;
+}
+.object-properties {
+margin: 1rem 2rem 2rem;
+/*padding: 1em 0 0 1em;*/
+/*box-shadow: inset 0 0 16px rgba(0,0,0,0.25);*/
+}
+.object-properties table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+.object-properties thead {
+display: none;
+}
+.object-properties td {
+vertical-align: top;
+padding: 0.375rem 0.25rem;
+}
+.object-properties tr:not(:last-child) td {
+padding-bottom: 1rem;
+}
+.object-properties td:not(:last-child) {
+padding-right: 1rem;
+}
+.object-properties td:first-child {
 border-radius: 0.375rem 0 0 0.375rem;
-    }
-    .object-properties td:last-child {
+}
+.object-properties td:last-child {
 border-radius: 0 0.375rem 0.375rem 0;
-        width: 100%;
-    }
-
+width: 100%;
+}
 .object-properties tr:nth-child(even) {
 background-color: blue;
-    background-color: hsl(var(--content-box-background-color-h), var(--content-box-background-color-s), calc(var(--content-box-background-color-l) - 3%));
+background-color: hsl(var(--content-box-background-color-h), var(--content-box-background-color-s), calc(var(--content-box-background-color-l) - 3%));
 }
-
-    .object-properties .hanging-indent {
-        padding-left: 2em ;
-        text-indent: -2em ;
-    }
-&lt;/style&gt;
-&lt;div style=&#34;background-color: var(--text-color); height: 100px; width: 100px;&#34;&gt;&lt;/div&gt;
-The Unity Game view toolbar has a dropdown that allows you to select various resolutions and aspect ratios presets for testing how your game will look on different monitors. While custom presets may be added to that dropdown menu by clicking the &lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-circle-plus&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; button at the bottom, there&#39;s no obvious way of removing items from the list once they&#39;re added.
-
-&lt;figure class=&#34;sc-picture__figure&#34;&gt;
-	&lt;picture&gt;
-		&lt;source type=&#34;image/avif&#34; srcset=&#34;gameview-sizes-menu.avif&#34;&gt;
-		&lt;source type=&#34;image/webp&#34; srcset=&#34;gameview-sizes-menu.webp&#34;&gt;
-		&lt;source type=&#34;image/jpeg&#34; srcset=&#34;gameview-sizes-menu.jpg&#34;&gt;
-		&lt;source type=&#34;image/png&#34; srcset=&#34;gameview-sizes-menu.png&#34;&gt;
-		&lt;img class=&#34;sc-picture__image&#34; src=&#34;https://somethingstrange.com/gameview-sizes-menu.png&#34; alt=&#34;gameview aspect ratio and screen size menu&#34; decoding=&#34;auto&#34; loading=&#34;eager&#34;&gt;
-	&lt;/picture&gt;
-&lt;/figure&gt;
-&lt;div style=&#34;display:flex;gap:2rem;flex-wrap:wrap;&#34;&gt;
-&lt;div style=&#34;width:60%;min-width:300px;flex-grow:1;&#34;&gt;
-&lt;/div&gt;
-&lt;div style=&#34;width:35%;min-width:300px;flex-grow:1;align-self:center;&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Fortunately, there&amp;rsquo;s a configuration file that contains all custom menu entries, and it&amp;rsquo;s a standard Unity YAML data file that can be modified in any plain text editor. The file is called &lt;span class=&#34;sc-path&#34;&gt;GameViewSizes.asset&lt;/span&gt;, and it&amp;rsquo;s located under your user profile.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        <media:content url="https://somethingstrange.com/icon.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>unity</category>
-            
-          
-        
-        
-          
-            
-              <category>gamedev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Natural Sorting of SemVer Strings in Hugo</title>
-        <link>https://somethingstrange.com/posts/natural-sorting-of-semver-strings-in-hugo/</link>
-        <pubDate>Thu, 13 Oct 2022 13:25:41 +0700</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/natural-sorting-of-semver-strings-in-hugo/</guid>
-        <description>&lt;p&gt;Earlier today, I saw a &lt;a href=&#34;https://discourse.gohugo.io/t/sorting-semantic-version-numbers/40838&#34;&gt;post&lt;/a&gt; on Hugo&amp;rsquo;s Discourse site where someone was asking for a way to sort version numbers with a &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_sort_order&#34;&gt;natural sort order&lt;/a&gt; where multi-digit numbers are treated atomically.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://discourse.gohugo.io/t/sorting-semantic-version-numbers/40838/4&#34;&gt;accepted solution&lt;/a&gt; seemed somewhat complicated with the way the versions were split into separate version components (i.e., Major, Minor, Patch, PreRelease), sorted into nested maps, and then merged together again afterward.&lt;/p&gt;
-&lt;p&gt;I believe the solution I came up with is a bit more straightforward, and it should be able to sort all SemVer strings. Also, since it doesn&amp;rsquo;t assume the &lt;code&gt;MAJOR.MINOR.PATCH&lt;/code&gt; format, it can also handle version strings with pre-release suffixes, such as &amp;ldquo;beta&amp;rdquo; and &amp;ldquo;rc&amp;rdquo;.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Hugo with Font Awesome</title>
-        <link>https://somethingstrange.com/posts/hugo-with-fontawesome/</link>
-        <pubDate>Thu, 17 Mar 2022 15:01:43 -0700</pubDate>
-        
-        <atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/hugo-with-fontawesome/</guid>
-        <description>&lt;p&gt;&lt;a href=&#34;https://fontawesome.com/&#34;&gt;Font Awesome&lt;/a&gt; is an icon font widely used across various websites, applications, and projects. I&amp;rsquo;ve been utilizing it for years to develop editor tools for my Unity projects. It&amp;rsquo;s truly awesome.&lt;/p&gt;
-&lt;p&gt;One of the first decisions I made as I started building this site with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, a popular open-source static site generator, was to integrate Font Awesome to handle my icon needs. I specifically wanted to use SVGs due to their numerous advantages over traditional font icons. Many &lt;a href=&#34;https://cloudfour.com/thinks/seriously-dont-use-icon-fonts/&#34;&gt;articles&lt;/a&gt; detail the &lt;a href=&#34;https://www.lambdatest.com/blog/its-2019-lets-end-the-debate-on-icon-fonts-vs-svg-icons/&#34;&gt;advantages&lt;/a&gt; of SVG icons &lt;a href=&#34;https://www.irigoyen.dev/blog/2021/02/17/stop-using-icon-fonts/&#34;&gt;over font icons&lt;/a&gt;, so I won’t repeat those here.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>font awesome</category>
-            
-          
-            
-              <category>hugo</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Command-Line Syntax Key</title>
-        <link>https://somethingstrange.com/posts/command-line-syntax-key/</link>
-        <pubDate>Wed, 16 Mar 2022 01:10:00 -0800</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/command-line-syntax-key/</guid>
-        <description>&lt;p&gt;The following table describes the notation used to indicate command-line syntax.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Notation&lt;/th&gt;
-          &lt;th&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Loose Text&lt;/td&gt;
-          &lt;td&gt;&lt;em&gt;Required&lt;/em&gt; text that must be typed as shown.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; … &lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
-          &lt;td&gt;Placeholder for a &lt;em&gt;required&lt;/em&gt; value.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;[&lt;/code&gt; … &lt;code&gt;]&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
-          &lt;td&gt;Set of &lt;em&gt;optional&lt;/em&gt; items.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;code&gt;{&lt;/code&gt; … &lt;code&gt;}&lt;/code&gt;&lt;/span&gt;&lt;/td&gt;
-          &lt;td&gt;Set of &lt;em&gt;required&lt;/em&gt; items. You must choose one.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;code&gt;|&lt;/code&gt; (pipe)&lt;/td&gt;
-          &lt;td&gt;Pipe separator for mutually exclusive items.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;span class=nowrap&gt;&lt;code&gt;...&lt;/code&gt; (ellipsis)&lt;/span&gt;&lt;/td&gt;
-          &lt;td&gt;Items that can be repeated and used multiple times.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>terminal</category>
-            
-          
-        
-        
-          
-            
-              <category>gamedev</category>
-            
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Verdaccio, Synology, and Unity. Oh My!</title>
-        <link>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</link>
-        <pubDate>Tue, 01 Mar 2022 13:30:03 -0800</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</guid>
-        <description>Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>synology</category>
-            
-          
-            
-              <category>verdaccio</category>
-            
-          
-            
-              <category>docker</category>
-            
-          
-            
-              <category>unity</category>
-            
-          
-            
-              <category>npm</category>
-            
-          
-        
-        
-          
-            
-              <category>gamedev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>A Convenient Caboodle of Unicode Characters</title>
-        <link>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</link>
-        <pubDate>Tue, 08 Feb 2022 22:55:31 -0800</pubDate>
-        
-        <atom:modified>Wed, 28 May 2025 12:54:08 -0700</atom:modified>
-        <guid>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</guid>
-        <description>Quick access to some useful Unicode characters.</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>unicode</category>
-            
-          
-        
-        
-          
-            
-              <category>gamedev</category>
-            
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>Photoshop Scripting</title>
-        <link>https://somethingstrange.com/posts/photoshop-scripting/</link>
-        <pubDate>Mon, 01 Nov 2021 16:53:42 -0800</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/photoshop-scripting/</guid>
-        <description>&lt;h2 id=&#34;the-scriptinglistener-plug-in&#34;&gt;The ScriptingListener plug-in&lt;/h2&gt;
-&lt;p&gt;The ScriptingListener plug-in can record JavaScript to a log file for any operation which is actionable.&lt;/p&gt;
-&lt;p&gt;Install the ScriptingListener plug-in:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Quit Photoshop.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Download the ScriptingListener plug-in package. This package contains the ScriptingListener plug-in in the &amp;ldquo;Utilities&amp;rdquo; folder, scripting documentation, and sample scripts.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 448 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#brands-windows&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;strong&gt;Windows&lt;/strong&gt;:&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://download.adobe.com/pub/adobe/photoshop/win/13.x/Win_Scripting_Plug-In.zip&#34;&gt;Scripting Listener Plug-in for Windows&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 384 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#brands-apple&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;strong&gt;macOS&lt;/strong&gt;:&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://helpx.adobe.com/content/dam/help/en/photoshop/kb/downloadable-plugins-and-content/Scripting_Plug_In_Release.zip&#34;&gt;Scripting Listener Plug-in for macOS&lt;/a&gt; (Photoshop 2020 and later)&lt;br /&gt;
-&lt;span style=&#34;display:inline-block; width:1em;&#34;&gt;&lt;/span&gt;&lt;span style=&#34;line-height:1em; vertical-align:middle;&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; style=&#34;height:1em; width:1em&#34;&gt;&lt;use xlink:href=&#34;#solid-download&#34; style=&#34;--fa-pc:currentColor;--fa-po:1;&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; &lt;a href=&#34;https://download.adobe.com/pub/adobe/photoshop/mac/13.x/Scripting_Plug_In_Release.dmg&#34;&gt;Scripting Listener Plug-in for macOS&lt;/a&gt; (Photoshop 2019 and earlier)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;After you download the ScriptingListener plug-in package file above, double-click it to decompress it. If asked, extract all the files.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>photoshop</category>
-            
-          
-            
-              <category>js</category>
-            
-          
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>An Indent Shortcode for Hugo</title>
-        <link>https://somethingstrange.com/posts/hugo-indent-shortcode/</link>
-        <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/hugo-indent-shortcode/</guid>
-        <description>&lt;p&gt;Indenting markdown usually isn&amp;rsquo;t difficult, however there could be a few gotchas. Skip down to the end for a quick little Hugo &lt;a href=&#34;https://somethingstrange.com/posts/hugo-indent-shortcode/#the-shortcode&#34;&gt;shortcode&lt;/a&gt; for inserting indents in markdown.&lt;/p&gt;
-&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
-&lt;p&gt;Earlier today, I wanted to indent a markdown page element that included a link, but for some reason, the HTML that wrapped the markdown link was breaking the things.&lt;/p&gt;
-&lt;p&gt;Search the web for how to &amp;ldquo;indent without adding a bullet or number in markdown&amp;rdquo; and you&amp;rsquo;ll likely come across multiple suggestions that rely on a mix of HTML tags and CSS styles.&lt;/p&gt;</description>
-        
-        <dc:creator>Michael Ryan</dc:creator>
-        <media:content url="https://somethingstrange.com/images/posts/windows-terminal.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>markdown</category>
-            
-          
-            
-              <category>Hugo</category>
-            
-          
-            
-              <category>shortcode</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-      <item>
-        <title>The Markdown Grimoire</title>
-        <link>https://somethingstrange.com/posts/the-markdown-grimoire/</link>
-        <pubDate>Fri, 31 Oct 0730 00:00:00 +0000</pubDate>
-        
-        <atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified>
-        <guid>https://somethingstrange.com/posts/the-markdown-grimoire/</guid>
-        <description>&lt;p&gt;Gathered from various sources, including &lt;a href=&#34;https://www.markdownguide.org&#34;&gt;The Markdown Guide&lt;/a&gt;, GitHub, and others.&lt;/p&gt;
-&lt;p&gt;Personal reference and for testing this site&amp;rsquo;s theme to ensure markdown is rendered correctly.&lt;/p&gt;
-&lt;p&gt;This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for &lt;a href=&#34;https://www.markdownguide.org/basic-syntax&#34;&gt;basic syntax&lt;/a&gt; and &lt;a href=&#34;https://www.markdownguide.org/extended-syntax&#34;&gt;extended syntax&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;basic-syntax&#34;&gt;Basic Syntax&lt;/h1&gt;
-&lt;p&gt;These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.&lt;/p&gt;</description>
-        
-        <dc:creator>Abdul Alhazred</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>markdown</category>
-            
-          
-        
-        
-          
-            
-              <category>webdev</category>
-            
-          
-        
-        
-      </item>
-      
-
-    
-  </channel>
-</rss>
+.object-properties .hanging-indent {
+padding-left: 2em ;
+text-indent: -2em ;
+}
+&lt;/style>
+&lt;div style="background-color: var(--text-color); height: 100px; width: 100px;">&lt;/div>
+The Unity Game view toolbar has a dropdown that allows you to select various resolutions and aspect ratios presets for testing how your game will look on different monitors. While custom presets may be added to that dropdown menu by clicking the &lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-circle-plus" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> button at the bottom, there's no obvious way of removing items from the list once they're added.
+&lt;figure class="sc-picture__figure">
+&lt;picture>
+&lt;source type="image/avif" srcset="gameview-sizes-menu.avif">
+&lt;source type="image/webp" srcset="gameview-sizes-menu.webp">
+&lt;source type="image/jpeg" srcset="gameview-sizes-menu.jpg">
+&lt;source type="image/png" srcset="gameview-sizes-menu.png">
+&lt;img class="sc-picture__image" src="https://somethingstrange.com/gameview-sizes-menu.png" alt="gameview aspect ratio and screen size menu" decoding="auto" loading="eager">
+&lt;/picture>
+&lt;/figure>
+&lt;div style="display:flex;gap:2rem;flex-wrap:wrap;">
+&lt;div style="width:60%;min-width:300px;flex-grow:1;">
+&lt;/div>
+&lt;div style="width:35%;min-width:300px;flex-grow:1;align-self:center;">
+&lt;/div>
+&lt;/div>
+&lt;p>Fortunately, there&amp;rsquo;s a configuration file that contains all custom menu entries, and it&amp;rsquo;s a standard Unity YAML data file that can be modified in any plain text editor. The file is called &lt;span class="sc-path">GameViewSizes.asset&lt;/span>, and it&amp;rsquo;s located under your user profile.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><media:content url="https://somethingstrange.com/icon.jpg" medium="image"><media:title type="html">featured image</media:title></media:content><category>unity</category><category>gamedev</category></item><item><title>Natural Sorting of SemVer Strings in Hugo</title><link>https://somethingstrange.com/posts/natural-sorting-of-semver-strings-in-hugo/</link><pubDate>Thu, 13 Oct 2022 13:25:41 +0700</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/natural-sorting-of-semver-strings-in-hugo/</guid><description>&lt;p>Earlier today, I saw a &lt;a href="https://discourse.gohugo.io/t/sorting-semantic-version-numbers/40838">post&lt;/a> on Hugo&amp;rsquo;s Discourse site where someone was asking for a way to sort version numbers with a &lt;a href="https://en.wikipedia.org/wiki/Natural_sort_order">natural sort order&lt;/a> where multi-digit numbers are treated atomically.&lt;/p>
+&lt;p>The &lt;a href="https://discourse.gohugo.io/t/sorting-semantic-version-numbers/40838/4">accepted solution&lt;/a> seemed somewhat complicated with the way the versions were split into separate version components (i.e., Major, Minor, Patch, PreRelease), sorted into nested maps, and then merged together again afterward.&lt;/p>
+&lt;p>I believe the solution I came up with is a bit more straightforward, and it should be able to sort all SemVer strings. Also, since it doesn&amp;rsquo;t assume the &lt;code>MAJOR.MINOR.PATCH&lt;/code> format, it can also handle version strings with pre-release suffixes, such as &amp;ldquo;beta&amp;rdquo; and &amp;ldquo;rc&amp;rdquo;.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>hugo</category><category>webdev</category></item><item><title>Hugo with Font Awesome</title><link>https://somethingstrange.com/posts/hugo-with-fontawesome/</link><pubDate>Thu, 17 Mar 2022 15:01:43 -0700</pubDate><atom:modified>Sat, 15 Feb 2025 23:31:48 -0800</atom:modified><guid>https://somethingstrange.com/posts/hugo-with-fontawesome/</guid><description>&lt;p>&lt;a href="https://fontawesome.com/">Font Awesome&lt;/a> is an icon font widely used across various websites, applications, and projects. I&amp;rsquo;ve been utilizing it for years to develop editor tools for my Unity projects. It&amp;rsquo;s truly awesome.&lt;/p>
+&lt;p>One of the first decisions I made as I started building this site with &lt;a href="https://gohugo.io/">Hugo&lt;/a>, a popular open-source static site generator, was to integrate Font Awesome to handle my icon needs. I specifically wanted to use SVGs due to their numerous advantages over traditional font icons. Many &lt;a href="https://cloudfour.com/thinks/seriously-dont-use-icon-fonts/">articles&lt;/a> detail the &lt;a href="https://www.lambdatest.com/blog/its-2019-lets-end-the-debate-on-icon-fonts-vs-svg-icons/">advantages&lt;/a> of SVG icons &lt;a href="https://www.irigoyen.dev/blog/2021/02/17/stop-using-icon-fonts/">over font icons&lt;/a>, so I won’t repeat those here.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>font awesome</category><category>hugo</category><category>webdev</category></item><item><title>Command-Line Syntax Key</title><link>https://somethingstrange.com/posts/command-line-syntax-key/</link><pubDate>Wed, 16 Mar 2022 01:10:00 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified><guid>https://somethingstrange.com/posts/command-line-syntax-key/</guid><description>&lt;p>The following table describes the notation used to indicate command-line syntax.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Notation&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Loose Text&lt;/td>
+&lt;td>&lt;em>Required&lt;/em> text that must be typed as shown.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;span class="nowrap">&lt;code>&amp;lt;&lt;/code> … &lt;code>&amp;gt;&lt;/code>&lt;/span>&lt;/td>
+&lt;td>Placeholder for a &lt;em>required&lt;/em> value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;span class="nowrap">&lt;code>[&lt;/code> … &lt;code>]&lt;/code>&lt;/span>&lt;/td>
+&lt;td>Set of &lt;em>optional&lt;/em> items.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;span class="nowrap">&lt;code>{&lt;/code> … &lt;code>}&lt;/code>&lt;/span>&lt;/td>
+&lt;td>Set of &lt;em>required&lt;/em> items. You must choose one.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>|&lt;/code> (pipe)&lt;/td>
+&lt;td>Pipe separator for mutually exclusive items.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;span class=nowrap>&lt;code>...&lt;/code> (ellipsis)&lt;/span>&lt;/td>
+&lt;td>Items that can be repeated and used multiple times.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description><dc:creator>Michael Ryan</dc:creator><category>terminal</category><category>gamedev</category><category>webdev</category></item><item><title>Verdaccio, Synology, and Unity. Oh My!</title><link>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</link><pubDate>Tue, 01 Mar 2022 13:30:03 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified><guid>https://somethingstrange.com/posts/verdaccio-synology-and-unity/</guid><description>Setting up a private Verdaccio package registry is generally quite easy, however it gets a bit more complicated when using a docker container on a Synology NAS.</description><dc:creator>Michael Ryan</dc:creator><category>synology</category><category>verdaccio</category><category>docker</category><category>unity</category><category>npm</category><category>gamedev</category></item><item><title>A Convenient Caboodle of Unicode Characters</title><link>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</link><pubDate>Tue, 08 Feb 2022 22:55:31 -0800</pubDate><atom:modified>Wed, 28 May 2025 12:54:08 -0700</atom:modified><guid>https://somethingstrange.com/posts/a-convenient-caboodle-of-unicode-characters/</guid><description>Quick access to some useful Unicode characters.</description><dc:creator>Michael Ryan</dc:creator><category>unicode</category><category>gamedev</category><category>webdev</category></item><item><title>Photoshop Scripting</title><link>https://somethingstrange.com/posts/photoshop-scripting/</link><pubDate>Mon, 01 Nov 2021 16:53:42 -0800</pubDate><atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified><guid>https://somethingstrange.com/posts/photoshop-scripting/</guid><description>&lt;h2 id="the-scriptinglistener-plug-in">The ScriptingListener plug-in&lt;/h2>
+&lt;p>The ScriptingListener plug-in can record JavaScript to a log file for any operation which is actionable.&lt;/p>
+&lt;p>Install the ScriptingListener plug-in:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Quit Photoshop.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Download the ScriptingListener plug-in package. This package contains the ScriptingListener plug-in in the &amp;ldquo;Utilities&amp;rdquo; folder, scripting documentation, and sample scripts.&lt;/p>
+&lt;ul>
+&lt;li>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:1em; width:1em">&lt;use xlink:href="#brands-windows" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;strong>Windows&lt;/strong>:&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://download.adobe.com/pub/adobe/photoshop/win/13.x/Win_Scripting_Plug-In.zip">Scripting Listener Plug-in for Windows&lt;/a>&lt;/li>
+&lt;li>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height:1em; width:1em">&lt;use xlink:href="#brands-apple" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;strong>macOS&lt;/strong>:&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://helpx.adobe.com/content/dam/help/en/photoshop/kb/downloadable-plugins-and-content/Scripting_Plug_In_Release.zip">Scripting Listener Plug-in for macOS&lt;/a> (Photoshop 2020 and later)&lt;br />
+&lt;span style="display:inline-block; width:1em;">&lt;/span>&lt;span style="line-height:1em; vertical-align:middle;">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em; width:1em">&lt;use xlink:href="#solid-download" style="--fa-pc:currentColor;--fa-po:1;"/>&lt;/svg>&lt;/span> &lt;a href="https://download.adobe.com/pub/adobe/photoshop/mac/13.x/Scripting_Plug_In_Release.dmg">Scripting Listener Plug-in for macOS&lt;/a> (Photoshop 2019 and earlier)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>After you download the ScriptingListener plug-in package file above, double-click it to decompress it. If asked, extract all the files.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><category>photoshop</category><category>js</category></item><item><title>An Indent Shortcode for Hugo</title><link>https://somethingstrange.com/posts/hugo-indent-shortcode/</link><pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate><atom:modified>Fri, 13 Dec 2024 17:01:09 -0800</atom:modified><guid>https://somethingstrange.com/posts/hugo-indent-shortcode/</guid><description>&lt;p>Indenting markdown usually isn&amp;rsquo;t difficult, however there could be a few gotchas. Skip down to the end for a quick little Hugo &lt;a href="https://somethingstrange.com/posts/hugo-indent-shortcode/#the-shortcode">shortcode&lt;/a> for inserting indents in markdown.&lt;/p>
+&lt;h3 id="the-problem">The Problem&lt;/h3>
+&lt;p>Earlier today, I wanted to indent a markdown page element that included a link, but for some reason, the HTML that wrapped the markdown link was breaking the things.&lt;/p>
+&lt;p>Search the web for how to &amp;ldquo;indent without adding a bullet or number in markdown&amp;rdquo; and you&amp;rsquo;ll likely come across multiple suggestions that rely on a mix of HTML tags and CSS styles.&lt;/p></description><dc:creator>Michael Ryan</dc:creator><media:content url="https://somethingstrange.com/images/posts/windows-terminal.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>markdown</category><category>Hugo</category><category>shortcode</category><category>webdev</category></item><item><title>The Markdown Grimoire</title><link>https://somethingstrange.com/posts/the-markdown-grimoire/</link><pubDate>Fri, 31 Oct 0730 00:00:00 +0000</pubDate><atom:modified>Fri, 13 Dec 2024 15:27:26 -0800</atom:modified><guid>https://somethingstrange.com/posts/the-markdown-grimoire/</guid><description>&lt;p>Gathered from various sources, including &lt;a href="https://www.markdownguide.org">The Markdown Guide&lt;/a>, GitHub, and others.&lt;/p>
+&lt;p>Personal reference and for testing this site&amp;rsquo;s theme to ensure markdown is rendered correctly.&lt;/p>
+&lt;p>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for &lt;a href="https://www.markdownguide.org/basic-syntax">basic syntax&lt;/a> and &lt;a href="https://www.markdownguide.org/extended-syntax">extended syntax&lt;/a>.&lt;/p>
+&lt;h1 id="basic-syntax">Basic Syntax&lt;/h1>
+&lt;p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.&lt;/p></description><dc:creator>Abdul Alhazred</dc:creator><category>markdown</category><category>webdev</category></item></channel></rss>
