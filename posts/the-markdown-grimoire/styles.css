@@ -1,0 +1,20 @@
+.sidebar-scribble {
+	padding: 0 0 2em;
+	padding: 0;
+	margin: 1em 0;
+	_float: right;
+	_max-width: 25%;
+	font-family: "Scratchy", cursive;
+	font-size: 32px;
+	color: #fff6;
+	line-height: 1;
+	text-align: center;
+	transform: rotate(var(--r)) translateY(var(--y));
+	font-feature-settings: 'swsh', 'flac', "liga" , "dlig" , "kern" , "fina" ;
+	font-feature-settings: "smcp", "swsh" 2;
+	font-variant-ligatures: normal;
+}
+.sidebar-scribble span {
+	display: inline-block;
+	transform: rotate(var(--r)) translateY(var(--y));
+}
